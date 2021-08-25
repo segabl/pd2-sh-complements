@@ -93,6 +93,13 @@ Complementary skill changes to go with Streamlined Heisting
 
 #### Oppressor
 
+- Heavy Impact
+  - Basic: Stagger chance 5% -> 15%
+  - Ace: Stagger chance 20% -> 40%
+
+*Heavy Impact is a niche skill that is not very useful with the current numbers.*
+*Increasing the stagger chance should give it some more use.*
+
 - Body Expertise
   - Basic: Damage 30% -> 25%
   - Ace: Damage 90% -> 65%

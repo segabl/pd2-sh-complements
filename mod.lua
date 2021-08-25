@@ -76,6 +76,12 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.player.drill_autorepair_2[1] = 0.3
 		self.skill_descs.kick_starter.multibasic = "30%"
 
+		-- Heavy impact (5% -> 15% / 20% -> 40%)
+		self.values.weapon.knock_down[1] = 0.15
+		self.values.weapon.knock_down[2] = 0.4
+		self.skill_descs.heavy_impact.multibasic = "15%"
+		self.skill_descs.heavy_impact.multipro = "40%"
+
 		-- Body Expertise (30% -> 25% / 90% -> 65%)
 		self.values.weapon.automatic_head_shot_add = { 0.25, 0.65 }
 		self.skill_descs.body_expertise.multibasic = "25%"
