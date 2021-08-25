@@ -128,7 +128,9 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.specialization_descs[7][7].multiperk3 = "20%"
 
 		-- Gambler - Medical Supplies cooldown (3s -> 2s)
-		self.loose_ammo_restore_health_values.cd = 2
+		for _, v in pairs(self.values.temporary.loose_ammo_restore_health) do
+			v[2] = 2
+		end
 		self.specialization_descs[10][1].multiperk3 = "2"
 
 		-- Gambler - Ammo Give Out cooldown (5s -> 3s)
