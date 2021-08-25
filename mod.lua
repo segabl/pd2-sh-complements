@@ -98,7 +98,7 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		-- Pumping Iron (100% -> 200% / 100% -> 150%)
 		self.values.player.non_special_melee_multiplier[1] = 3
 		self.values.player.melee_damage_multiplier[1] = 2.5
-		self.skill_descs.steroids.multibasic = "300%"
+		self.skill_descs.steroids.multibasic = "200%"
 		self.skill_descs.steroids.multipro = "150%"
 
 	end)
