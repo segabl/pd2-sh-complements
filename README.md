@@ -50,6 +50,7 @@ Complementary skill changes to go with Streamlined Heisting
 
 - Hardware Expert
   - Changed drill auto restart chance to trigger everytime the drill breaks instead of on drill placement
+  - Auto restart delay 5s to 20s -> 5s to 10s
   - Ace: Auto restart chance 10% -> 20%
 
 - Kickstarter
