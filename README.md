@@ -17,10 +17,9 @@ Complementary skill changes to go with Streamlined Heisting
 #### Controller
 
 - Partners In Crime
-  - Basic: Damage reduction 45% -> 40%
   - Ace: Damage reduction 54% -> 50%
 
-*Jokers in general are a low effort way to gain strong benefits and Partners In Crime is giving too much damage reduction combined with the changed health granularity in Streamlined Heisting.*
+*Jokers in general are a low effort way to gain strong benefits and Partners In Crime is giving too much survivability to Jokers.*
 *Reducing the damage reduction will force players to take new Jokers more frequently.*
 
 #### Sharpshooter

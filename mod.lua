@@ -36,9 +36,8 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.cooldown.long_dis_revive[1][2] = 60
 		self.skill_descs.inspire.multipro2 = "60"
 
-		-- Partners in Crime damage reduction (45% -> 40% / 54% -> 50%)
-		self.values.player.passive_convert_enemies_health_multiplier = { 0.6, 0.1 }
-		self.skill_descs.control_freak.multibasic3 = "40%"
+		-- Partners in Crime ace damage reduction (54% -> 50%)
+		self.values.player.passive_convert_enemies_health_multiplier[2] = 0.05
 		self.skill_descs.control_freak.multipro4 = "50%"
 
 		-- Aggressive Reload (100% -> 75%)
