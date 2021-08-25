@@ -54,9 +54,9 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		-- Bullet Storm duration (20s -> 15s)
 		self.skill_descs.ammo_reservoir.multipro2 = "10"
 
-		-- Saw Massacre wear (50% -> 80%)
-		self.values.saw.enemy_slicer[1] = 3
-		self.skill_descs.carbon_blade.multibasic2 = "80%"
+		-- Saw Massacre wear (50% -> 95%)
+		self.values.saw.enemy_slicer[1] = 1
+		self.skill_descs.carbon_blade.multibasic2 = "95%"
 
 		-- Fully Loaded throwable gain chance increase (1% -> 5%)
 		self.values.player.regain_throwable_from_ammo[1].chance_inc = 1.05

@@ -56,7 +56,7 @@ Complementary skill changes to go with Streamlined Heisting
 *The intended duration also seems a tad too long, providing large benefits for a low skill point cost.*
 
 - Saw Massacre
-  - Basic: Reduced wear 50% -> 80%
+  - Basic: Reduced wear 50% -> 95%
 
 *Saw Massacre is a useless skill and 50% reduced wear is not enough to make the saw a viable weapon against enemies.*
 *Decreasing the wear further will make it more viable at least in some cases.*
@@ -76,8 +76,8 @@ Complementary skill changes to go with Streamlined Heisting
   - Auto restart delay 5s to 20s -> 5s to 10s
   - Ace: Auto restart chance 10% -> 20%
 
-*Auto restart is an unconsistent mechanic as it only has a chance to apply once when the drill is placed. This means if you were lucky you would not need to look after the drill at all, while if you were unlucky, the skill would not do anything for you.*
-*Changing the mechanics to have a chance to trigger everytime the drill breaks and icnreasing the restart chance makes the skill less luck based.*
+*Auto restart is an inconsistent mechanic as it only has a chance to apply once when the drill is placed. This means if you were lucky you would not need to look after the drill at all, while if you were unlucky, the skill would not do anything for you.*
+*Changing the mechanic to have a chance to trigger everytime the drill breaks and increasing the restart chance makes the skill less luck based.*
 
 - More Firepower
   - Basic: Shaped charges 1 -> 2
