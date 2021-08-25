@@ -5,7 +5,7 @@ if not StreamHeistComplements then
 	Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitStreamlinedHeistingComplementaries", function (loc)
 
 		local function swap_tier_descriptions(desc_id, values)
-			local text = loc:text(desc_id)
+			local text = loc:text(desc_id):gsub(";", "")
 			local sorted_values = {}
 			for k in pairs(values) do
 				if type(k) == "string" then
@@ -14,7 +14,7 @@ if not StreamHeistComplements then
 			end
 			table.sort(sorted_values, function (a, b) return a:len() > b:len() end)
 			for _, k in ipairs(sorted_values) do
-				text = text:gsub("%$" .. k .. ";?", values[k]:gsub("%%", "%%%%"))
+				text = text:gsub("%$" .. k, values[k]:gsub("%%", "%%%%"))
 			end
 
 			local basic, basic_desc, pro, pro_desc = text:match("(.-\n)(.+)\n\n(.-\n)(.+)")
@@ -43,9 +43,9 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.temporary.single_shot_fast_reload[1][1] = 1.75
 		self.skill_descs.speedy_reload.multipro = "75%"
 
-		-- Graze headshot damage (100% -> 80%)
-		self.values.snp.graze_damage[2].damage_factor_headshot = 0.8
-		self.skill_descs.single_shot_ammo_return.multipro = "80%"
+		-- Graze headshot damage (100% -> 90%)
+		self.values.snp.graze_damage[2].damage_factor_headshot = 0.9
+		self.skill_descs.single_shot_ammo_return.multipro = "90%"
 
 		-- Overkill duration (20s -> 8s)
 		self.values.temporary.overkill_damage_multiplier[1][2] = 8
