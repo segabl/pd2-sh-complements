@@ -142,3 +142,14 @@ Complementary skill changes to go with Streamlined Heisting
   - Swapped with Berserker
 
 *See notes on Berserker.*
+
+## General changes
+
+### Weapons
+
+- Saw
+  - Fixed hardcoded damage increase against Bulldozers
+  - Made damage against Bulldozers multiply base damage instead of a fixed number
+
+*Saws have a hidden damage increase against Bulldozers but the list for the affected enemies is hardcoded so it only applies to the regular Bulldozer variants.*
+*Changing it to check for the "tank" tag instead of the hardcoded list will make it affect every Bulldozer.*
