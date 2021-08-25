@@ -81,6 +81,7 @@ Complementary skill changes to go with Streamlined Heisting
 
 - Pumping Iron
   - Basic: Damage increase 100% -> 200%
+  - Ace: Damage increase 100% -> 150%
 
 - Berserker
   - Swapped with Frenzy
