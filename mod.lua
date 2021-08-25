@@ -66,6 +66,12 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.player.drill_autorepair_1[1] = 0.2
 		self.skill_descs.hardware_expert.multipro3 = "20%"
 
+		-- More Firepower shaped charges (1 -> 2 / 2 -> 3)
+		self.values.shape_charge.quantity[1] = 2
+		self.values.shape_charge.quantity[2] = 5
+		self.skill_descs.more_fire_power.multibasic = "2"
+		self.skill_descs.more_fire_power.multipro = "3"
+
 		-- Kickstarter restart chance (20% -> 30%)
 		self.values.player.drill_autorepair_2[1] = 0.3
 		self.skill_descs.kick_starter.multibasic = "30%"

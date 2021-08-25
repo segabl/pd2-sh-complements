@@ -79,6 +79,13 @@ Complementary skill changes to go with Streamlined Heisting
 *Auto restart is an unconsistent mechanic as it only has a chance to apply once when the drill is placed. This means if you were lucky you would not need to look after the drill at all, while if you were unlucky, the skill would not do anything for you.*
 *Changing the mechanics to have a chance to trigger everytime the drill breaks and icnreasing the restart chance makes the skill less luck based.*
 
+- More Firepower
+  - Basic: Shaped charges 1 -> 2
+  - Ace: Shaped charges 2 -> 3
+
+*While the tripmine part of the skill is fine, the amount of shaped charges you get is not really great considering how little use they have on most heists.*
+*Increasing the amount from a maximum of 6 to 8 will give the skill more value on heists that have use for shaped charges.*
+
 - Kickstarter
   - Basic: Auto restart chance 20% -> 30%
 
