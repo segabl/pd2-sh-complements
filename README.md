@@ -150,6 +150,32 @@ Complementary skill changes to go with Streamlined Heisting
 
 *See notes on Berserker.*
 
+## Perk deck changes
+
+### Crook
+
+- Expert Composure
+  - Armor increase 25% -> 30%
+
+*Crook could use a slight armor buff to make other ballistic vests more usable.*
+
+### Burglar
+
+- Dutch Courage
+  - Pager answer speed 10% -> 20%
+
+*Increasing the speed for answering pagers makes Burglar more useful as an alternative for Yakuza as a stealth deck.*
+
+### Gambler
+
+- Medical Supplies
+  - Cooldown 3s -> 2s
+
+- Ammo Give Out
+  - Cooldown 5s -> 3s
+
+*As a team oriented deck, Gambler needs some tweaks to its cooldowns for health and ammo restore to make it more useful.*
+
 ## General changes
 
 ### Weapons

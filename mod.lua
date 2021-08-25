@@ -30,6 +30,8 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 
 	Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 
+		-- SKILLS
+
 		-- Inspire cooldown (20s -> 60s)
 		self.values.cooldown.long_dis_revive[1][2] = 60
 		self.skill_descs.inspire.multipro2 = "60"
@@ -112,6 +114,27 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.player.melee_damage_multiplier[1] = 2.5
 		self.skill_descs.steroids.multibasic = "200%"
 		self.skill_descs.steroids.multipro = "150%"
+
+
+		-- PERK DECKS
+
+		-- Crook - Expert Composure armor (25% -> 30%)
+		self.values.player.level_2_armor_multiplier[3] = 1.7
+		self.values.player.level_3_armor_multiplier[3] = 1.7
+		self.values.player.level_4_armor_multiplier[3] = 1.7
+		self.specialization_descs[6][7].multiperk2 = "30%"
+
+		-- Burglar - Dutch Courage pager answer speed (10% -> 20%)
+		self.values.player.alarm_pager_speed_multiplier[1] = 0.8
+		self.specialization_descs[7][7].multiperk3 = "20%"
+
+		-- Gambler - Medical Supplies cooldown (3s -> 2s)
+		self.loose_ammo_restore_health_values.cd = 2
+		self.specialization_descs[10][1].multiperk3 = "2"
+
+		-- Gambler - Ammo Give Out cooldown (5s -> 3s)
+		self.values.temporary.loose_ammo_give_team[1][2] = 3
+		self.specialization_descs[10][3].multiperk2 = "3"
 
 	end)
 
