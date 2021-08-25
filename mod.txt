@@ -8,8 +8,8 @@
 	"image" : "mod.png",
 	"version" : "1.0",
 	"updates" : [{
-		"identifier" : "pd2-sh-complementaries",
-		"host": { "meta": "https://updates.hoppip.at/pd2-sh-complementaries" }
+		"identifier" : "pd2-sh-complements",
+		"host": { "meta": "https://updates.hoppip.at/pd2-sh-complements" }
 	}],
 	"hooks" : [
 		{ "hook_id" : "lib/tweak_data/skilltreetweakdata", "script_path" : "mod.lua" },

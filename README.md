@@ -12,7 +12,7 @@ Complementary skill changes to go with Streamlined Heisting
   - Ace: Cooldown 20s -> 60s
 
 *Inspire's cooldown is low enough to not really matter, the time it takes for someone to go into custody when downed is longer than the cooldown.*
-*A cooldown increase should make Inspire less abusable*
+*A cooldown increase makes Inspire usage more strategic and less abusable.*
 
 #### Controller
 
