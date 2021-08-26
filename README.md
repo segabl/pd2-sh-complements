@@ -12,7 +12,7 @@ Complementary skill changes to go with Streamlined Heisting
   - Ace: Cooldown 20s -> 60s
 
 *Inspire's cooldown is low enough to not really matter, the time it takes for someone to go into custody when downed is longer than the cooldown.*
-*A cooldown increase makes Inspire usage more strategic and less abusable.*
+*Increasing the cooldown makes Inspire usage more strategic and less abusable.*
 
 #### Controller
 
@@ -20,7 +20,7 @@ Complementary skill changes to go with Streamlined Heisting
   - Ace: Damage reduction 54% -> 50%
 
 *Jokers in general are a low effort way to gain strong benefits and Partners In Crime is giving too much survivability to Jokers.*
-*Reducing the damage reduction will force players to take new Jokers more frequently.*
+*Reducing the total damage reduction to 95% will decrease effective HP by 80% and force players to take new Jokers more frequently.*
 
 #### Sharpshooter
 
@@ -49,7 +49,7 @@ Complementary skill changes to go with Streamlined Heisting
 
 - Bullet Storm
   - Fixed increased duration when ammo bag was used up
-  - Ace: Duration increase 15s -> 10s
+  - Ace: Duration 15s -> 10s
 
 *Depending on the ammo bag upgrades, Bullet Storm had comically long durations when the bag was used up due to a bug.*
 *The intended duration also seems a tad too long, providing large benefits for a low skill point cost.*
@@ -178,6 +178,18 @@ Complementary skill changes to go with Streamlined Heisting
 ## General changes
 
 ### Weapons
+
+- LMGs
+  - Added back 20% reduced movement speed penalty
+
+*Even after the nerfs LMGs are still very powerful with very little drawbacks.*
+*Adding back the movement speed penalty gives a more unique drawback than nerfing stats.*
+
+- Miniguns
+  - Added back 20% reduced movement speed penalty
+  - Increased damage by 10%
+
+*With the reduced movement speed, miniguns could use a slight buff to justify using them over LMGs.*
 
 - Saw
   - Fixed hardcoded damage increase against Bulldozers

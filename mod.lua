@@ -2,7 +2,7 @@ if not StreamHeistComplements then
 
 	StreamHeistComplements = {}
 
-	Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitStreamlinedHeistingComplementaries", function (loc)
+	Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitStreamlinedHeistingComplements", function (loc)
 
 		local function swap_tier_descriptions(desc_id, values)
 			local text = loc:text(desc_id):gsub(";", "")
@@ -22,11 +22,26 @@ if not StreamHeistComplements then
 		end
 
 		swap_tier_descriptions("menu_bloodthirst_desc", tweak_data.upgrades.skill_descs.bloodthirst)
+
 	end)
 
 end
 
-if RequiredScript == "lib/tweak_data/upgradestweakdata" then
+if RequiredScript == "lib/tweak_data/skilltreetweakdata" then
+
+	Hooks:PostHook(SkillTreeTweakData, "init", "shc_init", function (self)
+
+		-- Swap around basic and pro of Bloodthirst
+		self.skills.bloodthirst[1].upgrades[1] = "player_temp_melee_kill_increase_reload_speed_1"
+		self.skills.bloodthirst[2].upgrades[1] = "player_melee_damage_stacking_1"
+
+		-- Swap Frenzy and Berserker
+		self.trees[15].tiers[3][2] = "frenzy"
+		self.trees[15].tiers[4][1] = "wolverine"
+	
+	end)
+
+elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 
 	Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 
@@ -137,20 +152,31 @@ if RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.temporary.loose_ammo_give_team[1][2] = 3
 		self.specialization_descs[10][3].multiperk2 = "3"
 
+		-- WEAPONS
+
+		-- Movement speed penalty for lmgs and miniguns
+		self.weapon_movement_penalty.lmg = 0.8
+		self.weapon_movement_penalty.minigun = 0.8
+
 	end)
 
-elseif RequiredScript == "lib/tweak_data/skilltreetweakdata" then
+elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 
-	Hooks:PostHook(SkillTreeTweakData, "init", "shc_init", function (self)
+	Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 
-		-- Swap around basic and pro of Bloodthirst
-		self.skills.bloodthirst[1].upgrades[1] = "player_temp_melee_kill_increase_reload_speed_1"
-		self.skills.bloodthirst[2].upgrades[1] = "player_melee_damage_stacking_1"
+		for weap_id, weap_data in pairs(self) do
+			if type(weap_data) == "table" and weap_data.stats then
 
-		-- Swap Frenzy and Berserker
-		self.trees[15].tiers[3][2] = "frenzy"
-		self.trees[15].tiers[4][1] = "wolverine"
-	
+				local cat_map = table.list_to_set(weap_data.categories)
+
+				-- Buff minigun damage in exchange for movement speed penalty
+				if cat_map.minigun then
+					weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.1)
+				end
+
+			end
+		end
+
 	end)
 
 elseif RequiredScript == "lib/units/equipment/ammo_bag/ammobagbase" then
@@ -223,22 +249,20 @@ elseif RequiredScript == "lib/units/weapons/sawweaponbase" then
 	-- Fix hardcoded damage increase against Bulldozers and make it multiply instead of static
 	function SawHit:on_collision(col_ray, weapon_unit, user_unit, damage)
 		local hit_unit = col_ray.unit
-		if alive(hit_unit) and hit_unit:base() and hit_unit:base().has_tag and hit_unit:base():has_tag("tank") then
+		if hit_unit:base() and hit_unit:base().has_tag and hit_unit:base():has_tag("tank") then
 			damage = damage * 15
 		end
-	
+
 		local result = InstantBulletBase.on_collision(self, col_ray, weapon_unit, user_unit, damage)
-	
+
 		if hit_unit:damage() and col_ray.body:extension() and col_ray.body:extension().damage then
 			damage = math.clamp(damage * managers.player:upgrade_value("saw", "lock_damage_multiplier", 1) * 4, 0, 200)
-	
 			col_ray.body:extension().damage:damage_lock(user_unit, col_ray.normal, col_ray.position, col_ray.direction, damage)
-	
 			if hit_unit:id() ~= -1 then
 				managers.network:session():send_to_peers_synched("sync_body_damage_lock", col_ray.body, damage)
 			end
 		end
-	
+
 		return result
 	end
 
