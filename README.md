@@ -193,9 +193,10 @@ Complementary skill changes to go with Streamlined Heisting
 
 - Miniguns
   - Added back 20% reduced movement speed penalty
+  - Added damage falloff
   - Increased damage by 10%
 
-*With the reduced movement speed, miniguns could use a slight buff to justify using them over LMGs.*
+*With the reduced movement speed and added damage falloff, miniguns could use a slight damage buff to justify using them over LMGs.*
 
 - Saw
   - Fixed hardcoded damage increase against Bulldozers

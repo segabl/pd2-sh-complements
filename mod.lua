@@ -164,6 +164,8 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 
 	Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 
+		local FALLOFF_TEMPLATE = WeaponFalloffTemplate.setup_weapon_falloff_templates()
+
 		for weap_id, weap_data in pairs(self) do
 			if type(weap_data) == "table" and weap_data.stats then
 
@@ -172,6 +174,7 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 				-- Buff minigun damage in exchange for movement speed penalty
 				if cat_map.minigun then
 					weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.1)
+					weap_data.damage_falloff = FALLOFF_TEMPLATE.LMG_FALL_MEDIUM
 				end
 
 			end
