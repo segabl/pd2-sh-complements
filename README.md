@@ -1,6 +1,6 @@
 # Streamlined Heisting Complements
 
-Complementary skill changes to go with Streamlined Heisting
+Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 ## Skill changes
 

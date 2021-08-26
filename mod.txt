@@ -1,6 +1,6 @@
 {
 	"name" : "Streamlined Heisting Complements",
-	"description" : "Complementary skill changes to go with Streamlined Heisting",
+	"description" : "Complementary skill, perk and weapon changes to go with Streamlined Heisting",
 	"author" : "Hoppip",
 	"contact" : "Hoppip#1630",
 	"priority" : 400,
