@@ -244,6 +244,13 @@ elseif RequiredScript == "lib/units/props/drill" then
 		end
 	end
 
+elseif RequiredScript == "lib/units/weapons/raycastweaponbase" then
+
+	-- No aim assist
+	Hooks:PostHook(RaycastWeaponBase, "setup", "shc_setup", function (self)
+		self._autoaim = nil
+	end)
+
 elseif RequiredScript == "lib/units/weapons/sawweaponbase" then
 
 	-- Fix hardcoded damage increase against Bulldozers and make it multiply instead of static

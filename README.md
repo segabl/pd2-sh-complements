@@ -179,6 +179,12 @@ Complementary skill changes to go with Streamlined Heisting
 
 ### Weapons
 
+- All weapons
+  - Removed aim assist
+
+*There is a form of aim assist that makes you more likely to hit a target the longer you shoot at it while missing.*
+*Removing this aim assist will make it harder to hit enemies at distance with low accuracy weapons.*
+
 - LMGs
   - Added back 20% reduced movement speed penalty
 
