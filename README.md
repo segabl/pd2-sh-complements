@@ -175,6 +175,14 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 *As a team oriented deck, Gambler needs some tweaks to its cooldowns for health and ammo restore to make it more useful.*
 
+### Stoic
+
+- Virtue
+  - Damage over time duration 12s -> 9s
+
+*Stoic is a very powerful deck as it gives you a lot of time to react to incoming damage, often without even the need to use the flask.*
+*Decreasing the time it takes to apply the damage over time will force the usage of the flask more often.*
+
 ## General changes
 
 ### Weapons

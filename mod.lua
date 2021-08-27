@@ -152,6 +152,10 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.temporary.loose_ammo_give_team[1][2] = 3
 		self.specialization_descs[10][3].multiperk2 = "3"
 
+		-- Stoic - Reduce DoT duration (12s -> 9s)
+		self.values.player.damage_control_passive[1][2] = 11
+		self.specialization_descs[19][1].multiperk2 = "9"
+
 		-- WEAPONS
 
 		-- Movement speed penalty for lmgs and miniguns
