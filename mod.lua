@@ -38,7 +38,10 @@ if RequiredScript == "lib/tweak_data/skilltreetweakdata" then
 		-- Swap Frenzy and Berserker
 		self.trees[15].tiers[3][2] = "frenzy"
 		self.trees[15].tiers[4][1] = "wolverine"
-	
+
+		-- Remove passive dodge bonus from Hacker - Botnet
+		table.delete(self.specializations[21][9].upgrades, "player_passive_dodge_chance_2")
+
 	end)
 
 elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then

@@ -183,6 +183,14 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 *Stoic is a very powerful deck as it gives you a lot of time to react to incoming damage, often without even the need to use the flask.*
 *Decreasing the time it takes to apply the damage over time will force the usage of the flask more often.*
 
+### Hacker
+
+- Botnet
+  - Removed hidden dodge chance bonus
+
+*Hacker has two instances of hidden passive dodge chance bonuses of 15% each, which makes it a bit too strong.*
+*Removing one of those instances should make it more balanced.*
+
 ## General changes
 
 ### Weapons
