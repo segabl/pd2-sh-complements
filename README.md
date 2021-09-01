@@ -232,6 +232,12 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 *With the reduced movement speed and added damage falloff, miniguns could use a slight damage buff to justify using them over LMGs.*
 
+- Shotguns
+  - Restored original shotgun pellet amount of 12
+
+*Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
+*Restoring the pellet amount to the original values is a quick fix as opposed to rebalance all shotguns.*
+
 - Saw
   - Fixed hardcoded damage increase against Bulldozers
   - Made damage against Bulldozers multiply base damage instead of a fixed number

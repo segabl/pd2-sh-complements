@@ -198,6 +198,11 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 					weap_data.damage_falloff = FALLOFF_TEMPLATE.LMG_FALL_MEDIUM
 				end
 
+				-- Restore shotgun pellets
+				if cat_map.shotgun and weap_data.rays then
+					weap_data.rays = math.max(weap_data.rays, 12)
+				end
+
 			end
 		end
 
