@@ -39,6 +39,13 @@ if RequiredScript == "lib/tweak_data/skilltreetweakdata" then
 		self.trees[15].tiers[3][2] = "frenzy"
 		self.trees[15].tiers[4][1] = "wolverine"
 
+		-- Move melee damage boost duration to first perk of Infiltrator
+		table.delete(self.specializations[8][5].upgrades, "melee_stacking_hit_expire_t")
+		table.insert(self.specializations[8][1].upgrades, "melee_stacking_hit_expire_t")
+
+		-- Add melee damage boost duriation to first perk of Sociopath
+		table.insert(self.specializations[9][1].upgrades, "melee_stacking_hit_expire_t")
+
 		-- Remove passive dodge bonus from Hacker - Botnet
 		table.delete(self.specializations[21][9].upgrades, "player_passive_dodge_chance_2")
 
@@ -144,6 +151,13 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		-- Burglar - Dutch Courage pager answer speed (10% -> 20%)
 		self.values.player.alarm_pager_speed_multiplier[1] = 0.8
 		self.specialization_descs[7][7].multiperk3 = "20%"
+
+		-- Infiltrator - Overdog damage boost duration (7s -> 4s)
+		self.values.melee.stacking_hit_expire_t[1] = 4
+		self.specialization_descs[8][1].multiperk2 = "4"
+
+		-- Sociopath - Overdog state correct damage boost duration
+		self.specialization_descs[9][1].multiperk2 = "4"
 
 		-- Gambler - Medical Supplies cooldown (3s -> 2s)
 		for _, v in pairs(self.values.temporary.loose_ammo_restore_health) do

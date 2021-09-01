@@ -165,6 +165,24 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 *Increasing the speed for answering pagers makes Burglar more useful as an alternative for Yakuza as a stealth deck.*
 
+### Infiltrator
+
+- Overdog
+  - Moved hidden melee damage boost duration to the first perk
+  - Updated description to state the correct damage boost duration
+  - Melee damage boost duration 7s -> 4s
+
+*Overdog's description incorrectly states the duration of the damage boost only being 1s while a later card increases the duration to 7s.*
+*Reducing the duration to 4s brings it a bit more in line with other damage boosts.*
+
+### Sociopath
+
+- Overdog
+  - Added increased melee damage boost duration upgrade
+
+*When Infiltrator got the hidden melee damage boost duration upgrade, Sociopath was left out and still has only 1s, which is not enough for slower melee weapons.*
+*Adding the same duration increase as in Infiltrator should make all melee weapons useful with Sociopath.*
+
 ### Gambler
 
 - Medical Supplies
