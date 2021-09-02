@@ -100,8 +100,8 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 *Increasing the stagger chance should give it some more use.*
 
 - Body Expertise
-  - Basic: Damage 30% -> 25%
-  - Ace: Damage 90% -> 65%
+  - Basic: Damage 30% -> 20%
+  - Ace: Damage 90% -> 60%
 
 *Body Expertise gives too much value for very low effort.*
 *Reducing the damage percentage should bring the skill more in line.*
@@ -168,17 +168,17 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 ### Infiltrator
 
 - Overdog
-  - Moved hidden melee damage boost duration to the first perk
+  - Moved hidden melee damage boost duration from Advanced Close Combat to Overdog
   - Updated description to state the correct damage boost duration
   - Melee damage boost duration 7s -> 4s
 
-*Overdog's description incorrectly states the duration of the damage boost only being 1s while a later card increases the duration to 7s.*
+*Overdog's description incorrectly states the duration of the damage boost only being 1s while Advanced Close Combat increases the duration to 7s.*
 *Reducing the duration to 4s brings it a bit more in line with other damage boosts.*
 
 ### Sociopath
 
 - Overdog
-  - Added increased melee damage boost duration upgrade
+  - Added melee damage boost duration upgrade
 
 *When Infiltrator got the hidden melee damage boost duration upgrade, Sociopath was left out and still has only 1s, which is not enough for slower melee weapons.*
 *Adding the same duration increase as in Infiltrator should make all melee weapons useful with Sociopath.*
@@ -236,7 +236,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
   - Restored original shotgun pellet amount of 12
 
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
-*Restoring the pellet amount to the original values is a quick fix as opposed to rebalance all shotguns.*
+*Restoring the pellet amount to the original values is a quick fix as opposed to rebalancing all shotguns.*
 
 - Saw
   - Fixed hardcoded damage increase against Bulldozers

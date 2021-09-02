@@ -108,10 +108,10 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.skill_descs.heavy_impact.multibasic = "15%"
 		self.skill_descs.heavy_impact.multipro = "40%"
 
-		-- Body Expertise (30% -> 25% / 90% -> 65%)
-		self.values.weapon.automatic_head_shot_add = { 0.25, 0.65 }
-		self.skill_descs.body_expertise.multibasic = "25%"
-		self.skill_descs.body_expertise.multipro = "65%"
+		-- Body Expertise (30% -> 20% / 90% -> 60%)
+		self.values.weapon.automatic_head_shot_add = { 0.2, 0.6 }
+		self.skill_descs.body_expertise.multibasic = "20%"
+		self.skill_descs.body_expertise.multipro = "60%"
 
 		-- Optical Illusions target chance decrease (35% -> 20%)
 		self.values.player.camouflage_bonus[2] = 0.8
