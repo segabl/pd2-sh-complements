@@ -287,8 +287,9 @@ elseif RequiredScript == "lib/units/props/drill" then
 elseif RequiredScript == "lib/units/weapons/raycastweaponbase" then
 
 	-- No aim assist
-	Hooks:PostHook(RaycastWeaponBase, "setup", "shc_setup", function (self)
-		self._autoaim = nil
+	Hooks:PostHook(RaycastWeaponBase, "init", "shc_init", function (self)
+		self._autohit_data = { INIT_RATIO = 0, MAX_RATIO = 0, far_angle = 0, far_dis = 0, MIN_RATIO = 0, near_angle = 0 }
+		self._autohit_current = 0
 	end)
 
 elseif RequiredScript == "lib/units/weapons/sawweaponbase" then
