@@ -16,6 +16,17 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 #### Controller
 
+- Confident
+  - Basic: Added missing intimidation power upgrade, removed intimidation duration upgrade
+
+*Confident claims to increase the power of your intimidation but instead it increases intimidation duration (something that Stockholm Syndrome should do).*
+*Swapping out the upgrades and moving the duration upgrade to Stockholm Syndrome makes more sense.*
+
+- Stockholm Syndrome
+  - Basic: Added missing intimidation duration upgrade
+
+*See notes on Confident.*
+
 - Partners In Crime
   - Ace: Damage reduction 54% -> 50%
 
@@ -89,6 +100,13 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
   - Basic: Auto restart chance 20% -> 30%
 
 *See notes on Hardware Expert.*
+
+- Fire Trap
+  - Basic: Base burn duration 10s -> 15s
+  - Ace: Burn duration increase 10s -> 20s
+
+*Fire Trap doesn't really feel useful as a top tier skill and you're basically getting a non-replenshiable Molotov effect from it.*
+*Increasing the burn duration to a total of 35s should make the skill more useful for area denial.*
 
 #### Oppressor
 
@@ -220,13 +238,13 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 *Removing this aim assist will make it harder to hit enemies at distance with low accuracy weapons.*
 
 - LMGs
-  - Added back 20% reduced movement speed penalty
+  - Added 15% reduced movement speed penalty
 
 *Even after the nerfs LMGs are still very powerful with very little drawbacks.*
 *Adding back the movement speed penalty gives a more unique drawback than nerfing stats.*
 
 - Miniguns
-  - Added back 20% reduced movement speed penalty
+  - Added 15% reduced movement speed penalty
   - Added damage falloff
   - Increased damage by 10%
 

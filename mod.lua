@@ -5,23 +5,15 @@ if not StreamHeistComplements then
 	Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitStreamlinedHeistingComplements", function (loc)
 
 		local function swap_tier_descriptions(desc_id, values)
-			local text = loc:text(desc_id):gsub(";", "")
-			local sorted_values = {}
-			for k in pairs(values) do
-				if type(k) == "string" then
-					table.insert(sorted_values, k)
-				end
-			end
-			table.sort(sorted_values, function (a, b) return a:len() > b:len() end)
-			for _, k in ipairs(sorted_values) do
-				text = text:gsub("%$" .. k, values[k]:gsub("%%", "%%%%"))
-			end
-
-			local basic, basic_desc, pro, pro_desc = text:match("(.-\n)(.+)\n\n(.-\n)(.+)")
+			local basic, basic_desc, pro, pro_desc = loc:text(desc_id):match("(.-\n)(.+)\n\n(.-\n)(.+)")
 			loc:add_localized_strings({ [desc_id] = tostring(basic) .. tostring(pro_desc) .. "\n\n" .. tostring(pro) .. tostring(basic_desc) })
 		end
 
+		-- Swap basic and pro description of Bloodthirst
 		swap_tier_descriptions("menu_bloodthirst_desc", tweak_data.upgrades.skill_descs.bloodthirst)
+
+		-- Remove dodge bonus description from Hacker - Botnet
+		loc:add_localized_strings({ menu_deck21_9_desc = loc:text("menu_deck21_9_desc"):gsub("[^%.\n]+%$multiperk2[^\n]+", "") })
 
 	end)
 
@@ -32,7 +24,7 @@ if RequiredScript == "lib/tweak_data/blackmarkettweakdata" then
 	Hooks:PostHook(BlackMarketTweakData, "init", "shc_init", function (self)
 
 		-- Make melee weapons not ignore weapon movement penalty
-		for weap_id, weap_data in pairs(self.melee_weapons) do
+		for _, weap_data in pairs(self.melee_weapons) do
 			weap_data.stats.remove_weapon_movement_penalty = nil
 		end
 
@@ -42,7 +34,14 @@ elseif RequiredScript == "lib/tweak_data/skilltreetweakdata" then
 
 	Hooks:PostHook(SkillTreeTweakData, "init", "shc_init", function (self)
 
-		-- Swap around basic and pro of Bloodthirst
+		-- Move civilian intimidation duration from Confident to Stockholm Syndrome
+		table.delete(self.skills.cable_guy[1].upgrades, "player_civ_intimidation_mul")
+		table.insert(self.skills.stockholm_syndrome[1].upgrades, "player_civ_intimidation_mul")
+
+		-- Add intimidation power to Confident
+		table.insert(self.skills.cable_guy[1].upgrades, "player_intimidation_multiplier")
+
+		-- Swap basic and pro of Bloodthirst
 		self.skills.bloodthirst[1].upgrades[1] = "player_temp_melee_kill_increase_reload_speed_1"
 		self.skills.bloodthirst[2].upgrades[1] = "player_melee_damage_stacking_1"
 
@@ -71,6 +70,9 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		-- Inspire cooldown (20s -> 60s)
 		self.values.cooldown.long_dis_revive[1][2] = 60
 		self.skill_descs.inspire.multipro2 = "60"
+
+		-- Confident intimidation multiplier
+		self.values.player.intimidation_multiplier[1] = 1.5
 
 		-- Partners in Crime ace damage reduction (54% -> 50%)
 		self.values.player.passive_convert_enemies_health_multiplier[2] = 0.05
@@ -112,6 +114,12 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		-- Kickstarter restart chance (20% -> 30%)
 		self.values.player.drill_autorepair_2[1] = 0.3
 		self.skill_descs.kick_starter.multibasic = "30%"
+
+		-- Fire trap duration (10s -> 15s / 10s -> 20s)
+		self.values.trip_mine.fire_trap[1][1] = 5
+		self.values.trip_mine.fire_trap[2][1] = 35
+		self.skill_descs.fire_trap.multibasic = "15"
+		self.skill_descs.fire_trap.multipro = "20"
 
 		-- Heavy impact (5% -> 15% / 20% -> 40%)
 		self.values.weapon.knock_down[1] = 0.15
@@ -187,8 +195,8 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		-- WEAPONS
 
 		-- Movement speed penalty for lmgs and miniguns
-		self.weapon_movement_penalty.lmg = 0.8
-		self.weapon_movement_penalty.minigun = 0.8
+		self.weapon_movement_penalty.lmg = 0.85
+		self.weapon_movement_penalty.minigun = 0.85
 
 	end)
 
@@ -198,7 +206,7 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 
 		local FALLOFF_TEMPLATE = WeaponFalloffTemplate.setup_weapon_falloff_templates()
 
-		for weap_id, weap_data in pairs(self) do
+		for _, weap_data in pairs(self) do
 			if type(weap_data) == "table" and weap_data.stats then
 
 				local cat_map = table.list_to_set(weap_data.categories)
@@ -234,7 +242,7 @@ elseif RequiredScript == "lib/units/equipment/ammo_bag/ammobagbase" then
 				local took = self:round_value(weapon.unit:base():add_ammo_from_bag(self._ammo_amount))
 				taken = taken + took
 				self._ammo_amount = self:round_value(self._ammo_amount - took)
-	
+
 				if self._ammo_amount <= 0 then
 					return taken
 				end
