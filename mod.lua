@@ -67,6 +67,10 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 
 		-- SKILLS
 
+		-- Combat Medic revive health multiplier (30% -> 50%)
+		self.revive_health_multiplier[1] = 1.5
+		self.skill_descs.combat_medic.multipro = "50%"
+
 		-- Inspire cooldown (20s -> 60s)
 		self.values.cooldown.long_dis_revive[1][2] = 60
 		self.skill_descs.inspire.multipro2 = "60"
