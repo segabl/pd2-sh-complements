@@ -12,8 +12,12 @@ if not StreamHeistComplements then
 		-- Swap basic and pro description of Bloodthirst
 		swap_tier_descriptions("menu_bloodthirst_desc", tweak_data.upgrades.skill_descs.bloodthirst)
 
-		-- Remove dodge bonus description from Hacker - Botnet
-		loc:add_localized_strings({ menu_deck21_9_desc = loc:text("menu_deck21_9_desc"):gsub("[^%.\n]+%$multiperk2[^\n]+", "") })
+		loc:add_localized_strings({
+			-- Restore Sociopath first perk name
+			menu_deck9_1 = "No Talk",
+			-- Remove dodge bonus description from Hacker - Botnet
+			menu_deck21_9_desc = loc:text("menu_deck21_9_desc"):gsub("[^%.\n]+%$multiperk2[^\n]+", "")
+		})
 
 	end)
 
@@ -245,13 +249,11 @@ elseif RequiredScript == "lib/units/enemies/cop/copdamage" then
 
 	-- Fixed critical hit multiplier
 	function CopDamage:roll_critical_hit(attack_data)
-		local damage = attack_data.damage
-
 		if not self:can_be_critical(attack_data) or math.random() >= managers.player:critical_hit_chance() then
-			return false, damage
+			return false, attack_data.damage
 		end
 
-		return true, damage * 3
+		return true, attack_data.damage * 3
 	end
 
 elseif RequiredScript == "lib/units/equipment/ammo_bag/ammobagbase" then
