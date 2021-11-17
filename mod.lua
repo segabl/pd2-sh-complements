@@ -142,6 +142,10 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.skill_descs.unseen_strike.multibasic3 = "4"
 		self.skill_descs.unseen_strike.multipro = "12"
 
+		-- Nine Lives bleed out health increase (50% -> 100%)
+		self.values.player.bleed_out_health_multiplier[1] = 2
+		self.skill_descs.nine_lives.multibasic2 = "100%"
+
 		-- Bloodthirst (50% for 10s -> 30% for 4s / 100% up to 1600% -> 50% up to 800%)
 		self.values.player.melee_damage_stacking[1].max_multiplier = 8
 		self.values.player.melee_damage_stacking[1].melee_multiplier = 0.5

@@ -148,6 +148,16 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 ### Fugitive
 
+#### Revenant
+
+- Nine Lives
+  - Basic: Bleedout health increase 50% → 100%
+
+*The percentage value for this skill were still stuck in a time were enemies didn't even deal half as much damage.*
+*Increasing the gained health value should make the basic skill more useful.*
+
+#### Brawler
+
 - Bloodthirst
   - Basic and Ace skill swapped
   - Basic: Reload speed increase 50% for 10s → 30% for 4s
