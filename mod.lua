@@ -233,6 +233,19 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 
 	end)
 
+elseif RequiredScript == "lib/units/enemies/cop/copdamage" then
+
+	-- Fixed critical hit multiplier
+	function CopDamage:roll_critical_hit(attack_data)
+		local damage = attack_data.damage
+
+		if not self:can_be_critical(attack_data) or math.random() >= managers.player:critical_hit_chance() then
+			return false, damage
+		end
+
+		return true, damage * 3
+	end
+
 elseif RequiredScript == "lib/units/equipment/ammo_bag/ammobagbase" then
 
 	-- Reduce ace duration

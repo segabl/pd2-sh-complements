@@ -9,7 +9,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 #### Medic
 
 - Inspire
-  - Ace: Cooldown 20s -> 60s
+  - Ace: Cooldown 20s → 60s
 
 *Inspire's cooldown is low enough to not really matter, the time it takes for someone to go into custody when downed is longer than the cooldown.*
 *Increasing the cooldown makes Inspire usage more strategic and less abusable.*
@@ -28,7 +28,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 *See notes on Confident.*
 
 - Partners In Crime
-  - Ace: Damage reduction 54% -> 50%
+  - Ace: Damage reduction 54% → 50%
 
 *Jokers in general are a low effort way to gain strong benefits and Partners In Crime is giving too much survivability to Jokers.*
 *Reducing the total damage reduction to 95% will decrease effective HP by 80% and force players to take new Jokers more frequently.*
@@ -36,12 +36,12 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 #### Sharpshooter
 
 - Aggressive Reload
-  - Ace: Reload speed increase 100% -> 75%
+  - Ace: Reload speed increase 100% → 75%
 
 *The reload speed increase of Aggressive Reload seems a bit extreme for something as basic as hitting headshots.*
 
 - Graze
-  - Ace: Damage on headshot 100% -> 90%
+  - Ace: Damage on headshot 100% → 90%
 
 *Graze is a strong room clearing ability and giving 100% of the damage to close enemies makes it not very strategic to use.*
 *Slightly reducing the damage on a headshot kill will encourage players to shoot higher health targets first.*
@@ -51,7 +51,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 #### Shotgunner
 
 - Overkill
-  - Basic: Duration 20s -> 8s
+  - Basic: Duration 20s → 8s
 
 *Overkill's duration is way too long for the strong bonus damage it provides.*
 *Reducing the duration will force players to engage with enemies more.*
@@ -60,19 +60,19 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 - Bullet Storm
   - Fixed increased duration when ammo bag was used up
-  - Ace: Duration 15s -> 10s
+  - Ace: Duration 15s → 10s
 
 *Depending on the ammo bag upgrades, Bullet Storm had comically long durations when the bag was used up due to a bug.*
 *The intended duration also seems a tad too long, providing large benefits for a low skill point cost.*
 
 - Saw Massacre
-  - Basic: Reduced wear 50% -> 95%
+  - Basic: Reduced wear 50% → 95%
 
 *Saw Massacre is a useless skill and 50% reduced wear is not enough to make the saw a viable weapon against enemies.*
 *Decreasing the wear further will make it more viable at least in some cases.*
 
 - Fully Loaded
-  - Ace: Throwable pickup chance increase 1% -> 5%
+  - Ace: Throwable pickup chance increase 1% → 5%
 
 *The chance increase is multiplied with the base chance instead of added, which makes it completely negligible as it takes 70 ammo pickups to even reach 10% chance.*
 *With a chance increase of 5%, reaching more meaningful chance numbers will be possible.*
@@ -83,27 +83,27 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 - Hardware Expert
   - Changed drill auto restart chance to trigger everytime the drill breaks instead of on drill placement
-  - Auto restart delay 5s to 20s -> 5s to 10s
-  - Ace: Auto restart chance 10% -> 20%
+  - Auto restart delay 5-20s → 5-10s
+  - Ace: Auto restart chance 10% → 20%
 
 *Auto restart is an inconsistent mechanic as it only has a chance to apply once when the drill is placed. This means if you were lucky you would not need to look after the drill at all, while if you were unlucky, the skill would not do anything for you.*
 *Changing the mechanic to have a chance to trigger everytime the drill breaks and increasing the restart chance makes the skill less luck based.*
 
 - More Firepower
-  - Basic: Shaped charges 1 -> 2
-  - Ace: Shaped charges 2 -> 3
+  - Basic: Shaped charges 1 → 2
+  - Ace: Shaped charges 2 → 3
 
 *While the tripmine part of the skill is fine, the amount of shaped charges you get is not really great considering how little use they have on most heists.*
 *Increasing the amount from a maximum of 6 to 8 will give the skill more value on heists that have use for shaped charges.*
 
 - Kickstarter
-  - Basic: Auto restart chance 20% -> 30%
+  - Basic: Auto restart chance 20% → 30%
 
 *See notes on Hardware Expert.*
 
 - Fire Trap
-  - Basic: Base burn duration 10s -> 15s
-  - Ace: Burn duration increase 10s -> 20s
+  - Basic: Base burn duration 10s → 15s
+  - Ace: Burn duration increase 10s → 20s
 
 *Fire Trap doesn't really feel useful as a top tier skill and you're basically getting a non-replenshiable Molotov effect from it.*
 *Increasing the burn duration to a total of 35s should make the skill more useful for area denial.*
@@ -111,15 +111,15 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 #### Oppressor
 
 - Heavy Impact
-  - Basic: Stagger chance 5% -> 15%
-  - Ace: Stagger chance 20% -> 40%
+  - Basic: Stagger chance 5% → 15%
+  - Ace: Stagger chance 20% → 40%
 
 *Heavy Impact is a niche skill that is not very useful with the current numbers.*
 *Increasing the stagger chance should give it some more use.*
 
 - Body Expertise
-  - Basic: Damage 30% -> 20%
-  - Ace: Damage 90% -> 60%
+  - Basic: Damage 30% → 20%
+  - Ace: Damage 90% → 60%
 
 *Body Expertise gives too much value for very low effort.*
 *Reducing the damage percentage should bring the skill more in line.*
@@ -129,13 +129,20 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 #### Silent Killer
 
 - Optical Illusions
-  - Basic: Trageting chance decrease 35% -> 20%
+  - Basic: Trageting chance decrease 35% → 20%
 
 *Optical Illusions is a niche skill but it provides slightly too much value when it's used with Jokers.*
 
+- Low Blow
+  - Changed crit damage multiplier to a static 3x multiplier
+
+*The crit damage multiplier used the headshot multiplier, which made crits too effective against enemies like Bulldozers and Cloakers.*
+*Making the multiplier static will keep their strength against regular units but slightly nerf them against enemies with high headshot multipliers*
+
 - Unseen Strike
-  - Basic: Crit duration 6s -> 4s
-  - Ace: Crit duration 18s -> 12s
+  - Changed crit damage multiplier to a static 3x multiplier
+  - Basic: Crit duration 6s → 4s
+  - Ace: Crit duration 18s → 12s
 
 *The duration for crits is a bit too long, given that part of the skill's description is wrong and you do not lose the bonus on getting hit.*
 
@@ -143,15 +150,15 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 
 - Bloodthirst
   - Basic and Ace skill swapped
-  - Basic: Reload speed increase 50% for 10s -> 30% for 4s
-  - Ace: Damage increase +100% up to 1600% -> +50% up to 800%
+  - Basic: Reload speed increase 50% for 10s → 30% for 4s
+  - Ace: Damage increase +100% up to 1600% → +50% up to 800%
 
 *Bloodthirst provides a way too strong bonus for a basic skill that involves no effort to gain as the requirement for it is something you do anyways.*
 *Swapping the basic and ace version and reducing the numbers should bring this skill more in line.*
 
 - Pumping Iron
-  - Basic: Damage increase 100% -> 200%
-  - Ace: Damage increase 100% -> 150%
+  - Basic: Damage increase 100% → 200%
+  - Ace: Damage increase 100% → 150%
 
 *Pumping Iron could do with a little numbers increase, especially with Bloodthirst nerfed.*
 *Increasing the damage will make it possible to reach similar damage numbers against non specials in combination with Bloodthirst.*
@@ -172,14 +179,14 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 ### Crook
 
 - Expert Composure
-  - Armor increase 25% -> 30%
+  - Armor increase 25% → 30%
 
 *Crook could use a slight armor buff to make other ballistic vests more usable.*
 
 ### Burglar
 
 - Dutch Courage
-  - Pager answer speed 10% -> 20%
+  - Pager answer speed 10% → 20%
 
 *Increasing the speed for answering pagers makes Burglar more useful as an alternative for Yakuza as a stealth deck.*
 
@@ -188,7 +195,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 - Overdog
   - Moved hidden melee damage boost duration from Advanced Close Combat to Overdog
   - Updated description to state the correct damage boost duration
-  - Melee damage boost duration 7s -> 4s
+  - Melee damage boost duration 7s → 4s
 
 *Overdog's description incorrectly states the duration of the damage boost only being 1s while Advanced Close Combat increases the duration to 7s.*
 *Reducing the duration to 4s brings it a bit more in line with other damage boosts.*
@@ -204,17 +211,17 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 ### Gambler
 
 - Medical Supplies
-  - Cooldown 3s -> 2s
+  - Cooldown 3s → 2s
 
 - Ammo Give Out
-  - Cooldown 5s -> 3s
+  - Cooldown 5s → 3s
 
 *As a team oriented deck, Gambler needs some tweaks to its cooldowns for health and ammo restore to make it more useful.*
 
 ### Stoic
 
 - Virtue
-  - Damage over time duration 12s -> 9s
+  - Damage over time duration 12s → 9s
 
 *Stoic is a very powerful deck as it gives you a lot of time to react to incoming damage, often without even the need to use the flask.*
 *Decreasing the time it takes to apply the damage over time will force the usage of the flask more often.*
