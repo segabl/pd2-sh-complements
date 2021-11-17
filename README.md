@@ -1,6 +1,6 @@
 # Streamlined Heisting Complements
 
-Complementary skill, perk and weapon changes to go with Streamlined Heisting
+Complementary skill, perk and weapon changes to go with [Streamlined Heisting](https://github.com/segabl/pd2-streamlined-heisting).
 
 ## Skill changes
 
@@ -17,7 +17,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 - Inspire
   - Ace: Cooldown 20s → 60s
 
-*Inspire's cooldown is low enough to not really matter, the time it takes for someone to go into custody when downed is longer than the cooldown.*
+*Inspire's cooldown is low enough to not really matter, the time it takes for someone to go into custody when downed is longer than the cooldown of the skill.*
 *Increasing the cooldown makes Inspire usage more strategic and less abusable.*
 
 #### Controller
@@ -111,7 +111,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
   - Basic: Base burn duration 10s → 15s
   - Ace: Burn duration increase 10s → 20s
 
-*Fire Trap doesn't really feel useful as a top tier skill and you're basically getting a non-replenshiable Molotov effect from it.*
+*Fire Trap doesn't really feel useful as a top tier skill and you're basically getting a non-replenishable Molotov effect from it.*
 *Increasing the burn duration to a total of 35s should make the skill more useful for area denial.*
 
 #### Oppressor
@@ -142,7 +142,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 - Low Blow
   - Changed crit damage multiplier to a static 3x multiplier
 
-*The crit damage multiplier used the headshot multiplier, which made crits too effective against enemies like Bulldozers and Cloakers.*
+*The crit damage multiplier uses the headshot multiplier, which made crits too effective against enemies like Bulldozers and Cloakers.*
 *Making the multiplier static will keep their strength against regular units but slightly nerf them against enemies with high headshot multipliers*
 
 - Unseen Strike
@@ -159,7 +159,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 - Nine Lives
   - Basic: Bleedout health increase 50% → 100%
 
-*The percentage value for this skill were still stuck in a time were enemies didn't even deal half as much damage.*
+*The percentage value for this skill was still stuck in a time were enemies didn't even deal half as much damage and where the murder tactic was non-functional.*
 *Increasing the gained health value should make the basic skill more useful.*
 
 #### Brawler
@@ -219,6 +219,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 ### Sociopath
 
 - Overdog
+  - Renamed back to "No Talk"
   - Added melee damage boost duration upgrade
 
 *When Infiltrator got the hidden melee damage boost duration upgrade, Sociopath was left out and still has only 1s, which is not enough for slower melee weapons.*
@@ -247,7 +248,7 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 - Botnet
   - Removed hidden dodge chance bonus
 
-*Hacker has two instances of hidden passive dodge chance bonuses of 15% each, which makes it a bit too strong.*
+*Hacker has two instances of dodge chance bonuses of 15% each, which makes it a bit too strong.*
 *Removing one of those instances should make it more balanced.*
 
 ## General changes
