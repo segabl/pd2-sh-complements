@@ -256,6 +256,11 @@ Complementary skill, perk and weapon changes to go with Streamlined Heisting
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
 *Restoring the pellet amount to the original values is a quick fix as opposed to rebalancing all shotguns.*
 
+- Grenade Launchers
+  - Reduced max ammo pickup by 20%
+
+*Grenade launchers are a bit too easy to keep topped off, a slight decrease in the maximum ammo pickup should discourage use against single targets.*
+
 - Saw
   - Fixed hardcoded damage increase against Bulldozers
   - Made damage against Bulldozers multiply base damage instead of a fixed number

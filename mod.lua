@@ -206,7 +206,7 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 
 		local FALLOFF_TEMPLATE = WeaponFalloffTemplate.setup_weapon_falloff_templates()
 
-		for _, weap_data in pairs(self) do
+		for weap_id, weap_data in pairs(self) do
 			if type(weap_data) == "table" and weap_data.stats then
 
 				local cat_map = table.list_to_set(weap_data.categories)
@@ -220,6 +220,12 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 				-- Restore shotgun pellets
 				if cat_map.shotgun and weap_data.rays then
 					weap_data.rays = math.max(weap_data.rays, 12)
+				end
+
+				-- Nerf GL pickup
+				if cat_map.grenade_launcher then
+					weap_data.AMMO_PICKUP[1] = 0
+					weap_data.AMMO_PICKUP[2] = weap_data.AMMO_PICKUP[2] < 0.5 and weap_data.AMMO_PICKUP[2] or weap_data.AMMO_PICKUP[2] * 0.8
 				end
 
 			end
