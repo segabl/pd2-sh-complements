@@ -4,13 +4,13 @@ if not StreamHeistComplements then
 
 	Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitStreamlinedHeistingComplements", function (loc)
 
-		local function swap_tier_descriptions(desc_id, values)
+		local function swap_tier_descriptions(desc_id)
 			local basic, basic_desc, pro, pro_desc = loc:text(desc_id):match("(.-\n)(.+)\n\n(.-\n)(.+)")
 			loc:add_localized_strings({ [desc_id] = tostring(basic) .. tostring(pro_desc) .. "\n\n" .. tostring(pro) .. tostring(basic_desc) })
 		end
 
 		-- Swap basic and pro description of Bloodthirst
-		swap_tier_descriptions("menu_bloodthirst_desc", tweak_data.upgrades.skill_descs.bloodthirst)
+		swap_tier_descriptions("menu_bloodthirst_desc")
 
 		loc:add_localized_strings({
 			-- Restore Sociopath first perk name
@@ -349,6 +349,32 @@ elseif RequiredScript == "lib/units/weapons/sawweaponbase" then
 		end
 
 		return result
+	end
+
+elseif RequiredScript == "lib/units/weapons/trip_mine/tripminebase" then
+
+	-- Fix fire position when tripmines are placed against walls
+	local fire_pos = Vector3()
+	function TripMineBase:_spawn_environment_fire(user_unit, added_time, range_multiplier)
+		local position = self._unit:position()
+		local rotation = self._unit:rotation()
+		local data = tweak_data.env_effect:trip_mine_fire()
+		local normal = rotation:y()
+
+		local range = data.range * range_multiplier * 2
+		local dot = math.abs(mvector3.dot(normal, math.UP))
+		mvector3.set(fire_pos, normal)
+		mvector3.multiply(fire_pos, math.lerp(range, 20, dot))
+		mvector3.add(fire_pos, position)
+
+		local col_ray = World:raycast("ray", position, fire_pos, "slot_mask", managers.slot:get_mask("statics"))
+		if col_ray then
+			mvector3.set(fire_pos, normal)
+			mvector3.multiply(fire_pos, col_ray.distance * 0.5)
+			mvector3.add(fire_pos, position)
+		end
+
+		EnvironmentFire.spawn(fire_pos, rotation, data, dot < 0.5 and math.UP or normal, user_unit, added_time, range_multiplier)
 	end
 
 end

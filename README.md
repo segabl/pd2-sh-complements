@@ -108,11 +108,12 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *See notes on Hardware Expert.*
 
 - Fire Trap
+  - Fixed tripmines placed on walls spawning fire on the walls
   - Basic: Base burn duration 10s → 15s
   - Ace: Burn duration increase 10s → 20s
 
 *Fire Trap doesn't really feel useful as a top tier skill and you're basically getting a non-replenishable Molotov effect from it.*
-*Increasing the burn duration to a total of 35s should make the skill more useful for area denial.*
+*Increasing the burn duration to a total of 35s and allowing them to be placed on walls without making the fire useless should make the skill more useful for area denial.*
 
 #### Oppressor
 
