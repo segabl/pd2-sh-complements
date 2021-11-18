@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<mod name="Streamlined Heisting Complements">
+
+	<tweak definition="effect.xml"/>
+
+	<hooks script_path="mod.lua">
+
+		<group hook_id="lib/tweak_data/">
+			<post :hook_id="blackmarkettweakdata"/>
+			<post :hook_id="skilltreetweakdata"/>
+			<post :hook_id="upgradestweakdata"/>
+			<post :hook_id="weapontweakdata"/>
+		</group>
+		<group hook_id="lib/units/">
+			<post :hook_id="enemies/cop/copdamage"/>
+			<post :hook_id="equipment/ammo_bag/ammobagbase"/>
+			<post :hook_id="props/drill"/>
+			<post :hook_id="weapons/raycastweaponbase"/>
+			<post :hook_id="weapons/sawweaponbase"/>
+			<post :hook_id="weapons/trip_mine/tripminebase"/>
+		</group>
+
+	</hooks>
+
+</mod>
