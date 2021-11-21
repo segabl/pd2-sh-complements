@@ -276,10 +276,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *With the reduced movement speed and added damage falloff, miniguns could use a slight damage buff to justify using them over LMGs.*
 
 - Shotguns
-  - Restored original shotgun pellet amount of 12
+  - Restored original base pellet amount of 12
+  - Buckshot ammo: Now reduces pellet amount by 3
 
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
-*Restoring the pellet amount to the original values is a quick fix as opposed to rebalancing all shotguns.*
+*Restoring the pellet amount to the original values and reducing the amount with buckshot ammo is a quick fix as opposed to rebalancing all shotguns.*
 
 - Grenade Launchers
   - Reduced max ammo pickup by 20%
