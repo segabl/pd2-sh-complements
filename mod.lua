@@ -9,6 +9,9 @@ if not StreamHeistComplements then
 			loc:add_localized_strings({ [desc_id] = tostring(basic) .. tostring(pro_desc) .. "\n\n" .. tostring(pro) .. tostring(basic_desc) })
 		end
 
+		-- Swap basic and pro description of Far Away
+		swap_tier_descriptions("menu_far_away_beta_desc")
+
 		-- Swap basic and pro description of Bloodthirst
 		swap_tier_descriptions("menu_bloodthirst_desc")
 
@@ -44,6 +47,10 @@ elseif RequiredScript == "lib/tweak_data/skilltreetweakdata" then
 
 		-- Add intimidation power to Confident
 		table.insert(self.skills.cable_guy[1].upgrades, "player_intimidation_multiplier")
+
+		-- Swap basic and pro of Far Away
+		self.skills.far_away[1].upgrades[1] = "shotgun_steelsight_range_inc_1"
+		self.skills.far_away[2].upgrades[1] = "shotgun_steelsight_accuracy_inc_1"
 
 		-- Swap basic and pro of Bloodthirst
 		self.skills.bloodthirst[1].upgrades[1] = "player_temp_melee_kill_increase_reload_speed_1"
@@ -93,6 +100,10 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		-- Graze headshot damage (100% -> 90%)
 		self.values.snp.graze_damage[2].damage_factor_headshot = 0.9
 		self.skill_descs.single_shot_ammo_return.multipro = "90%"
+
+		-- Far away accuracy increase (40% -> 75%)
+		self.values.shotgun.steelsight_accuracy_inc[1] = 0.25
+		self.skill_descs.far_away.multibasic = "75%"
 
 		-- Overkill duration (20s -> 8s)
 		self.values.temporary.overkill_damage_multiplier[1][2] = 8

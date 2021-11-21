@@ -56,6 +56,13 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 #### Shotgunner
 
+- Far Away
+  - Basic and Ace skill swapped
+  - Ace: Steelsight accuracy increase 40% → 75%
+
+*While one might want to increase the effective range of shotguns, increased accuracy might not always desireable.*
+*Swapping basic and ace allows for increasing shotgun range without messing with accuracy and buffing the accuracy bonus makes it a more useful pick.*
+
 - Overkill
   - Basic: Duration 20s → 8s
 
