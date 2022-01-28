@@ -243,6 +243,18 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *As a team oriented deck, Gambler needs some tweaks to its cooldowns for health and ammo restore to make it more useful.*
 
+### Grinder
+
+- Histamine
+  - Healing interval 0.3s → 0.2s
+  - Healing duration 3s → 2s
+  - Effect cooldown 1.5s → 1s
+
+- Euphoria
+  - Healing duration 4.2s → 3s
+
+*Speeding up healing over time but shortening its duration will keep the overall healing the same but should feel better against the lower grace period.*
+
 ### Stoic
 
 - Virtue

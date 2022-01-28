@@ -211,6 +211,22 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.temporary.loose_ammo_give_team[1][2] = 3
 		self.specialization_descs[10][3].multiperk2 = "3"
 
+		-- Grinder - Faster ticks over shorter duration
+		self.damage_to_hot_data.tick_time = 0.2
+		self.damage_to_hot_data.stacking_cooldown = 1
+		self.values.player.damage_to_hot_extra_ticks[1] = 5
+		self.specialization_descs[11][1].multiperk2 = "0.2"
+		self.specialization_descs[11][1].multiperk3 = "2"
+		self.specialization_descs[11][1].multiperk4 = "1"
+		self.specialization_descs[11][3].multiperk2 = "0.2"
+		self.specialization_descs[11][3].multiperk3 = "2"
+		self.specialization_descs[11][5].multiperk2 = "0.2"
+		self.specialization_descs[11][5].multiperk3 = "2"
+		self.specialization_descs[11][7].multiperk2 = "0.2"
+		self.specialization_descs[11][7].multiperk3 = "2"
+		self.specialization_descs[11][9].multiperk2 = "0.2"
+		self.specialization_descs[11][9].multiperk3 = "3"
+
 		-- Stoic - Reduce DoT duration (12s -> 9s)
 		self.values.player.damage_control_passive[1][2] = 11
 		self.specialization_descs[19][1].multiperk2 = "9"
