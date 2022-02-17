@@ -134,10 +134,10 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.player.drill_autorepair_2[1] = 0.3
 		self.skill_descs.kick_starter.multibasic = "30%"
 
-		-- Fire trap duration (10s -> 15s / 10s -> 20s)
-		self.values.trip_mine.fire_trap[1][1] = 5
-		self.values.trip_mine.fire_trap[2][1] = 35
-		self.skill_descs.fire_trap.multibasic = "15"
+		-- Fire trap duration (10s -> 20s / 10s -> 20s)
+		self.values.trip_mine.fire_trap[1][1] = 10
+		self.values.trip_mine.fire_trap[2][1] = 30
+		self.skill_descs.fire_trap.multibasic = "20"
 		self.skill_descs.fire_trap.multipro = "20"
 
 		-- Heavy impact (5% -> 15% / 20% -> 40%)
