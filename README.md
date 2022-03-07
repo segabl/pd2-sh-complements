@@ -271,6 +271,21 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Hacker has two instances of dodge chance bonuses of 15% each, which makes it a bit too strong.*
 *Removing one of those instances should make it more balanced.*
 
+### Leech
+
+- Momentum
+  - Number of health segments 5 → 8
+  - Teammate heal amount 5% → 3%
+
+- Stalwart
+  - Teammate heal amount 10% → 6%
+
+- Symbiosis
+  - Number of health segments 10 → 16
+
+*Leech depends heavily on vanilla values of grace period and enemy firing behaviour and as such falls off with lower grace period and enemies firing in full auto.*
+*Increasing the number of health segments should improve survivability, while lowering the healing amount keeps the total amount of healing similar to vanilla.*
+
 ## General changes
 
 ### Weapons

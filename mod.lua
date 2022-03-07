@@ -231,6 +231,16 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.player.damage_control_passive[1][2] = 11
 		self.specialization_descs[19][1].multiperk2 = "9"
 
+		-- Leech - Increase segments (5 -> 8 / 10 -> 16), reduce heal amount (5% -> 3% / 10% -> 6%)
+		self.values.player.copr_static_damage_ratio[1] = 0.125
+		self.values.player.copr_static_damage_ratio[2] = 0.0625
+		self.values.player.copr_teammate_heal[1] = 0.03
+		self.values.player.copr_teammate_heal[2] = 0.06
+		self.specialization_descs[22][1].multiperk2 = "12.5%"
+		self.specialization_descs[22][1].multiperk4 = "3%"
+		self.specialization_descs[22][5].multiperk3 = "6%"
+		self.specialization_descs[22][9].multiperk = "6.25%"
+
 		-- WEAPONS
 
 		-- Movement speed penalty for lmgs and miniguns
