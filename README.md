@@ -9,13 +9,15 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 #### Medic
 
 - Combat Medic
-  - Ace: Revive health increase 30% → 50%
+  - Ace
+    - Revive health increase 30% → 50%
 
 *Since this percentage is multiplied with the revive health percentage, the ace version of this skill was not doing much at high difficulties.*
 *While bumping the numbers will not increase revive health notably, it will slightly counterbalance the general revive health reduction.*
 
 - Inspire
-  - Ace: Cooldown 20s → 60s
+  - Ace
+    - Cooldown 20s → 60s
 
 *Inspire's cooldown is low enough to not really matter, the time it takes for someone to go into custody when downed is longer than the cooldown of the skill.*
 *Increasing the cooldown makes Inspire usage more strategic and less abusable.*
@@ -23,18 +25,21 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 #### Controller
 
 - Confident
-  - Basic: Added missing intimidation power upgrade, removed intimidation duration upgrade
+  - Basic
+    - Added missing intimidation power upgrade, removed intimidation duration upgrade
 
 *Confident claims to increase the power of your intimidation but instead it increases intimidation duration (something that Stockholm Syndrome should do).*
 *Swapping out the upgrades and moving the duration upgrade to Stockholm Syndrome makes more sense.*
 
 - Stockholm Syndrome
-  - Basic: Added missing intimidation duration upgrade
+  - Basic
+    - Added missing intimidation duration upgrade
 
 *See notes on Confident.*
 
 - Partners In Crime
-  - Ace: Damage reduction 54% → 50%
+  - Ace
+    - Damage reduction 54% → 50%
 
 *Jokers in general are a low effort way to gain strong benefits and Partners In Crime is giving too much survivability to Jokers.*
 *Reducing the total damage reduction to 95% will decrease effective HP by 80% and force players to take new Jokers more frequently.*
@@ -42,12 +47,14 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 #### Sharpshooter
 
 - Aggressive Reload
-  - Ace: Reload speed increase 100% → 75%
+  - Ace
+    - Reload speed increase 100% → 75%
 
 *The reload speed increase of Aggressive Reload seems a bit extreme for something as basic as hitting headshots.*
 
 - Graze
-  - Ace: Damage on headshot 100% → 90%
+  - Ace
+    - Damage on headshot 100% → 90%
 
 *Graze is a strong room clearing ability and giving 100% of the damage to close enemies makes it not very strategic to use.*
 *Slightly reducing the damage on a headshot kill will encourage players to shoot higher health targets first.*
@@ -58,13 +65,15 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Far Away
   - Basic and Ace skill swapped
-  - Ace: Steelsight accuracy increase 40% → 75%
+  - Ace
+    - Steelsight accuracy increase 40% → 75%
 
 *While one might want to increase the effective range of shotguns, increased accuracy might not always desireable.*
 *Swapping basic and ace allows for increasing shotgun range without messing with accuracy and buffing the accuracy bonus makes it a more useful pick.*
 
 - Overkill
-  - Basic: Duration 20s → 8s
+  - Basic
+    - Duration 20s → 8s
 
 *Overkill's duration is way too long for the strong bonus damage it provides.*
 *Reducing the duration will force players to engage with enemies more.*
@@ -73,19 +82,22 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Bullet Storm
   - Fixed increased duration when ammo bag was used up
-  - Ace: Duration 15s → 10s
+  - Ace
+    - Duration 15s → 10s
 
 *Depending on the ammo bag upgrades, Bullet Storm had comically long durations when the bag was used up due to a bug.*
 *The intended duration also seems a tad too long, providing large benefits for a low skill point cost.*
 
 - Saw Massacre
-  - Basic: Reduced wear 50% → 95%
+  - Basic
+    - Reduced wear 50% → 95%
 
 *Saw Massacre is a useless skill and 50% reduced wear is not enough to make the saw a viable weapon against enemies.*
 *Decreasing the wear further will make it more viable at least in some cases.*
 
 - Fully Loaded
-  - Ace: Throwable pickup chance increase 1% → 5%
+  - Ace
+    - Throwable pickup chance increase 1% → 5%
 
 *The chance increase is multiplied with the base chance instead of added, which makes it completely negligible as it takes 70 ammo pickups to even reach 10% chance.*
 *With a chance increase of 5%, reaching more meaningful chance numbers will be possible.*
@@ -97,27 +109,33 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Hardware Expert
   - Changed drill auto restart chance to trigger everytime the drill breaks instead of on drill placement
   - Auto restart delay 5-20s → 5-10s
-  - Ace: Auto restart chance 10% → 20%
+  - Ace
+    - Auto restart chance 10% → 20%
 
 *Auto restart is an inconsistent mechanic as it only has a chance to apply once when the drill is placed. This means if you were lucky you would not need to look after the drill at all, while if you were unlucky, the skill would not do anything for you.*
 *Changing the mechanic to have a chance to trigger everytime the drill breaks and increasing the restart chance makes the skill less luck based.*
 
 - More Firepower
-  - Basic: Shaped charges 1 → 2
-  - Ace: Shaped charges 2 → 3
+  - Basic
+    - Shaped charges 1 → 2
+  - Ace
+    - Shaped charges 2 → 3
 
 *While the tripmine part of the skill is fine, the amount of shaped charges you get is not really great considering how little use they have on most heists.*
 *Increasing the amount from a maximum of 6 to 8 will give the skill more value on heists that have use for shaped charges.*
 
 - Kickstarter
-  - Basic: Auto restart chance 20% → 30%
+  - Basic
+    - Auto restart chance 20% → 30%
 
 *See notes on Hardware Expert.*
 
 - Fire Trap
   - Fixed tripmines placed on walls spawning fire on the walls
-  - Basic: Base burn duration 10s → 20s
-  - Ace: Burn duration increase 10s → 20s
+  - Basic
+    - Base burn duration 10s → 20s
+  - Ace
+    - Burn duration increase 10s → 20s
 
 *Fire Trap doesn't really feel useful as a top tier skill and you're basically getting a non-replenishable Molotov effect from it.*
 *Increasing the burn duration to a total of 35s and allowing them to be placed on walls without making the fire useless should make the skill more useful for area denial.*
@@ -125,15 +143,19 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 #### Oppressor
 
 - Heavy Impact
-  - Basic: Stagger chance 5% → 15%
-  - Ace: Stagger chance 20% → 40%
+  - Basic
+    - Stagger chance 5% → 15%
+  - Ace
+    - Stagger chance 20% → 40%
 
 *Heavy Impact is a niche skill that is not very useful with the current numbers.*
 *Increasing the stagger chance should give it some more use.*
 
 - Body Expertise
-  - Basic: Damage 30% → 20%
-  - Ace: Damage 90% → 60%
+  - Basic
+    - Damage 30% → 20%
+  - Ace
+    - Damage 90% → 60%
 
 *Body Expertise gives too much value for very low effort.*
 *Reducing the damage percentage should bring the skill more in line.*
@@ -143,7 +165,8 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 #### Silent Killer
 
 - Optical Illusions
-  - Basic: Trageting chance decrease 35% → 20%
+  - Basic
+    - Trageting chance decrease 35% → 20%
 
 *Optical Illusions is a niche skill but it provides slightly too much value when it's used with Jokers.*
 
@@ -155,17 +178,43 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Unseen Strike
   - Changed crit damage multiplier to a static 3x multiplier
-  - Basic: Crit duration 6s → 4s
-  - Ace: Crit duration 18s → 12s
+  - Basic
+    - Crit duration 6s → 4s
+  - Ace
+    - Crit duration 18s → 12s
 
 *The duration for crits is a bit too long, given that part of the skill's description is wrong and you do not lose the bonus on getting hit.*
 
 ### Fugitive
 
+#### Gunslinger
+
+- Desperado
+  - Basic
+    - Now refreshes buff duration on hit
+    - Stack boost is now additive
+    - Duration 10s → 5s
+
+*Losing the accuracy bonus after a fixed amount of time despite consistently hitting shots didn't really feel good.*
+*Refreshing the buff duration on hit but reducing the base buff duration makes the skill feel better while still providing a good boost to accuracy.*
+
+- Trigger Happy
+  - Now refreshes buff duration on hit
+  - Stack boost is now additive
+  - Basic
+    - Damage increase 120% → 25%
+    - Max stacks 1 → 4
+  - Ace
+    - Max stacks 1 → 6
+
+*The Ace version of Trigger happy wasn't really worth it, since all the important stuff was in the basic skill.*
+*Increasing the maximum stack size and moving some of the skill's power to the ace version should improve how this skill plays.*
+
 #### Revenant
 
 - Nine Lives
-  - Basic: Bleedout health increase 50% → 100%
+  - Basic
+    - Bleedout health increase 50% → 100%
 
 *The percentage value for this skill was still stuck in a time were enemies didn't even deal half as much damage and where the murder tactic was non-functional.*
 *Increasing the gained health value should make the basic skill more useful.*
@@ -174,15 +223,19 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Bloodthirst
   - Basic and Ace skill swapped
-  - Basic: Reload speed increase 50% for 10s → 30% for 4s
-  - Ace: Damage increase +100% up to 1600% → +50% up to 800%
+  - Basic
+    - Reload speed increase 50% for 10s → 30% for 4s
+  - Ace
+    - Damage increase +100% up to 1600% → +50% up to 800%
 
 *Bloodthirst provides a way too strong bonus for a basic skill that involves no effort to gain as the requirement for it is something you do anyways.*
 *Swapping the basic and ace version and reducing the numbers should bring this skill more in line.*
 
 - Pumping Iron
-  - Basic: Damage increase 100% → 200%
-  - Ace: Damage increase 100% → 150%
+  - Basic
+    - Damage increase 100% → 200%
+  - Ace
+    - Damage increase 100% → 150%
 
 *Pumping Iron could do with a little numbers increase, especially with Bloodthirst nerfed.*
 *Increasing the damage will make it possible to reach similar damage numbers against non specials in combination with Bloodthirst.*

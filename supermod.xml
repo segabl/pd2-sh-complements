@@ -5,6 +5,10 @@
 
 	<hooks script_path="mod.lua">
 
+		<group hook_id="lib/player_actions/skills/">
+			<post :hook_id="playeractionexperthandling"/>
+			<post :hook_id="playeractiontriggerhappy"/>
+		</group>
 		<group hook_id="lib/tweak_data/">
 			<post :hook_id="blackmarkettweakdata"/>
 			<post :hook_id="skilltreetweakdata"/>

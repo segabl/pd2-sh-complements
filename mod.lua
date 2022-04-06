@@ -12,6 +12,10 @@ if not StreamHeistComplements then
 		-- Swap basic and pro description of Far Away
 		swap_tier_descriptions("menu_far_away_beta_desc")
 
+		-- Trigger happy pro description
+		local basic, basic_desc, pro = loc:text("menu_trigger_happy_beta_desc"):match("(.-\n)(.+)\n\n(.-\n)")
+		loc:add_localized_strings({ menu_trigger_happy_beta_desc = basic .. basic_desc .. "\n\n" .. pro .. basic_desc:gsub("multibasic", "multipro") })
+
 		-- Swap basic and pro description of Bloodthirst
 		swap_tier_descriptions("menu_bloodthirst_desc")
 
@@ -161,6 +165,22 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.skill_descs.unseen_strike.multibasic3 = "4"
 		self.skill_descs.unseen_strike.multipro = "12"
 
+		-- Desperado max duration (10s -> 4s)
+		self.values.pistol.stacked_accuracy_bonus[1].accuracy_bonus = 0.1
+		self.values.pistol.stacked_accuracy_bonus[1].max_time = 5
+		self.skill_descs.expert_handling.multibasic2 = "5"
+
+		-- Trigger happy max stacks (1 -> 4 / 1 -> 6), damage bonus (120% -> 30%)
+		self.values.pistol.stacking_hit_damage_multiplier[1].max_stacks = 4
+		self.values.pistol.stacking_hit_damage_multiplier[1].damage_bonus = 0.25
+		self.values.pistol.stacking_hit_damage_multiplier[2].max_stacks = 6
+		self.values.pistol.stacking_hit_damage_multiplier[2].damage_bonus = 0.25
+		self.skill_descs.trigger_happy.multibasic3 = "4"
+		self.skill_descs.trigger_happy.multibasic4 = "25%"
+		self.skill_descs.trigger_happy.multipro2 = "4"
+		self.skill_descs.trigger_happy.multipro3 = "6"
+		self.skill_descs.trigger_happy.multipro4 = "25%"
+
 		-- Nine Lives bleed out health increase (50% -> 100%)
 		self.values.player.bleed_out_health_multiplier[1] = 2
 		self.skill_descs.nine_lives.multibasic2 = "100%"
@@ -275,6 +295,58 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 		end
 
 	end)
+
+elseif RequiredScript == "lib/player_actions/skills/playeractionexperthandling" then
+
+	PlayerAction.ExpertHandling.Function = function (player_manager, accuracy_bonus, max_stacks, max_time)
+		local co = coroutine.running()
+		local current_stacks = 1
+		local duration = max_time - Application:time()
+
+		local function on_hit(unit, attack_data)
+			if attack_data.attacker_unit == player_manager:player_unit() and attack_data.variant == "bullet" then
+				current_stacks = current_stacks + 1
+				max_time = Application:time() + duration
+				player_manager:set_property("desperado", 1 - accuracy_bonus * math.min(current_stacks, max_stacks))
+			end
+		end
+
+		player_manager:set_property("desperado", 1 - accuracy_bonus)
+		player_manager:register_message(Message.OnEnemyShot, co, on_hit)
+
+		while Application:time() < max_time and player_manager:is_current_weapon_of_category("pistol") do
+			coroutine.yield(co)
+		end
+
+		player_manager:remove_property("desperado")
+		player_manager:unregister_message(Message.OnEnemyShot, co)
+	end
+
+elseif RequiredScript == "lib/player_actions/skills/playeractiontriggerhappy" then
+
+	PlayerAction.TriggerHappy.Function = function (player_manager, damage_bonus, max_stacks, max_time)
+		local co = coroutine.running()
+		local current_stacks = 1
+		local duration = max_time - Application:time()
+
+		local function on_hit(unit, attack_data)
+			if attack_data.attacker_unit == player_manager:player_unit() and attack_data.variant == "bullet" then
+				current_stacks = current_stacks + 1
+				max_time = Application:time() + duration
+				player_manager:set_property("trigger_happy", 1 + damage_bonus * math.min(current_stacks, max_stacks))
+			end
+		end
+
+		player_manager:set_property("trigger_happy", 1 + damage_bonus)
+		player_manager:register_message(Message.OnEnemyShot, co, on_hit)
+
+		while Application:time() < max_time and player_manager:is_current_weapon_of_category("pistol") do
+			coroutine.yield(co)
+		end
+
+		player_manager:remove_property("trigger_happy")
+		player_manager:unregister_message(Message.OnEnemyShot, co)
+	end
 
 elseif RequiredScript == "lib/units/enemies/cop/copdamage" then
 
