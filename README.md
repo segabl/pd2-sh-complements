@@ -362,9 +362,15 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Grenade launchers are a bit too easy to keep topped off, a slight decrease in the maximum ammo pickup should discourage use against single targets.*
 
-- Saw
+- Saws
   - Fixed hardcoded damage increase against Bulldozers
   - Made damage against Bulldozers multiply base damage instead of a fixed number
 
 *Saws have a hidden damage increase against Bulldozers but the list for the affected enemies is hardcoded so it only applies to the regular Bulldozer variants.*
 *Changing it to check for the "tank" tag instead of the hardcoded list will make it affect every Bulldozer.*
+
+- Akimbo
+  - Set reload speed to approximately 75% of their single weapon counterparts
+
+*Reload speeds for akimbo weapons seem random and don't really correlate to their single counterparts, in some cases even being faster than the base weapon reload speed.*
+*This change bases reload times on their single counterparts which results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*

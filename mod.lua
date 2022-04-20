@@ -268,6 +268,8 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 	Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 
 		local FALLOFF_TEMPLATE = WeaponFalloffTemplate.setup_weapon_falloff_templates()
+		local akimbo_mappings = self:get_akimbo_mappings()
+		local akimbo_multiplier = 1.5
 
 		for weap_id, weap_data in pairs(self) do
 			if type(weap_data) == "table" and weap_data.stats then
@@ -289,6 +291,28 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 				if cat_map.grenade_launcher then
 					weap_data.AMMO_PICKUP[1] = 0
 					weap_data.AMMO_PICKUP[2] = weap_data.AMMO_PICKUP[2] < 0.5 and weap_data.AMMO_PICKUP[2] or weap_data.AMMO_PICKUP[2] * 0.8
+				end
+
+				-- Tweak akimbo reload speeds
+				if akimbo_mappings[weap_id] then
+					local akimbo_weap_data = self[akimbo_mappings[weap_id]]
+					if akimbo_weap_data and table.contains(akimbo_weap_data.categories, "akimbo") then
+						local akimbo_reload_stat = akimbo_weap_data.stats.reload
+						local reload_akimbo = akimbo_weap_data.timers.reload_not_empty / self.stats.reload[akimbo_reload_stat]
+						local reload_target = (weap_data.timers.reload_not_empty / self.stats.reload[weap_data.stats.reload]) * akimbo_multiplier
+						if reload_akimbo < reload_target then
+							while reload_akimbo < reload_target and akimbo_reload_stat > 1 do
+								akimbo_reload_stat = akimbo_reload_stat - 1
+								reload_akimbo = akimbo_weap_data.timers.reload_not_empty / self.stats.reload[akimbo_reload_stat]
+							end
+						else
+							while reload_akimbo > reload_target and akimbo_reload_stat < #self.stats.reload do
+								akimbo_reload_stat = akimbo_reload_stat + 1
+								reload_akimbo = akimbo_weap_data.timers.reload_not_empty / self.stats.reload[akimbo_reload_stat]
+							end
+						end
+						akimbo_weap_data.stats.reload = akimbo_reload_stat
+					end
 				end
 
 			end
