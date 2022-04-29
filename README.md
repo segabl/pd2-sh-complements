@@ -17,7 +17,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Inspire
   - Ace
-    - Cooldown 20s → 60s
+    - Cooldown 20s → 40s
 
 *Inspire's cooldown is low enough to not really matter, the time it takes for someone to go into custody when downed is longer than the cooldown of the skill.*
 *Increasing the cooldown makes Inspire usage more strategic and less abusable.*

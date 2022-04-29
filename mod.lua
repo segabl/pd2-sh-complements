@@ -86,9 +86,9 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.revive_health_multiplier[1] = 1.5
 		self.skill_descs.combat_medic.multipro = "50%"
 
-		-- Inspire cooldown (20s -> 60s)
-		self.values.cooldown.long_dis_revive[1][2] = 60
-		self.skill_descs.inspire.multipro2 = "60"
+		-- Inspire cooldown (20s -> 40s)
+		self.values.cooldown.long_dis_revive[1][2] = 40
+		self.skill_descs.inspire.multipro2 = "40"
 
 		-- Confident intimidation multiplier
 		self.values.player.intimidation_multiplier[1] = 1.5
