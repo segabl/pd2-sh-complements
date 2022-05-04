@@ -265,6 +265,23 @@ elseif RequiredScript == "lib/tweak_data/weaponfactorytweakdata" then
 
 elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 
+	-- Fix missing entries in the PICKUP table
+	local up = 1
+	repeat
+		local n, v = debug.getupvalue(WeaponTweakData._pickup_chance, up)
+		if n == "PICKUP" then
+			local last_idx = table.size(v)
+			log(last_idx)
+			v.LMG_HIGH_CAPACITY = last_idx + 1
+			v.PISTOL_HIGH_CAPACITY = last_idx + 2
+			v.PISTOL_LOW_CAPACITY = last_idx + 3
+			v.SHOTGUN_SECOND_CAPACITY = last_idx + 4
+			break
+		else
+			up = up + 1
+		end
+	until not n
+
 	Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 
 		local FALLOFF_TEMPLATE = WeaponFalloffTemplate.setup_weapon_falloff_templates()

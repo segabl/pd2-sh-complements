@@ -339,6 +339,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - LMGs
   - Added 15% reduced movement speed penalty
+  - Fixed ammo pickup of high damage LMGs
 
 *Even after the nerfs LMGs are still very powerful with very little drawbacks.*
 *Adding back the movement speed penalty gives a more unique drawback than nerfing stats.*
@@ -353,6 +354,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Shotguns
   - Restored original base pellet amount of 12
   - Buckshot ammo: Now reduces pellet amount by 3
+  - Fixed ammo pickup of some secondary shotguns
 
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
 *Restoring the pellet amount to the original values and reducing the amount with buckshot ammo is a quick fix as opposed to rebalancing all shotguns.*
@@ -374,3 +376,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Reload speeds for akimbo weapons seem random and don't really correlate to their single counterparts, in some cases even being faster than the base weapon reload speed.*
 *This change bases reload times on their single counterparts which results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
+
+- Pistols
+  - Fixed ammo pickup for most pistols
+
+*Ammo pickup values for most pistols was lower than intended due to some missing pickup definitions.*
+*Adding the misssing definitions should make pistol ammo pickup feel more consistent.*
