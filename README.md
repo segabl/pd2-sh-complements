@@ -104,6 +104,15 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 ### Technician
 
+#### Engineer
+
+- Eco Sentry
+  - Basic
+    - Reduced deploy cost 5% → 10%
+
+*The basic version does exactly the same as the basic version of Third Law, but costs 2 points instead of 1.*
+*Giving Eco Sentry a slight boost should allow placing an additional sentry from full ammo in most cases.*
+
 #### Breacher
 
 - Hardware Expert

@@ -124,6 +124,9 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.player.regain_throwable_from_ammo[1].chance_inc = 1.05
 		self.skill_descs.bandoliers.multipro4 = "5%"
 
+		-- Eco Sentry cost reduction (5% -> 10%)
+		self.skill_descs.eco_sentry.multibasic = "10%"
+
 		-- Hardware Expert restart chance (10% -> 20%)
 		self.values.player.drill_autorepair_1[1] = 0.2
 		self.skill_descs.hardware_expert.multipro3 = "20%"
@@ -421,6 +424,11 @@ elseif RequiredScript == "lib/units/equipment/ammo_bag/ammobagbase" then
 	Hooks:PreHook(AmmoBagBase, "_set_empty", "shc__set_empty", function (self)
 		managers.network:session():send_to_peers_synched("sync_ammo_bag_ammo_taken", self._unit, self._max_ammo_amount + 1)
 	end)
+
+elseif RequiredScript == "lib/units/equipment/sentry_gun/sentrygunbase" then
+
+	-- Eco Sentry cost reduction (5% -> 10%)
+	SentryGunBase.DEPLOYEMENT_COST[3] = 0.85
 
 elseif RequiredScript == "lib/units/props/drill" then
 
