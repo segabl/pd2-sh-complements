@@ -274,7 +274,6 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 		local n, v = debug.getupvalue(WeaponTweakData._pickup_chance, up)
 		if n == "PICKUP" then
 			local last_idx = table.size(v)
-			log(last_idx)
 			v.LMG_HIGH_CAPACITY = last_idx + 1
 			v.PISTOL_HIGH_CAPACITY = last_idx + 2
 			v.PISTOL_LOW_CAPACITY = last_idx + 3
@@ -299,7 +298,7 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 
 				-- Buff minigun damage in exchange for movement speed penalty
 				if cat_map.minigun then
-					weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.1)
+					weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.2)
 					weap_data.damage_falloff = FALLOFF_TEMPLATE.LMG_FALL_MEDIUM
 				end
 

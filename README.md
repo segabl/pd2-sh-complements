@@ -356,7 +356,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Miniguns
   - Added 15% reduced movement speed penalty
   - Added damage falloff
-  - Increased damage by 10%
+  - Increased damage by 20%
 
 *With the reduced movement speed and added damage falloff, miniguns could use a slight damage buff to justify using them over LMGs.*
 
