@@ -392,3 +392,17 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Ammo pickup values for most pistols was lower than intended due to some missing pickup definitions.*
 *Adding the misssing definitions should make pistol ammo pickup feel more consistent.*
+
+- Bows
+  - Reduced damage by 50%
+  - Reduced charge time by 30%
+  - Increased minimum projectile speed to 50%
+  - Added innate armor piercing
+
+*Bows don't really feel good to use due to requiring long charge times before being able to fire a usable shot.*
+*Allowing bows to be quickly fired without charging and reducing the damage in exchange makes bows more fun to use.*
+
+- Crossbows
+  - Added innate armor piercing
+
+*Similar to bows, crossbows are not that fun to use, adding armor piercing should make them feel better.*
