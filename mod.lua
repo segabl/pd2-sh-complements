@@ -500,7 +500,7 @@ elseif RequiredScript == "lib/units/weapons/bowweaponbase" then
 
 	-- Easier to do this than go through all arrows and change their damage
 	function BowWeaponBase:projectile_damage_multiplier()
-		return math.lerp(0.05, 0.5, self:charge_multiplier())
+		return math.lerp(0.1, 0.5, self:charge_multiplier())
 	end
 
 elseif RequiredScript == "lib/units/weapons/raycastweaponbase" then
