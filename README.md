@@ -306,6 +306,14 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *As a team oriented deck, Gambler needs some tweaks to its cooldowns for health and ammo restore to make it more useful.*
 
+### Anarchist
+
+- Lust for Life
+  - Armor gain 30 → 20
+
+*The final card description in Anarchist is incorrect and it actually gives 30 armor instead of the stated 10.*
+*Slightly reducing the armor gain should still allow decent gains while being a bit more risky.*
+
 ### Stoic
 
 - Virtue

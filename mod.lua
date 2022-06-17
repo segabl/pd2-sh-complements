@@ -234,6 +234,12 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.temporary.loose_ammo_give_team[1][2] = 3
 		self.specialization_descs[10][3].multiperk2 = "3"
 
+		-- Anarchist - Lust for Life amount (30 -> 20)
+		for _, v in pairs(self.values.player.damage_to_armor[1]) do
+			v[1] = 2
+		end
+		self.specialization_descs[15][9].multiperk = "20"
+
 		-- Stoic - Reduce DoT duration (12s -> 9s)
 		self.values.player.damage_control_passive[1][2] = 11
 		self.specialization_descs[19][1].multiperk2 = "9"
