@@ -147,11 +147,11 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.skill_descs.fire_trap.multibasic = "20"
 		self.skill_descs.fire_trap.multipro = "20"
 
-		-- Heavy impact (5% -> 15% / 20% -> 40%)
-		self.values.weapon.knock_down[1] = 0.15
-		self.values.weapon.knock_down[2] = 0.4
-		self.skill_descs.heavy_impact.multibasic = "15%"
-		self.skill_descs.heavy_impact.multipro = "40%"
+		-- Heavy impact (5% -> 10% / 20% -> 30%)
+		self.values.weapon.knock_down[1] = 0.1
+		self.values.weapon.knock_down[2] = 0.3
+		self.skill_descs.heavy_impact.multibasic = "10%"
+		self.skill_descs.heavy_impact.multipro = "30%"
 
 		-- Body Expertise (30% -> 20% / 90% -> 60%)
 		self.values.weapon.automatic_head_shot_add = { 0.2, 0.6 }

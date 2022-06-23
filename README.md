@@ -154,9 +154,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Heavy Impact
   - Basic
-    - Stagger chance 5% → 15%
+    - Stagger chance 5% → 10%
   - Ace
-    - Stagger chance 20% → 40%
+    - Stagger chance 20% → 30%
 
 *Heavy Impact is a niche skill that is not very useful with the current numbers.*
 *Increasing the stagger chance should give it some more use.*
