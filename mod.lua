@@ -101,10 +101,6 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.temporary.single_shot_fast_reload[1][1] = 1.75
 		self.skill_descs.speedy_reload.multipro = "75%"
 
-		-- Graze headshot damage (100% -> 90%)
-		self.values.snp.graze_damage[2].damage_factor_headshot = 0.9
-		self.skill_descs.single_shot_ammo_return.multipro = "90%"
-
 		-- Far away accuracy increase (40% -> 75%)
 		self.values.shotgun.steelsight_accuracy_inc[1] = 0.25
 		self.skill_descs.far_away.multibasic = "75%"

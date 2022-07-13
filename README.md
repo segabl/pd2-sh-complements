@@ -52,13 +52,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *The reload speed increase of Aggressive Reload seems a bit extreme for something as basic as hitting headshots.*
 
-- Graze
-  - Ace
-    - Damage on headshot 100% → 90%
-
-*Graze is a strong room clearing ability and giving 100% of the damage to close enemies makes it not very strategic to use.*
-*Slightly reducing the damage on a headshot kill will encourage players to shoot higher health targets first.*
-
 ### Enforcer
 
 #### Shotgunner
