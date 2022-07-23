@@ -116,9 +116,9 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.saw.enemy_slicer[1] = 1
 		self.skill_descs.carbon_blade.multibasic2 = "95%"
 
-		-- Fully Loaded throwable gain chance increase (1% -> 5%)
-		self.values.player.regain_throwable_from_ammo[1].chance_inc = 1.05
-		self.skill_descs.bandoliers.multipro4 = "5%"
+		-- Fully Loaded throwable gain chance increase (1% -> 10%)
+		self.values.player.regain_throwable_from_ammo[1].chance_inc = 1.1
+		self.skill_descs.bandoliers.multipro4 = "10%"
 
 		-- Eco Sentry cost reduction (5% -> 10%)
 		self.skill_descs.eco_sentry.multibasic = "10%"
