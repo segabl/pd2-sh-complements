@@ -91,10 +91,10 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Fully Loaded
   - Ace
-    - Throwable pickup chance increase 1% → 5%
+    - Throwable pickup chance increase 1% → 10%
 
 *The chance increase is multiplied with the base chance instead of added, which makes it completely negligible as it takes 70 ammo pickups to even reach 10% chance.*
-*With a chance increase of 5%, reaching more meaningful chance numbers will be possible.*
+*With a higher chance increase reaching more meaningful chance numbers will be possible.*
 
 ### Technician
 
@@ -141,7 +141,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
     - Burn duration increase 10s → 20s
 
 *Fire Trap doesn't really feel useful as a top tier skill and you're basically getting a non-replenishable Molotov effect from it.*
-*Increasing the burn duration to a total of 35s and allowing them to be placed on walls without making the fire useless should make the skill more useful for area denial.*
+*Increasing the burn duration and allowing them to be placed on walls without making the fire useless should make the skill more useful for area denial.*
 
 #### Oppressor
 
@@ -160,7 +160,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Ace
     - Damage 90% → 60%
 
-*Body Expertise gives too much value for very low effort.*
+*Body Expertise simply gives too much value for very low effort.*
 *Reducing the damage percentage should bring the skill more in line.*
 
 ### Ghost
@@ -176,7 +176,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Low Blow
   - Changed crit damage multiplier to a static 3x multiplier
 
-*The crit damage multiplier uses the headshot multiplier, which made crits too effective against enemies like Bulldozers and Cloakers.*
+*The crit damage multiplier uses the headshot multiplier, which made crits a bit too effective against enemies like Bulldozers and Cloakers.*
 *Making the multiplier static will keep their strength against regular units but slightly nerf them against enemies with high headshot multipliers*
 
 - Unseen Strike
@@ -199,7 +199,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
     - Duration 10s → 5s
 
 *Losing the accuracy bonus after a fixed amount of time despite consistently hitting shots didn't really feel good.*
-*Refreshing the buff duration on hit but reducing the base buff duration makes the skill feel better while still providing a good boost to accuracy.*
+*Refreshing the buff duration on hit but reducing the base duration makes the skill feel better while still providing a good boost to accuracy.*
 
 - Trigger Happy
   - Now refreshes buff duration on hit
@@ -318,7 +318,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 ### Hacker
 
 - Botnet
-  - Removed hidden dodge chance bonus
+  - Removed dodge chance bonus
 
 *Hacker has two instances of dodge chance bonuses of 15% each, which makes it a bit too strong.*
 *Removing one of those instances should make it more balanced.*
@@ -364,8 +364,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Shotguns
   - Restored original base pellet amount of 12
-  - Buckshot ammo: Now reduces pellet amount by 3
   - Fixed ammo pickup of some secondary shotguns
+  - Buckshot ammo
+    - Now reduces pellet amount by 3
 
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
 *Restoring the pellet amount to the original values and reducing the amount with buckshot ammo is a quick fix as opposed to rebalancing all shotguns.*
@@ -383,7 +384,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Changing it to check for the "tank" tag instead of the hardcoded list will make it affect every Bulldozer.*
 
 - Akimbo
-  - Set reload speed to approximately 75% of their single weapon counterparts
+  - Set reload speed to roughly 75% of their single weapon counterparts
 
 *Reload speeds for akimbo weapons seem random and don't really correlate to their single counterparts, in some cases even being faster than the base weapon reload speed.*
 *This change bases reload times on their single counterparts which results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
@@ -392,7 +393,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Fixed ammo pickup for most pistols
 
 *Ammo pickup values for most pistols was lower than intended due to some missing pickup definitions.*
-*Adding the misssing definitions should make pistol ammo pickup feel more consistent.*
+*Adding the missing definitions should make pistol ammo pickup feel more consistent.*
 
 - Bows
   - Reduced damage by 50%
