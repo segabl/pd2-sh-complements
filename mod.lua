@@ -299,10 +299,12 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 				local cat_map = table.list_to_set(weap_data.categories)
 				if cat_map.bow then
 					-- Add armor piercing to bows, reduce bow damage in exchange for being able to fire quick shots
+					weap_data.stats.reload = 21
 					weap_data.stats_modifiers = weap_data.stats_modifiers or {}
 					weap_data.stats_modifiers.damage = (weap_data.stats_modifiers.damage or 1) * 0.5
 					weap_data.charge_data.max_t = weap_data.charge_data.max_t * 0.7
 					weap_data.armor_piercing_chance = 1
+					weap_data.bow_reload_speed_multiplier = nil
 				elseif cat_map.crossbow then
 					-- Add armor piercing to crossbows
 					weap_data.armor_piercing_chance = 1
