@@ -90,6 +90,12 @@ elseif RequiredScript == "lib/tweak_data/upgradestweakdata" then
 		self.values.cooldown.long_dis_revive[1][2] = 40
 		self.skill_descs.inspire.multipro2 = "40"
 
+		-- Forced Friendship ace damage absorption (0.5 -> 1.5 / 8 max -> 4 max)
+		self.values.team.damage.hostage_absorption[1] = 0.15
+		self.values.team.damage.hostage_absorption_limit = 4
+		self.skill_descs.triathlete.multipro = "1.5"
+		self.skill_descs.triathlete.multipro2 = "4"
+
 		-- Confident intimidation multiplier
 		self.values.player.intimidation_multiplier[1] = 1.5
 

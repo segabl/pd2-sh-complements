@@ -24,6 +24,14 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 #### Controller
 
+- Forced Friendship
+  - Ace
+    - Damage absorption 0.5 → 1.5
+    - Max stacks 8 → 4
+
+*Keeping that many hostages for a measly 4 damage absorption is not really practical and not even possible on heists without civilians or after civilians are gone.*
+*Reducing the stacks makes it possible to keep up the buff through police hostages and slightly increasing the total absorption should make it more useful.*
+
 - Confident
   - Basic
     - Added missing intimidation power upgrade, removed intimidation duration upgrade
