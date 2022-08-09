@@ -325,6 +325,10 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 					-- Nerf GL pickup
 					weap_data.AMMO_PICKUP[1] = 0
 					weap_data.AMMO_PICKUP[2] = weap_data.AMMO_PICKUP[2] < 0.5 and weap_data.AMMO_PICKUP[2] or weap_data.AMMO_PICKUP[2] * 0.8
+				elseif cat_map.flamethrower and weap_data.fire_dot_data then
+					-- Move some DOT damage to base damage
+					weap_data.fire_dot_data.dot_damage = weap_data.fire_dot_data.dot_damage * 0.3
+					weap_data.stats.damage = weap_data.stats.damage * 4
 				end
 
 				-- Tweak akimbo reload speeds
