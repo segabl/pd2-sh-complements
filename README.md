@@ -418,8 +418,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Similar to bows, crossbows are not that fun to use, adding armor piercing should make them feel better.*
 
 - Flamethrowers
-  - Reduced DoT damage by 70%
-  - Increased base damage by 300%
+  - Moved 70% of DoT damage to base damage
 
 *Shortly tapping flamethrowers and letting the DoT do the actual damage is not a very fun way to use them.*
 *Moving a majority of the damage to the base damage makes flamethrowers feel more powerful while keeping the same average DPS.*
