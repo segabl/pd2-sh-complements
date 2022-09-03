@@ -373,6 +373,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Shotguns
   - Restored original base pellet amount of 12
   - Fixed ammo pickup of some secondary shotguns
+  - Double Barrel Shotguns
+    - Increased damage by 25%
+    - Increased reload speed by 50%
   - Buckshot ammo
     - Now reduces pellet amount by 3
 

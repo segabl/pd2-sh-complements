@@ -321,6 +321,11 @@ elseif RequiredScript == "lib/tweak_data/weapontweakdata" then
 				elseif cat_map.shotgun then
 					-- Restore shotgun pellets
 					weap_data.rays = weap_data.rays and math.max(weap_data.rays, 12)
+					if weap_data.CLIP_AMMO_MAX == 2 then
+						-- Buff double barrel damage and reload speed
+						weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.25)
+						weap_data.stats.reload = weap_data.stats.reload + 5
+					end
 				elseif cat_map.grenade_launcher then
 					-- Nerf GL pickup
 					weap_data.AMMO_PICKUP[1] = 0
