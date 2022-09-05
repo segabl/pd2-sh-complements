@@ -352,13 +352,15 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - All weapons
   - Removed aim assist
+  - Reworked and rebalanced ammo pickup
 
 *There is a form of aim assist that makes you more likely to hit a target the longer you shoot at it while missing.*
 *Removing this aim assist will make it harder to hit enemies at distance with low accuracy weapons.*
+*Ammo pickup is highly inconsistent since fractional parts of ammo pickup are just discarded.*
+*Adding any fractional leftovers to the next ammo pickup will guarantee a pickup at some point no matter how low the pickup rate.*
 
 - LMGs
   - Added 15% reduced movement speed penalty
-  - Fixed ammo pickup of high damage LMGs
 
 *Even after the nerfs LMGs are still very powerful with very little drawbacks.*
 *Adding back the movement speed penalty gives a more unique drawback than nerfing stats.*
@@ -372,7 +374,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Shotguns
   - Restored original base pellet amount of 12
-  - Fixed ammo pickup of some secondary shotguns
   - Double Barrel Shotguns
     - Increased damage by 25%
     - Increased reload speed by 50%
@@ -381,11 +382,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
 *Restoring the pellet amount to the original values and reducing the amount with buckshot ammo is a quick fix as opposed to rebalancing all shotguns.*
-
-- Grenade Launchers
-  - Reduced max ammo pickup by 20%
-
-*Grenade launchers are a bit too easy to keep topped off, a slight decrease in the maximum ammo pickup should discourage use against single targets.*
 
 - Saws
   - Fixed hardcoded damage increase against Bulldozers
@@ -399,12 +395,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Reload speeds for akimbo weapons seem random and don't really correlate to their single counterparts, in some cases even being faster than the base weapon reload speed.*
 *This change bases reload times on their single counterparts which results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
-
-- Pistols
-  - Fixed ammo pickup for most pistols
-
-*Ammo pickup values for most pistols was lower than intended due to some missing pickup definitions.*
-*Adding the missing definitions should make pistol ammo pickup feel more consistent.*
 
 - Bows
   - Reduced damage by 50%
