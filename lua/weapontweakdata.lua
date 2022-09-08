@@ -2,8 +2,12 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 
 	local FALLOFF_TEMPLATE = WeaponFalloffTemplate.setup_weapon_falloff_templates()
 	local reload_stats = self.stats.reload
-	local akimbo_mappings = self:get_akimbo_mappings()
+	local akimbo_mappings = {}
 	local akimbo_multiplier = 1.5
+
+	for k, v in pairs(self:get_akimbo_mappings()) do
+		akimbo_mappings[v] = k
+	end
 
 	for weap_id, weap_data in pairs(self) do
 		if type(weap_data) == "table" and weap_data.stats then
@@ -43,16 +47,16 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 			end
 
 			-- Tweak akimbo reload speeds
-			if akimbo_mappings[weap_id] then
-				local akimbo_weap_data = self[akimbo_mappings[weap_id]]
-				if akimbo_weap_data and table.contains(akimbo_weap_data.categories, "akimbo") then
-					local akimbo_reload = akimbo_weap_data.timers.reload_empty
-					local reload_target = (weap_data.timers.reload_empty / reload_stats[weap_data.stats.reload]) * akimbo_multiplier
-					local akimbo_reload_stat = 1
-					while akimbo_reload / reload_stats[akimbo_reload_stat] > reload_target and akimbo_reload_stat < #reload_stats do
-						akimbo_reload_stat = akimbo_reload_stat + 1
+			if cat_map.akimbo then
+				local single_weapon_data = self[akimbo_mappings[weap_id]] or self[weap_id:sub(3)]
+				if single_weapon_data then
+					local reload = weap_data.timers.reload_empty
+					local reload_target = (single_weapon_data.timers.reload_empty / reload_stats[single_weapon_data.stats.reload]) * akimbo_multiplier
+					local reload_stat = 1
+					while reload / reload_stats[reload_stat] > reload_target and reload_stat < #reload_stats do
+						reload_stat = reload_stat + 1
 					end
-					akimbo_weap_data.stats.reload = akimbo_reload_stat
+					weap_data.stats.reload = reload_stat
 				end
 			end
 
