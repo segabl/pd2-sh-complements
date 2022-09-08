@@ -63,11 +63,8 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 					ref = ref * 4
 				elseif cat_map.shotgun or cat_map.grenade_launcher then
 					ref = ref * 2
-				elseif cat_map.minigun or cat_map.lmg then
+				elseif weap_data.CLIP_AMMO_MAX >= 100 then
 					ref = ref * 0.75
-				end
-				if cat_map.akimbo then
-					ref = ref * 1.5
 				end
 				weap_data.AMMO_PICKUP = { 20 / ref, 40 / ref }
 			end
