@@ -5,12 +5,17 @@
 
 	<hooks script_path="mod.lua">
 
+		<group hook_id="lib/managers/">
+			<post :hook_id="menu/blackmarketgui"/>
+			<post :hook_id="menu/playerinventorygui"/>
+			<post :hook_id="blackmarketmanager"/>
+		</group>
 		<group hook_id="lib/player_actions/skills/">
 			<post :hook_id="playeractionexperthandling"/>
 			<post :hook_id="playeractiontriggerhappy"/>
 		</group>
 		<group hook_id="lib/tweak_data/">
-			<post :hook_id="blackmarkettweakdata"/>
+			<post :hook_id="blackmarket/meleeweaponstweakdata"/>
 			<post :hook_id="skilltreetweakdata"/>
 			<post :hook_id="upgradestweakdata"/>
 			<post :hook_id="weaponfactorytweakdata"/>

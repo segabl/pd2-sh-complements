@@ -415,3 +415,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Shortly tapping flamethrowers and letting the DoT do the actual damage is not a very fun way to use them.*
 *Moving a majority of the damage to the base damage makes flamethrowers feel more powerful while keeping the same average DPS.*
+
+- Melee
+  - Rebalanced all melee weapons based on speed, concealment and range
+
+*There are only a handful of relevant melee weapons and most of the others are arbitrarily balanced.*
+*Basing the damage and knockdown of melee weapons on their other stats with the Ice Pick as a reference should make the choice of melee weapon more interesting.*
