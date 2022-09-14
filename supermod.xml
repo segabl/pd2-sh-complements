@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <mod name="Streamlined Heisting Complements">
 
-	<tweak definition="effect.xml"/>
-
 	<hooks script_path="mod.lua">
 
 		<group hook_id="lib/managers/">
