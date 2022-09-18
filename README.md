@@ -283,10 +283,10 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Overdog
   - Moved hidden melee damage boost duration from Advanced Close Combat to Overdog
   - Updated description to state the correct damage boost duration
-  - Melee damage boost duration 7s → 4s
+  - Melee damage boost duration 7s → 5s
 
 *Overdog's description incorrectly states the duration of the damage boost only being 1s while Advanced Close Combat increases the duration to 7s.*
-*Reducing the duration to 4s brings it a bit more in line with other damage boosts.*
+*Reducing the duration to 5s brings it a bit more in line with other damage boosts.*
 
 ### Sociopath
 
