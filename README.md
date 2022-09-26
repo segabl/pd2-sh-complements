@@ -379,6 +379,8 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
     - Increased reload speed by 50%
   - Buckshot ammo
     - Now reduces pellet amount by 3
+  - Tombstone slug
+    - Now reduces pellet amount by 3
 
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
 *Restoring the pellet amount to the original values and reducing the amount with buckshot ammo is a quick fix as opposed to rebalancing all shotguns.*
