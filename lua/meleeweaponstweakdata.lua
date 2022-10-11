@@ -41,10 +41,11 @@ Hooks:PostHook(BlackMarketTweakData, "_init_melee_weapons", "shc__init_melee_wea
 		local range = math.map_range(data.stats.range, min_range, max_range, 1, 0)
 		local conceal = math.map_range(data.stats.concealment or 30, min_conceal, max_conceal, 1, 0)
 		local charge_t = data.stats.charge_time or 0
-		local effect_mul = (data.tase_data or data.dot_data) and 0.4 or 1
+		local damage_mul = (data.tase_data or data.dot_data) and 0.4 or 1
+		local effect_mul = (data.tase_data or data.dot_data) and 0.2 or 1
 		local min, max = get_damage(expire, range, conceal, charge_t)
-		data.stats.min_damage = math.round(min * effect_mul, 0.5)
-		data.stats.max_damage = math.round(max * effect_mul, 0.5)
+		data.stats.min_damage = math.round(min * damage_mul, 0.5)
+		data.stats.max_damage = math.round(max * damage_mul, 0.5)
 		data.stats.min_damage_effect = math.round((math.map_range(expire, min_expire, max_expire, 30, 350) + (data.melee_damage_delay or 0) * 350) * effect_mul, 10)
 		data.stats.max_damage_effect = data.stats.min_damage_effect
 		data.stats.remove_weapon_movement_penalty = nil
