@@ -74,7 +74,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Overkill
   - Basic
-    - Duration 20s → 8s
+    - Duration 20s → 10s
 
 *Overkill's duration is way too long for the strong bonus damage it provides.*
 *Reducing the duration will force players to engage with enemies more.*

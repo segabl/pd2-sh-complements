@@ -31,9 +31,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.values.shotgun.steelsight_accuracy_inc[1] = 0.25
 	self.skill_descs.far_away.multibasic = "75%"
 
-	-- Overkill duration (20s -> 8s)
-	self.values.temporary.overkill_damage_multiplier[1][2] = 8
-	self.skill_descs.overkill.multibasic2 = "8"
+	-- Overkill duration (20s -> 10s)
+	self.values.temporary.overkill_damage_multiplier[1][2] = 10
+	self.skill_descs.overkill.multibasic2 = "10"
 
 	-- Bullet Storm duration (20s -> 15s)
 	self.skill_descs.ammo_reservoir.multipro2 = "10"
