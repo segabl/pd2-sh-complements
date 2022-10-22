@@ -65,14 +65,21 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 				local ref = self.stats.damage[math.min(weap_data.stats.damage, #self.stats.damage)] * (weap_data.stats_modifiers and weap_data.stats_modifiers.damage or 1)
 				if cat_map.flamethrower then
 					ref = ref * 4
-				elseif cat_map.shotgun or cat_map.grenade_launcher then
+				elseif cat_map.grenade_launcher then
 					ref = ref * 2
 				elseif cat_map.pistol then
 					ref = ref * 1.5
-				elseif weap_data.CLIP_AMMO_MAX >= 100 then
+				elseif cat_map.lmg or cat_map.minigun or weap_data.CLIP_AMMO_MAX >= 100 then
 					ref = ref * 0.75
 				end
-				weap_data.AMMO_PICKUP = { 20 / ref, 40 / ref }
+				if weap_data.can_shoot_through_shield then
+					ref = ref * 1.5
+				end
+				if weap_data.rays then
+					ref = ref * 2
+				end
+
+				weap_data.AMMO_PICKUP = { 25 / ref, 40 / ref }
 			end
 
 		end
