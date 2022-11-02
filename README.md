@@ -377,13 +377,15 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Double Barrel Shotguns
     - Increased damage by 25%
     - Increased reload speed by 50%
-  - Buckshot ammo
+  - Buckshot
     - Now reduces pellet amount by 3
-  - Tombstone slug
+  - Tombstone Slug
     - Now reduces pellet amount by 3
+  - AP Slug
+    - Accuracy bonus 8 → 24
 
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
-*Restoring the pellet amount to the original values and reducing the amount with buckshot ammo is a quick fix as opposed to rebalancing all shotguns.*
+*Restoring the pellet amount to the original values and rebalancing ammo types should make the choice of ammo more impactful.*
 
 - Saws
   - Fixed hardcoded damage increase against Bulldozers
