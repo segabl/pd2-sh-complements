@@ -9,6 +9,10 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 		akimbo_mappings[v] = k
 	end
 
+	-- Specific weapon changes
+	self.m32.stats.reload = 18
+
+	-- Generic weapon stat changes
 	for weap_id, weap_data in pairs(self) do
 		if type(weap_data) == "table" and weap_data.stats then
 

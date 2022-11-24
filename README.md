@@ -414,6 +414,13 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Similar to bows, crossbows are not that fun to use, adding armor piercing should make them feel better.*
 
+- Grenade Launchers
+  - Reduced overall ammo pickup
+  - Piglet
+    - Increased reload speed by 70%
+
+*Reducing the overall ammo pickup of grenade launchers in favour of more consistent pickup should make them feel like less of a gamble to use.*
+
 - Flamethrowers
   - Moved 70% of DoT damage to base damage
 
