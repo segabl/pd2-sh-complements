@@ -2,9 +2,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 
 	-- SKILLS
 
-	-- Combat Medic revive health multiplier (30% -> 50%)
-	self.revive_health_multiplier[1] = 1.5
-	self.skill_descs.combat_medic.multipro = "50%"
+	-- Combat Medic revive health multiplier (30% -> 60%)
+	self.revive_health_multiplier[1] = 1.6
+	self.skill_descs.combat_medic.multipro = "60%"
 
 	-- Inspire cooldown (20s -> 40s)
 	self.values.cooldown.long_dis_revive[1][2] = 40
@@ -49,9 +49,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	-- Eco Sentry cost reduction (5% -> 10%)
 	self.skill_descs.eco_sentry.multibasic = "10%"
 
-	-- Hardware Expert restart chance (10% -> 20%)
-	self.values.player.drill_autorepair_1[1] = 0.2
-	self.skill_descs.hardware_expert.multipro3 = "20%"
+	-- Hardware Expert restart chance (10% -> 30%)
+	self.values.player.drill_autorepair_1[1] = 0.3
+	self.skill_descs.hardware_expert.multipro3 = "30%"
 
 	-- More Firepower shaped charges (1 -> 2 / 2 -> 3)
 	self.values.shape_charge.quantity[1] = 2
@@ -109,6 +109,10 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	-- Nine Lives bleed out health increase (50% -> 100%)
 	self.values.player.bleed_out_health_multiplier[1] = 2
 	self.skill_descs.nine_lives.multibasic2 = "100%"
+
+	-- Up you go revive health (40% -> 100%)
+	self.values.player.revived_health_regain[1] = 2
+	self.skill_descs.up_you_go.multipro = "100%"
 
 	-- Bloodthirst (50% for 10s -> 30% for 4s / 100% up to 1600% -> 50% up to 800%)
 	self.values.player.melee_damage_stacking[1].max_multiplier = 8
