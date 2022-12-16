@@ -187,3 +187,15 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.weapon_movement_penalty.minigun = 0.85
 
 end)
+
+
+-- Fix Copycat perk descriptions
+local mrwi_deck9_options_original = UpgradesTweakData.mrwi_deck9_options
+function UpgradesTweakData.mrwi_deck9_options(...)
+	local options = mrwi_deck9_options_original(...)
+
+	-- Burglar
+	options[7].custom_editable_descs[3] = "20%"
+
+	return options
+end
