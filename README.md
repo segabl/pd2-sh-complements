@@ -99,10 +99,10 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Fully Loaded
   - Ace
-    - Throwable pickup chance increase 1% → 10%
+    - Throwable pickup chance increases additively now
 
-*The chance increase is multiplied with the base chance instead of added, which makes it completely negligible as it takes 70 ammo pickups to even reach 10% chance.*
-*With a higher chance increase reaching more meaningful chance numbers will be possible.*
+*The chance increase was multiplied with the base chance instead of added, which made it completely negligible as it took 70 ammo pickups to even reach 10% chance.*
+*With an additive chance increase reaching more meaningful chance numbers will be possible.*
 
 ### Technician
 
