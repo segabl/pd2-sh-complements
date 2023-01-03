@@ -428,10 +428,12 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Reducing the overall ammo pickup of grenade launchers in favour of more consistent pickup should make them feel like less of a gamble to use.*
 
 - Flamethrowers
-  - Moved 70% of DoT damage to base damage
+  - Reduced DoT damage by 50%
+  - Reduced DoT chance by 50%
+  - Increased base damage by 250%
 
 *Shortly tapping flamethrowers and letting the DoT do the actual damage is not a very fun way to use them.*
-*Moving a majority of the damage to the base damage makes flamethrowers feel more powerful while keeping the same average DPS.*
+*Moving some of the damage to the base damage makes them feel more fun to use and slightly less niche.*
 
 - Melee
   - Rebalanced all melee weapons based on speed, concealment and range

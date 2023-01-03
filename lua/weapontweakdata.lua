@@ -42,13 +42,9 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 				end
 			elseif cat_map.flamethrower and weap_data.fire_dot_data then
 				-- Move some DOT damage to base damage
-				local fire_dot_data = weap_data.fire_dot_data
-				local fire_dot_damage = fire_dot_data.dot_damage
-				local fire_dot_chance = fire_dot_data.dot_trigger_chance / 100
-				fire_dot_data.dot_damage = fire_dot_damage * 0.3
-				local base_damage_add = (fire_dot_damage / fire_dot_data.dot_tick_period * 0.7 * fire_dot_chance) * weap_data.auto.fire_rate
-				weap_data.stats_modifiers = weap_data.stats_modifiers or {}
-				weap_data.stats_modifiers.damage = (weap_data.stats.damage + base_damage_add) / weap_data.stats.damage
+				weap_data.fire_dot_data.dot_trigger_chance = weap_data.fire_dot_data.dot_trigger_chance * 0.5
+				weap_data.fire_dot_data.dot_damage = weap_data.fire_dot_data.dot_damage * 0.5
+				weap_data.stats.damage = math.ceil(weap_data.stats.damage * 2.5)
 			end
 
 			-- Tweak akimbo reload speeds
