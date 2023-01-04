@@ -10,10 +10,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Combat Medic
   - Ace
-    - Revive health increase 30% → 60%
+    - Changed revive health increase to be additive
+    - Revive health increase 30% → 15%
 
-*Since this percentage is multiplied with the revive health percentage, the ace version of this skill was not doing much at high difficulties.*
-*While bumping the numbers will not increase revive health notably, it will slightly counterbalance the general revive health reduction.*
+*Since this percentage was multiplied with the revive health percentage, the ace version of this skill was not doing much at high difficulties.*
+*Changing it to add to the revive health percentage and in turn reducing the amount will make it much more useful on higher difficulties.*
 
 - Inspire
   - Ace

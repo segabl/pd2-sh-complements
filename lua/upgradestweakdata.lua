@@ -2,9 +2,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 
 	-- SKILLS
 
-	-- Combat Medic revive health multiplier (30% -> 60%)
-	self.revive_health_multiplier[1] = 1.6
-	self.skill_descs.combat_medic.multipro = "60%"
+	-- Combat Medic revive health multiplier (30% -> 15%)
+	self.revive_health_multiplier[1] = 1.15
+	self.skill_descs.combat_medic.multipro = "15%"
 
 	-- Inspire cooldown (20s -> 40s)
 	self.values.cooldown.long_dis_revive[1][2] = 40
