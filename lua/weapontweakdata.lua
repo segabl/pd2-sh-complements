@@ -9,8 +9,12 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 		akimbo_mappings[v] = k
 	end
 
-	-- Specific weapon changes
+	-- Piglet reload speed
 	self.m32.stats.reload = 18
+
+	-- Aran fire rate/reload fix
+	self.contender.timers.reload_empty = 1.7
+	self.contender.fire_mode_data.fire_rate = 0.5
 
 	-- Generic weapon stat changes
 	for weap_id, weap_data in pairs(self) do
