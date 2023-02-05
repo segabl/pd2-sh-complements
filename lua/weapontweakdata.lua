@@ -69,7 +69,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 			if weap_data.AMMO_PICKUP and weap_data.AMMO_PICKUP[2] > 0 then
 				local ref = self.stats.damage[math.min(weap_data.stats.damage, #self.stats.damage)] * (weap_data.stats_modifiers and weap_data.stats_modifiers.damage or 1)
 				if cat_map.flamethrower then
-					ref = ref * 4
+					ref = ref * 3
 				elseif cat_map.grenade_launcher then
 					ref = ref * 2
 				elseif cat_map.pistol then
