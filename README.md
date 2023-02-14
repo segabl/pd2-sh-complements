@@ -182,14 +182,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Optical Illusions is a niche skill but it provides slightly too much value when it's used with Jokers.*
 
-- Low Blow
-  - Changed crit damage multiplier to a static 3x multiplier
-
-*The crit damage multiplier uses the headshot multiplier, which made crits a bit too effective against enemies like Bulldozers and Cloakers.*
-*Making the multiplier static will keep their strength against regular units but slightly nerf them against enemies with high headshot multipliers*
-
 - Unseen Strike
-  - Changed crit damage multiplier to a static 3x multiplier
   - Basic
     - Crit duration 6s → 4s
   - Ace
