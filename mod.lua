@@ -8,20 +8,15 @@ if not StreamHeistComplements then
 
 		local function swap_tier_descriptions(desc_id)
 			local basic, basic_desc, pro, pro_desc = loc:text(desc_id):match("(.-\n)(.+)\n\n(.-\n)(.+)")
-			loc:add_localized_strings({ [desc_id] = tostring(basic) .. tostring(pro_desc) .. "\n\n" .. tostring(pro) .. tostring(basic_desc) })
+			return tostring(basic) .. tostring(pro_desc) .. "\n\n" .. tostring(pro) .. tostring(basic_desc)
 		end
 
-		-- Swap basic and pro description of Far Away
-		swap_tier_descriptions("menu_far_away_beta_desc")
-
-		-- Trigger happy pro description
-		local basic, basic_desc, pro = loc:text("menu_trigger_happy_beta_desc"):match("(.-\n)(.+)\n\n(.-\n)")
-		loc:add_localized_strings({ menu_trigger_happy_beta_desc = basic .. basic_desc .. "\n\n" .. pro .. basic_desc:gsub("multibasic", "multipro") })
-
-		-- Swap basic and pro description of Bloodthirst
-		swap_tier_descriptions("menu_bloodthirst_desc")
-
+		local th_basic, th_basic_desc, th_pro = loc:text("menu_trigger_happy_beta_desc"):match("(.-\n)(.+)\n\n(.-\n)")
 		loc:add_localized_strings({
+			menu_single_shot_ammo_return_beta_desc = loc:text("menu_single_shot_ammo_return_beta_desc"):gsub("bullet", "bullets"),
+			menu_far_away_beta_desc = swap_tier_descriptions("menu_far_away_beta_desc"),
+			menu_trigger_happy_beta_desc = th_basic .. th_basic_desc .. "\n\n" .. th_pro .. th_basic_desc:gsub("multibasic", "multipro"),
+			menu_bloodthirst_desc = swap_tier_descriptions("menu_bloodthirst_desc"),
 			-- Restore Sociopath first perk name
 			menu_deck9_1 = "No Talk",
 			-- Remove dodge bonus description from Hacker - Botnet

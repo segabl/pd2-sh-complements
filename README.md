@@ -55,6 +55,13 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 #### Sharpshooter
 
+- Ammo Efficiency
+  - Basic
+    - Ammo return 1 → 2
+
+*This skill doesn't really feel impactful, shooting enemies at long range is usually still a net loss of ammo.*
+*Increasing the ammo return allows gaining all ammo spent back when played optimally which should make it feel more rewarding.*
+
 - Aggressive Reload
   - Ace
     - Reload speed increase 100% → 75%

@@ -23,6 +23,11 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.values.player.passive_convert_enemies_health_multiplier[2] = 0.05
 	self.skill_descs.control_freak.multipro4 = "50%"
 
+	-- Ammo Efficiency (1 bullet -> 2 bullets)
+	self.values.player.head_shot_ammo_return[1].ammo = 2
+	self.values.player.head_shot_ammo_return[2].ammo = 2
+	self.skill_descs.spotter_teamwork.multibasic3 = "2"
+
 	-- Aggressive Reload (100% -> 75%)
 	self.values.temporary.single_shot_fast_reload[1][1] = 1.75
 	self.skill_descs.speedy_reload.multipro = "75%"
