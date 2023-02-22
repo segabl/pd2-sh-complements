@@ -105,13 +105,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Saw Massacre is a useless skill and 50% reduced wear is not enough to make the saw a viable weapon against enemies.*
 *Decreasing the wear further will make it more viable at least in some cases.*
 
-- Fully Loaded
-  - Ace
-    - Throwable pickup chance increases additively now
-
-*The chance increase was multiplied with the base chance instead of added, which made it completely negligible as it took 70 ammo pickups to even reach 10% chance.*
-*With an additive chance increase reaching more meaningful chance numbers will be possible.*
-
 ### Technician
 
 #### Engineer
@@ -359,12 +352,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - All weapons
   - Removed aim assist
-  - Reworked and rebalanced ammo pickup
+  - Rebalanced ammo pickup
 
 *There is a form of aim assist that makes you more likely to hit a target the longer you shoot at it while missing.*
 *Removing this aim assist will make it harder to hit enemies at distance with low accuracy weapons.*
-*Ammo pickup is highly inconsistent since fractional parts of ammo pickup are just discarded.*
-*Adding any fractional leftovers to the next ammo pickup will guarantee a pickup at some point no matter how low the pickup rate.*
+*Ammo pickup has been rebalanced based on damage instead of total ammo.*
 
 - LMGs
   - Added 15% reduced movement speed penalty

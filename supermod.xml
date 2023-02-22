@@ -10,7 +10,6 @@
 		</group>
 		<group hook_id="lib/player_actions/skills/">
 			<post :hook_id="playeractionexperthandling"/>
-			<post :hook_id="playeractionfullyloaded"/>
 			<post :hook_id="playeractiontriggerhappy"/>
 		</group>
 		<group hook_id="lib/tweak_data/">
