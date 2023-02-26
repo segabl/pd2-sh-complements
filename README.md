@@ -386,18 +386,24 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
 *Restoring the pellet amount to the original values and rebalancing ammo types should make the choice of ammo more impactful.*
 
-- Saws
-  - Fixed hardcoded damage increase against Bulldozers
-  - Made damage against Bulldozers multiply base damage instead of a fixed number
+- Snipers
+  - Rebalanced total ammo
 
-*Saws have a hidden damage increase against Bulldozers but the list for the affected enemies is hardcoded so it only applies to the regular Bulldozer variants.*
-*Changing it to check for the "tank" tag instead of the hardcoded list will make it affect every Bulldozer.*
+*Snipers have varying ammo pools though vanilla balancing suggests they are all intended to have around the same pool.*
+*Rebalancing the values makes the choice of sniper rifle depend less on total ammo pool.*
 
 - Akimbo
   - Set reload speed to roughly 75% of their single weapon counterparts
 
 *Reload speeds for akimbo weapons seem random and don't really correlate to their single counterparts, in some cases even being faster than the base weapon reload speed.*
 *This change bases reload times on their single counterparts which results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
+
+- Saws
+  - Fixed hardcoded damage increase against Bulldozers
+  - Made damage against Bulldozers multiply base damage instead of a fixed number
+
+*Saws have a hidden damage increase against Bulldozers but the list for the affected enemies is hardcoded so it only applies to the regular Bulldozer variants.*
+*Changing it to check for the "tank" tag instead of the hardcoded list will make it affect every Bulldozer.*
 
 - Bows
   - Reduced damage by 50%

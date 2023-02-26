@@ -21,7 +21,11 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 		if type(weap_data) == "table" and weap_data.stats then
 
 			local cat_map = table.list_to_set(weap_data.categories)
-			if cat_map.bow then
+			if cat_map.snp then
+				local total_ammo_reference = weap_data.use_data.selection_index == 2 and 30 or 20
+				weap_data.NR_CLIPS_MAX = math.ceil(total_ammo_reference / weap_data.CLIP_AMMO_MAX)
+				weap_data.AMMO_MAX = weap_data.CLIP_AMMO_MAX * weap_data.NR_CLIPS_MAX
+			elseif cat_map.bow then
 				-- Add armor piercing to bows, reduce bow damage in exchange for being able to fire quick shots
 				weap_data.stats.reload = 21
 				weap_data.stats_modifiers = weap_data.stats_modifiers or {}
@@ -66,7 +70,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 			end
 
 			-- Tweak pickup values based on damage and category
-			if weap_data.AMMO_PICKUP and weap_data.AMMO_PICKUP[2] > 0 then
+			if weap_data.AMMO_PICKUP and not cat_map.saw and not cat_map.bow and not cat_map.crossbow then
 				local ref = self.stats.damage[math.min(weap_data.stats.damage, #self.stats.damage)] * (weap_data.stats_modifiers and weap_data.stats_modifiers.damage or 1)
 				if cat_map.flamethrower then
 					ref = ref * 3
@@ -75,7 +79,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 				elseif cat_map.pistol then
 					ref = ref * 1.5
 				elseif cat_map.lmg or cat_map.minigun or weap_data.CLIP_AMMO_MAX >= 100 then
-					ref = ref * 0.75
+					ref = ref * 0.5
 				end
 				if weap_data.can_shoot_through_shield then
 					ref = ref * 1.5
