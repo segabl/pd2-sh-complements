@@ -1,7 +1,8 @@
 if not StreamHeistComplements then
 
 	StreamHeistComplements = {
-		mod_path = ModPath
+		mod_path = ModPath,
+		required = {}
 	}
 
 	Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitStreamlinedHeistingComplements", function (loc)
@@ -27,14 +28,13 @@ if not StreamHeistComplements then
 
 end
 
-local required = {}
-if RequiredScript and not required[RequiredScript] then
+if RequiredScript and not StreamHeistComplements.required[RequiredScript] then
 
 	local fname = StreamHeistComplements.mod_path .. RequiredScript:gsub(".+/(.+)", "lua/%1.lua")
 	if io.file_is_readable(fname) then
 		dofile(fname)
 	end
 
-	required[RequiredScript] = true
+	StreamHeistComplements.required[RequiredScript] = true
 
 end
