@@ -188,7 +188,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Ace
     - Crit duration 18s → 12s
 
-*The duration for crits is a bit too long, given that part of the skill's description is wrong and you do not lose the bonus on getting hit.*
+*The duration for crits seems a bit too long since you do not lose the bonus on getting hit.*
 
 ### Fugitive
 
@@ -281,12 +281,10 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 ### Infiltrator
 
 - Overdog
-  - Moved hidden melee damage boost duration from Advanced Close Combat to Overdog
-  - Updated description to state the correct damage boost duration
   - Melee damage boost duration 7s → 5s
 
-*Overdog's description incorrectly states the duration of the damage boost only being 1s while Advanced Close Combat increases the duration to 7s.*
-*Reducing the duration to 5s brings it a bit more in line with other damage boosts.*
+*Overdog's increased damage boost duration seems a bit too high when compared to other damage boosts.*
+*Reducing the duration brings it a bit more in line with other damage boosts.*
 
 ### Sociopath
 
@@ -294,7 +292,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Renamed back to "No Talk"
   - Added melee damage boost duration upgrade
 
-*When Infiltrator got the hidden melee damage boost duration upgrade, Sociopath was left out and still has only 1s, which is not enough for slower melee weapons.*
+*When Infiltrator got the melee damage boost duration upgrade, Sociopath was left out and still has only 1s, which is not enough for slower melee weapons.*
 *Adding the same duration increase as in Infiltrator should make all melee weapons useful with Sociopath.*
 
 ### Gambler
@@ -421,8 +419,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Grenade Launchers
   - Reduced overall ammo pickup
-  - Piglet
-    - Increased reload speed by 70%
 
 *Reducing the overall ammo pickup of grenade launchers in favour of more consistent pickup should make them feel like less of a gamble to use.*
 

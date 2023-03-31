@@ -144,11 +144,11 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.values.player.alarm_pager_speed_multiplier[1] = 0.8
 	self.specialization_descs[7][7].multiperk3 = "20%"
 
-	-- Infiltrator - Overdog damage boost duration (7s -> 5s)
+	-- Infiltrator - Advanced close combat damage boost duration (7s -> 5s)
 	self.values.melee.stacking_hit_expire_t[1] = 5
-	self.specialization_descs[8][1].multiperk2 = "5"
+	self.specialization_descs[8][5].multiperk2 = "5"
 
-	-- Sociopath - Overdog state correct damage boost duration
+	-- Sociopath - No Talk state correct damage boost duration
 	self.specialization_descs[9][1].multiperk2 = "5"
 
 	-- Gambler - Medical Supplies cooldown (3s -> 2s)

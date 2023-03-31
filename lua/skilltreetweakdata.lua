@@ -19,10 +19,6 @@ Hooks:PostHook(SkillTreeTweakData, "init", "shc_init", function (self)
 	self.trees[15].tiers[3][2] = "frenzy"
 	self.trees[15].tiers[4][1] = "wolverine"
 
-	-- Move melee damage boost duration to first perk of Infiltrator
-	table.delete(self.specializations[8][5].upgrades, "melee_stacking_hit_expire_t")
-	table.insert(self.specializations[8][1].upgrades, "melee_stacking_hit_expire_t")
-
 	-- Add melee damage boost duriation to first perk of Sociopath
 	table.insert(self.specializations[9][1].upgrades, "melee_stacking_hit_expire_t")
 
