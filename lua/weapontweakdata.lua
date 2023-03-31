@@ -12,9 +12,17 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 	-- Piglet reload speed
 	self.m32.stats.reload = 18
 
+	-- Compact 40 reload timer
+	self.slap.timers.reload_empty = 3.1
+	self.slap.timers.reload_not_empty = 3.1
+
 	-- Aran fire rate/reload fix
 	self.contender.timers.reload_empty = 1.7
+	self.contender.timers.reload_not_empty = 1.7
+	self.contender.timers.reload_steelsight = 1.7
+	self.contender.timers.reload_steelsight_not_empty = 1.7
 	self.contender.fire_mode_data.fire_rate = 0.5
+	self.contender.single.fire_rate = 0.5
 
 	-- Generic weapon stat changes
 	for weap_id, weap_data in pairs(self) do
