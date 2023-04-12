@@ -17,6 +17,7 @@
 			<post :hook_id="skilltreetweakdata"/>
 			<post :hook_id="upgradestweakdata"/>
 			<post :hook_id="weaponfactorytweakdata"/>
+			<post :hook_id="weaponfallofftweakdata"/>
 			<post :hook_id="weapontweakdata"/>
 		</group>
 		<group hook_id="lib/units/">
