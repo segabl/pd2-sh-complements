@@ -63,7 +63,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 				weap_data.stats.damage = math.ceil(weap_data.stats.damage * 2.5)
 			end
 
-			-- Tweak akimbo reload speeds
+			-- Tweak akimbo reload speeds and total ammo
 			if cat_map.akimbo then
 				local single_weapon_data = self[akimbo_mappings[weap_id]] or self[weap_id:sub(3)]
 				if single_weapon_data then
@@ -74,6 +74,8 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 						reload_stat = reload_stat + 1
 					end
 					weap_data.stats.reload = reload_stat
+					weap_data.NR_CLIPS_MAX = single_weapon_data.NR_CLIPS_MAX + 1
+					weap_data.AMMO_MAX = weap_data.CLIP_AMMO_MAX * weap_data.NR_CLIPS_MAX * 0.5
 				end
 			end
 

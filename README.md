@@ -391,10 +391,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Rebalancing the values makes the choice of sniper rifle depend less on total ammo pool.*
 
 - Akimbo
-  - Set reload speed to roughly 75% of their single weapon counterparts
+  - Set reload speed to roughly 75% of their single variants
+  - Set total ammo to their single variants plus one extra magazine
 
-*Reload speeds for akimbo weapons seem random and don't really correlate to their single counterparts, in some cases even being faster than the base weapon reload speed.*
-*This change bases reload times on their single counterparts which results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
+*Certain akimbo weapon stats seem random and inconsistent when compared to their single weapon counterparts.*
+*Basing the inconsistent stats on their single variants results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
 
 - Saws
   - Fixed hardcoded damage increase against Bulldozers
