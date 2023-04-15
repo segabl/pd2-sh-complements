@@ -80,8 +80,10 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 			end
 
 			-- Tweak pickup values based on damage and category
-			if weap_data.AMMO_PICKUP and not cat_map.saw and not cat_map.bow and not cat_map.crossbow then
+			if weap_data.AMMO_PICKUP and weap_data.AMMO_PICKUP[2] > 0 then
 				local ref = self.stats.damage[math.min(weap_data.stats.damage, #self.stats.damage)] * (weap_data.stats_modifiers and weap_data.stats_modifiers.damage or 1)
+				ref = ref ^ 1.2
+
 				if cat_map.flamethrower then
 					ref = ref * 3
 				elseif cat_map.grenade_launcher then
@@ -98,7 +100,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 					ref = ref * 2
 				end
 
-				weap_data.AMMO_PICKUP = { 25 / ref, 40 / ref }
+				weap_data.AMMO_PICKUP = { 35 / ref, 70 / ref }
 			end
 
 		end

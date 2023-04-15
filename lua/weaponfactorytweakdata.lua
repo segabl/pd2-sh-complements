@@ -13,8 +13,8 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_ammunition", "shc_create_ammuniti
 	self.parts.wpn_fps_ammo_type.custom_stats.ammo_pickup_max_mul = 0.5
 	self.parts.wpn_fps_ammo_type.custom_stats.ammo_pickup_min_mul = 0.5
 
-	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_max_mul = 2
-	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_min_mul = 2
+	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_max_mul = 1.5
+	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_min_mul = 1.5
 
 	self.parts.wpn_fps_ass_g3_b_short.custom_stats.ammo_pickup_max_mul = 2
 	self.parts.wpn_fps_ass_g3_b_short.custom_stats.ammo_pickup_min_mul = 2
