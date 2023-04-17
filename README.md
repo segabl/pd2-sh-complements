@@ -77,7 +77,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Ace
     - Steelsight accuracy increase 40% → 75%
 
-*While one might want to increase the effective range of shotguns, increased accuracy might not always desireable.*
+*While one might want to increase the effective range of shotguns, increased accuracy might not always be desireable.*
 *Swapping basic and ace allows for increasing shotgun range without messing with accuracy and buffing the accuracy bonus makes it a more useful pick.*
 
 - Overkill
@@ -178,7 +178,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Optical Illusions
   - Basic
-    - Trageting chance decrease 35% → 20%
+    - Targeting chance decrease 35% → 20%
 
 *Optical Illusions is a niche skill but it provides slightly too much value when it's used with Jokers.*
 
@@ -228,7 +228,8 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Ace
     - Revive health increase 40% → 100%
 
-*See notes on Combat Medic.*
+*Since this is a multiplier to the health you get on being revived, it did almost nothing on higher difficulties.*
+*Increasing it will give you double the revive health which should make it more useful.*
 
 #### Brawler
 
@@ -378,11 +379,16 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
     - Now reduces pellet amount by 3
   - Tombstone Slug
     - Now reduces pellet amount by 3
+    - Stun chance 100% → 25%
+    - DoT damage 120 → 40
+    - DoT duration 5s → 10s
   - AP Slug
     - Accuracy bonus 8 → 24
+  - Dragon's Breath Round
+    - Removed damage penalty
 
-*Shotgun pellet amount was changed for "optimization", without touching shotgun balance at all.*
-*Restoring the pellet amount to the original values and rebalancing ammo types should make the choice of ammo more impactful.*
+*Some shotgun ammo types are clearly superior with no downsides while others struggle to be useful.*
+*Adding downsides to the ones that are just free damage and buffing less used ones should make the choice of ammo more impactful.*
 
 - Snipers
   - Rebalanced total ammo
@@ -417,11 +423,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Added innate armor piercing
 
 *Similar to bows, crossbows are not that fun to use, adding armor piercing should make them feel better.*
-
-- Grenade Launchers
-  - Reduced overall ammo pickup
-
-*Reducing the overall ammo pickup of grenade launchers in favour of more consistent pickup should make them feel like less of a gamble to use.*
 
 - Flamethrowers
   - Reduced DoT damage by 50%
