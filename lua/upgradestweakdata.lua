@@ -181,6 +181,11 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.specialization_descs[22][5].multiperk3 = "6%"
 	self.specialization_descs[22][9].multiperk = "6.25%"
 
+	-- Copycat - Instant swap duration (3 -> 6)
+	self.values.weapon.primary_reload_swap_secondary[1] = 6
+	self.values.weapon.secondary_reload_swap_primary[1] = 6
+	self.specialization_descs[23][1].multiperk2 = "6"
+
 	-- WEAPONS
 
 	-- Movement speed penalty for lmgs and miniguns

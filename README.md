@@ -345,6 +345,14 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Leech depends heavily on vanilla values of grace period and enemy firing behaviour and as such falls off with lower grace period and enemies firing in full auto.*
 *Increasing the number of health segments should improve survivability, while lowering the healing amount keeps the total amount of healing similar to vanilla.*
 
+### Copycat
+
+- Tactical Reload
+  - Instant swap duration 3s → 6s
+
+*The recent change made to the swapping mechanic leaves a little too short of a time window to swap weapons, especially if you don't immediately notice it is available.*
+*Increasing the duration the bonus is available makes it more accessible without being broken since the effect is cleared on swap anyways.*
+
 ## General changes
 
 ### Weapons
