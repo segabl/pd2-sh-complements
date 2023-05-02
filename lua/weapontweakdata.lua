@@ -31,7 +31,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 			local cat_map = table.list_to_set(weap_data.categories)
 			if cat_map.snp then
 				local total_ammo_reference = weap_data.use_data.selection_index == 2 and 30 or 20
-				weap_data.NR_CLIPS_MAX = math.ceil(total_ammo_reference / weap_data.CLIP_AMMO_MAX)
+				weap_data.NR_CLIPS_MAX = math.max(2, math.floor(total_ammo_reference / weap_data.CLIP_AMMO_MAX))
 				weap_data.AMMO_MAX = weap_data.CLIP_AMMO_MAX * weap_data.NR_CLIPS_MAX
 			elseif cat_map.bow then
 				-- Add armor piercing to bows, reduce bow damage in exchange for being able to fire quick shots
