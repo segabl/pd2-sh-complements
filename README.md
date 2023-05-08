@@ -348,10 +348,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 ### Copycat
 
 - Tactical Reload
-  - Instant swap duration 3s → 6s
+  - Changed instant swap back to increased swap speed
+  - Swap speed duration 3s → 10s
 
-*The recent change made to the swapping mechanic leaves a little too short of a time window to swap weapons, especially if you don't immediately notice it is available.*
-*Increasing the duration the bonus is available makes it more accessible without being broken since the effect is cleared on swap anyways.*
+*The change made to the swapping mechanic leaves a little too short of a time window to swap weapons and also tends to bug out in various situations.*
+*Increasing the duration the bonus is available and changing it back to a swap speed increase makes it more accessible and less prone to bugs.*
 
 ## General changes
 

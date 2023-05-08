@@ -181,10 +181,11 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.specialization_descs[22][5].multiperk3 = "6%"
 	self.specialization_descs[22][9].multiperk = "6.25%"
 
-	-- Copycat - Instant swap duration (3 -> 6)
-	self.values.weapon.primary_reload_swap_secondary[1] = 6
-	self.values.weapon.secondary_reload_swap_primary[1] = 6
-	self.specialization_descs[23][1].multiperk2 = "6"
+	-- Copycat - Instant swap duration (3 -> 10), instant swap revert
+	self.values.weapon.mrwi_swap_speed_multiplier[1] = 5
+	self.values.weapon.primary_reload_swap_secondary[1] = 10
+	self.values.weapon.secondary_reload_swap_primary[1] = 10
+	self.specialization_descs[23][1].multiperk2 = "10"
 
 	-- WEAPONS
 
