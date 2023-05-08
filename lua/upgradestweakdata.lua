@@ -115,21 +115,13 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.values.player.revived_health_regain[1] = 2
 	self.skill_descs.up_you_go.multipro = "100%"
 
-	-- Bloodthirst (50% for 10s -> 30% for 4s / 100% up to 1600% -> 50% up to 800%)
+	-- Bloodthirst (10s -> 5s / 100% up to 1600% -> 50% up to 800%)
 	self.values.player.melee_damage_stacking[1].max_multiplier = 8
 	self.values.player.melee_damage_stacking[1].melee_multiplier = 0.5
-	self.values.player.melee_kill_increase_reload_speed[1][1] = 1.3
-	self.values.player.melee_kill_increase_reload_speed[1][2] = 4
+	self.values.player.melee_kill_increase_reload_speed[1][2] = 5
 	self.skill_descs.bloodthirst.multibasic = "50%"
 	self.skill_descs.bloodthirst.multibasic2 = "800%"
-	self.skill_descs.bloodthirst.multipro = "30%"
-	self.skill_descs.bloodthirst.multipro2 = "4"
-
-	-- Pumping Iron (100% -> 200% / 100% -> 150%)
-	self.values.player.non_special_melee_multiplier[1] = 3
-	self.values.player.melee_damage_multiplier[1] = 2.5
-	self.skill_descs.steroids.multibasic = "200%"
-	self.skill_descs.steroids.multipro = "150%"
+	self.skill_descs.bloodthirst.multipro2 = "5"
 
 
 	-- PERK DECKS

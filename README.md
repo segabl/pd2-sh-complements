@@ -236,21 +236,12 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Bloodthirst
   - Basic and Ace skill swapped
   - Basic
-    - Reload speed increase 50% for 10s → 30% for 4s
+    - Reload speed duration 10s → 5s
   - Ace
     - Damage increase +100% up to 1600% → +50% up to 800%
 
 *Bloodthirst provides a way too strong bonus for a basic skill that involves no effort to gain as the requirement for it is something you do anyways.*
 *Swapping the basic and ace version and reducing the numbers should bring this skill more in line.*
-
-- Pumping Iron
-  - Basic
-    - Damage increase 100% → 200%
-  - Ace
-    - Damage increase 100% → 150%
-
-*Pumping Iron could do with a little numbers increase, especially with Bloodthirst nerfed.*
-*Increasing the damage will make it possible to reach similar damage numbers against non specials in combination with Bloodthirst.*
 
 - Berserker
   - Swapped with Frenzy
@@ -443,6 +434,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Melee
   - Rebalanced all melee weapons based on speed, concealment and range
+  - Reduced charge time by 50%
 
 *There are only a handful of relevant melee weapons and most of the others are arbitrarily balanced.*
 *Basing the damage and knockdown of melee weapons on their other stats with the Ice Pick as a reference should make the choice of melee weapon more interesting.*
