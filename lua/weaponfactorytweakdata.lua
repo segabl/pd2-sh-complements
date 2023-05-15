@@ -36,6 +36,9 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_ammunition", "shc_create_ammuniti
 	self.parts.wpn_fps_ass_shak12_body_vks.custom_stats.ammo_pickup_max_mul = 0.5
 	self.parts.wpn_fps_ass_shak12_body_vks.custom_stats.ammo_pickup_min_mul = 0.5
 
+	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.ammo_pickup_max_mul = 2.5
+	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.ammo_pickup_min_mul = 2.5
+
 	-- Comando 553
 	self.parts.wpn_fps_ass_s552_fg_standard_green.stats.spread = 5
 	self.parts.wpn_fps_ass_s552_fg_standard_green.stats.spread_moving = 5
