@@ -20,6 +20,8 @@ if not StreamHeistComplements then
 			menu_bloodthirst_desc = swap_tier_descriptions("menu_bloodthirst_desc"),
 			-- Restore Sociopath first perk name
 			menu_deck9_1 = "No Talk",
+			-- Remove cooldown text from Gambler - Ammo Give Out
+			menu_deck10_3_desc = loc:text("menu_deck10_3_desc"):gsub("\n.-%$multiperk2[^\n]+", ""),
 			-- Remove dodge bonus description from Hacker - Botnet
 			menu_deck21_9_desc = loc:text("menu_deck21_9_desc"):gsub("[^%.\n]+%$multiperk2[^\n]+", "")
 		})

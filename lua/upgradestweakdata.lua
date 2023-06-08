@@ -153,9 +153,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	end
 	self.specialization_descs[10][1].multiperk3 = "2"
 
-	-- Gambler - Ammo Give Out cooldown (5s -> 3s)
-	self.values.temporary.loose_ammo_give_team[1][2] = 3
-	self.specialization_descs[10][3].multiperk2 = "3"
+	-- Gambler - Ammo Give Out remove cooldown
+	self.values.temporary.loose_ammo_give_team[1][2] = 0
+	self.specialization_descs[10][3].multiperk2 = "0"
 
 	-- Anarchist - Lust for Life amount (30 -> 20)
 	for _, v in pairs(self.values.player.damage_to_armor[1]) do

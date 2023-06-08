@@ -293,7 +293,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Cooldown 3s → 2s
 
 - Ammo Give Out
-  - Cooldown 5s → 3s
+  - Removed cooldown
 
 *As a team oriented deck, Gambler needs some tweaks to its cooldowns for health and ammo restore to make it more useful.*
 
