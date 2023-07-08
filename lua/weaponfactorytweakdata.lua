@@ -51,4 +51,9 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_ammunition", "shc_create_ammuniti
 	self.parts.wpn_fps_shot_r870_fg_wood.stats.concealment = -1
 	self.parts.wpn_fps_shot_r870_fg_wood.stats.recoil = nil
 
+	-- Campbell 74
+	self.parts.wpn_fps_lmg_kacchainsaw_sling.stats.recoil = 2
+	self.parts.wpn_fps_lmg_kacchainsaw_sling.stats.spread = nil
+	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.fire_rate_multiplier = 1.6
+
 end)
