@@ -121,6 +121,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Hardware Expert
   - Changed drill auto restart chance to trigger everytime the drill breaks instead of on drill placement
   - Auto restart delay 5-20s → 3-8s
+  - Drill upgrade duration 10s → 5s
   - Ace
     - Auto restart chance 10% → 30%
 

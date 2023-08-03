@@ -15,6 +15,7 @@
 		</group>
 		<group hook_id="lib/tweak_data/">
 			<post :hook_id="blackmarket/meleeweaponstweakdata"/>
+			<post :hook_id="interactiontweakdata"/>
 			<post :hook_id="skilltreetweakdata"/>
 			<post :hook_id="upgradestweakdata"/>
 			<post :hook_id="weaponfactorytweakdata"/>
