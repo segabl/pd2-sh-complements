@@ -79,6 +79,22 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 				end
 			end
 
+			-- Fix alert sizes
+			if cat_map.snp then
+				weap_data.stats.alert_size = 4
+			elseif cat_map.shotgun or cat_map.lmg or cat_map.minigun then
+				weap_data.stats.alert_size = 6
+			elseif cat_map.assault_rifle or cat_map.revolver then
+				weap_data.stats.alert_size = 7
+			elseif cat_map.smg then
+				weap_data.stats.alert_size = 8
+			elseif cat_map.pistol then
+				weap_data.stats.alert_size = 9
+			elseif cat_map.flamethrower then
+				weap_data.stats.alert_size = 13
+			end
+			weap_data.stats.alert_size = math.clamp(weap_data.stats.alert_size, 1, #self.stats.alert_size)
+
 			-- Tweak pickup values based on damage and category
 			if weap_data.AMMO_PICKUP and weap_data.AMMO_PICKUP[2] > 0 then
 				local ref = self.stats.damage[math.min(weap_data.stats.damage, #self.stats.damage)] * (weap_data.stats_modifiers and weap_data.stats_modifiers.damage or 1)

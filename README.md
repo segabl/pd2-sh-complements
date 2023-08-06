@@ -353,6 +353,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - All weapons
   - Removed aim assist
   - Rebalanced ammo pickup
+  - Made alert ranges consistent
 
 *There is a form of aim assist that makes you more likely to hit a target the longer you shoot at it while missing.*
 *Removing this aim assist will make it harder to hit enemies at distance with low accuracy weapons.*

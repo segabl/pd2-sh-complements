@@ -56,4 +56,12 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_ammunition", "shc_create_ammuniti
 	self.parts.wpn_fps_lmg_kacchainsaw_sling.stats.spread = nil
 	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.fire_rate_multiplier = 1.6
 
+	-- Set lowest alert range for all suppressors
+	for _, v in pairs(self.parts) do
+		if v.perks and table.contains(v.perks, "silencer") then
+			v.stats = v.stats or {}
+			v.stats.alert_size = 20
+		end
+	end
+
 end)
