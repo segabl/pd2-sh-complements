@@ -1,4 +1,4 @@
-Hooks:PostHook(WeaponFactoryTweakData, "create_ammunition", "shc_create_ammunition", function (self)
+Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 
 	-- Reduce buckshot rays
 	self.parts.wpn_fps_upg_a_custom.custom_stats.rays = 9
@@ -57,10 +57,21 @@ Hooks:PostHook(WeaponFactoryTweakData, "create_ammunition", "shc_create_ammuniti
 	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.fire_rate_multiplier = 1.6
 
 	-- Set lowest alert range for all suppressors
+	-- Tweak Sting grenade pickup
 	for _, v in pairs(self.parts) do
 		if v.perks and table.contains(v.perks, "silencer") then
 			v.stats = v.stats or {}
 			v.stats.alert_size = 20
+		elseif v.sub_type == "ammo_hornet" and v.custom_stats then
+			v.custom_stats.ammo_pickup_max_mul = 5
+			v.custom_stats.ammo_pickup_min_mul = 5
+		end
+	end
+
+	for _, v in pairs(self) do
+		if type(v) == "table" and v.override and v.override.wpn_fps_upg_a_underbarrel_hornet then
+			v.override.wpn_fps_upg_a_underbarrel_hornet.custom_stats.ammo_pickup_max_mul = 5
+			v.override.wpn_fps_upg_a_underbarrel_hornet.custom_stats.ammo_pickup_min_mul = 5
 		end
 	end
 
