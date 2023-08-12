@@ -106,7 +106,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 					ref = ref * 2
 				elseif cat_map.pistol then
 					ref = ref * 1.5
-				elseif cat_map.lmg or cat_map.minigun or weap_data.CLIP_AMMO_MAX >= 100 then
+				elseif cat_map.lmg or cat_map.minigun or weap_data.CLIP_AMMO_MAX >= 100 and not cat_map.akimbo then
 					ref = ref * 0.5
 				end
 				if weap_data.can_shoot_through_shield then
