@@ -17,6 +17,18 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	self.parts.wpn_fps_upg_a_slug.stats.moving_spread = 6
 	self.parts.wpn_fps_upg_a_slug.stats.spread = 6
 
+	-- Give military laser module same stability as LED combo
+	self.parts.wpn_fps_upg_fl_ass_peq15.stats.recoil = 2
+
+	-- AK family suppressors
+	self.parts.wpn_fps_upg_ns_ass_pbs1.stats.spread = 1
+	self.parts.wpn_fps_upg_ns_ass_pbs1.stats.spread_moving = 1
+	self.parts.wpn_fps_upg_ns_ass_pbs1.stats.recoil = 2
+	self.parts.wpn_fps_upg_ns_ass_pbs1.stats.concealment = -4
+
+	self.parts.wpn_fps_upg_ak_ns_tgp.stats.spread = 2
+	self.parts.wpn_fps_upg_ak_ns_tgp.stats.spread_moving = 2
+
 	-- Tweak pickup multipliers for conversion kits
 	self.parts.wpn_fps_ammo_type.custom_stats.ammo_pickup_max_mul = 0.5
 	self.parts.wpn_fps_ammo_type.custom_stats.ammo_pickup_min_mul = 0.5
@@ -55,6 +67,15 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	self.parts.wpn_fps_lmg_kacchainsaw_sling.stats.recoil = 2
 	self.parts.wpn_fps_lmg_kacchainsaw_sling.stats.spread = nil
 	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.fire_rate_multiplier = 1.6
+
+	-- Compact-5
+	self.parts.wpn_fps_smg_mp5_fg_mp5sd.stats.spread = 2
+	self.parts.wpn_fps_smg_mp5_fg_mp5sd.stats.spread_moving = 2
+	self.parts.wpn_fps_smg_mp5_fg_mp5sd.stats.recoil = 2
+
+	-- Kobus 90
+	self.parts.wpn_fps_smg_p90_b_ninja.stats.spread = 1
+	self.parts.wpn_fps_smg_p90_b_ninja.stats.spread_moving = 1
 
 	-- Set lowest alert range for all suppressors
 	-- Tweak Sting grenade pickup
