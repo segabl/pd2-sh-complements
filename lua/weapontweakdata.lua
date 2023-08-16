@@ -56,7 +56,7 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 					weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.25)
 					weap_data.stats.reload = weap_data.stats.reload + 5
 				end
-			elseif cat_map.flamethrower and weap_data.fire_dot_data then
+			elseif cat_map.flamethrower and weap_data.fire_dot_data and weap_data.stats.damage < 50 then
 				-- Move some DOT damage to base damage
 				weap_data.fire_dot_data.dot_trigger_chance = weap_data.fire_dot_data.dot_trigger_chance * 0.5
 				weap_data.fire_dot_data.dot_damage = weap_data.fire_dot_data.dot_damage * 0.5
