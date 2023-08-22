@@ -77,6 +77,13 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	self.parts.wpn_fps_smg_p90_b_ninja.stats.spread = 1
 	self.parts.wpn_fps_smg_p90_b_ninja.stats.spread_moving = 1
 
+	-- JP36
+	self.parts.wpn_fps_ass_g36_s_kv.stats.recoil = 2
+	self.parts.wpn_fps_ass_g36_s_kv.stats.concealment = -1
+	self.parts.wpn_fps_ass_g36_s_sl8.stats.spread = 2
+	self.parts.wpn_fps_ass_g36_s_sl8.stats.spread_moving = 2
+	self.parts.wpn_fps_ass_g36_s_sl8.stats.concealment = -5
+
 	-- Set lowest alert range for all suppressors
 	-- Tweak Sting grenade pickup
 	for _, v in pairs(self.parts) do
