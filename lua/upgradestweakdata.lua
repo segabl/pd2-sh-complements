@@ -17,7 +17,7 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.skill_descs.triathlete.multipro2 = "4"
 
 	-- Confident intimidation multiplier
-	self.values.player.intimidation_multiplier[1] = 1.5
+	self.values.player.intimidation_multiplier[1] = 1.35
 
 	-- Joker damage multiplier
 	self.values.player.convert_enemies_damage_multiplier[1] = 1
