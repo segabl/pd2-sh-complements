@@ -193,6 +193,11 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.weapon_movement_penalty.lmg = 0.85
 	self.weapon_movement_penalty.minigun = 0.85
 
+	-- EQUIPMENT
+
+	-- Regular ECM feedback interval (1.5 -> 1)
+	self.ecm_feedback_interval = 1
+
 end)
 
 

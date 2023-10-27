@@ -442,3 +442,10 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *There are only a handful of relevant melee weapons and most of the others are arbitrarily balanced.*
 *Basing the damage and knockdown of melee weapons on their other stats with the Ice Pick as a reference should make the choice of melee weapon more interesting.*
+
+### Equipment
+
+- ECM Jammer
+  - Feedback interval 1.5s → 1s
+
+*This is a small adjustment to make feedback between Pocket ECM and regular ECM more consistent.*
