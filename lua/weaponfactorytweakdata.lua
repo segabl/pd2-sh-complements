@@ -9,9 +9,6 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 
 	-- Rework tombstone
 	self.parts.wpn_fps_upg_a_rip.custom_stats.rays = 9
-	self.parts.wpn_fps_upg_a_rip.custom_stats.dot_data.custom_data.hurt_animation_chance = 0.25
-	self.parts.wpn_fps_upg_a_rip.custom_stats.dot_data.custom_data.dot_damage = 4
-	self.parts.wpn_fps_upg_a_rip.custom_stats.dot_data.custom_data.dot_length = 10
 
 	-- Increase AP slug accuracy
 	self.parts.wpn_fps_upg_a_slug.stats.moving_spread = 6

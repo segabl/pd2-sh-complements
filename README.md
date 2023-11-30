@@ -121,14 +121,12 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 #### Breacher
 
 - Hardware Expert
-  - Changed drill auto restart chance to trigger everytime the drill breaks instead of on drill placement
-  - Auto restart delay 5-20s → 3-8s
   - Drill upgrade duration 10s → 5s
   - Ace
     - Auto restart chance 10% → 30%
 
-*Auto restart is an inconsistent mechanic as it only has a chance to apply once when the drill is placed. This means if you were lucky you would not need to look after the drill at all, while if you were unlucky, the skill would not do anything for you.*
-*Changing the mechanic to have a chance to trigger everytime the drill breaks and increasing the restart chance makes the skill less luck based.*
+*With the recent change that makes drill roll the chance to auto restart on each break it has become a bit more unpredictable.*
+*Upping the chance for the restart to happen should make it more useful.*
 
 - More Firepower
   - Basic
