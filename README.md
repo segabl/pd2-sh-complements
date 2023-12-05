@@ -35,9 +35,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Confident
   - Basic
-    - Added missing intimidation power upgrade, removed intimidation duration upgrade
+    - Removed intimidation duration upgrade
 
-*Confident claims to increase the power of your intimidation but instead it increases intimidation duration (something that Stockholm Syndrome should do).*
+*Confident increases intimidation duration which is something that Stockholm Syndrome claims to do.*
 *Swapping out the upgrades and moving the duration upgrade to Stockholm Syndrome makes more sense.*
 
 - Stockholm Syndrome
