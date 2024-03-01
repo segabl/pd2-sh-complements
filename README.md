@@ -406,11 +406,10 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Basing the inconsistent stats on their single variants results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
 
 - Saws
-  - Fixed hardcoded damage increase against Bulldozers
   - Made damage against Bulldozers multiply base damage instead of a fixed number
 
-*Saws have a hidden damage increase against Bulldozers but the list for the affected enemies is hardcoded so it only applies to the regular Bulldozer variants.*
-*Changing it to check for the "tank" tag instead of the hardcoded list will make it affect every Bulldozer.*
+*Saws have a hidden damage increase against Bulldozers that's just a hardcoded damage value.*
+*Changing it to be a multiplier of the damage makes modding for damage actually matter.*
 
 - Bows
   - Reduced damage by 50%
@@ -425,14 +424,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Added innate armor piercing
 
 *Similar to bows, crossbows are not that fun to use, adding armor piercing should make them feel better.*
-
-- Flamethrowers
-  - Reduced DoT damage by 50%
-  - Reduced DoT chance by 50%
-  - Increased base damage by 250%
-
-*Shortly tapping flamethrowers and letting the DoT do the actual damage is not a very fun way to use them.*
-*Moving some of the damage to the base damage makes them feel more fun to use and slightly less niche.*
 
 - Melee
   - Rebalanced all melee weapons based on speed, concealment and range
