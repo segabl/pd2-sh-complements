@@ -24,6 +24,7 @@
 			<post :hook_id="weapontweakdata"/>
 		</group>
 		<group hook_id="lib/units/">
+			<post :hook_id="beings/player/states/playerbipod"/>
 			<post :hook_id="beings/player/playerdamage"/>
 			<post :hook_id="equipment/ammo_bag/ammobagbase"/>
 			<post :hook_id="equipment/sentry_gun/sentrygunbase"/>

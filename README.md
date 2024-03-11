@@ -363,6 +363,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - LMGs
   - Added 15% reduced movement speed penalty
+  - Fixed bipods not using separate spread values
 
 *Even after the nerfs LMGs are still very powerful with very little drawbacks.*
 *Adding back the movement speed penalty gives a more unique drawback than nerfing stats.*

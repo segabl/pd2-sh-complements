@@ -62,10 +62,12 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 			end
 
 			-- Fix ADS spread values, basically swap around crouching and ADS spread
+			-- Make bipods actually use bipod spread values
 			if weap_data.spread then
 				weap_data.spread.steelsight = 1.6
 				weap_data.spread.crouching = weap_data.spread.standing * 0.8
 				weap_data.spread.moving_crouching = weap_data.spread.moving_standing * 0.8
+				weap_data.spread.bipod = weap_data.spread.standing * 0.5
 			end
 
 			-- Tweak akimbo reload speeds and total ammo
