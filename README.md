@@ -354,10 +354,12 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Removed aim assist
   - Rebalanced ammo pickup
   - Made alert ranges consistent
+  - Fixed ADS and crouching spread values
 
 *There is a form of aim assist that makes you more likely to hit a target the longer you shoot at it while missing.*
 *Removing this aim assist will make it harder to hit enemies at distance with low accuracy weapons.*
 *Ammo pickup has been rebalanced based on damage instead of total ammo.*
+*Fixed incorrect ADS spread values which lead to crouching having better accuracy than ADS.*
 
 - LMGs
   - Added 15% reduced movement speed penalty

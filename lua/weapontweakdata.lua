@@ -61,6 +61,13 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 				end
 			end
 
+			-- Fix ADS spread values, basically swap around crouching and ADS spread
+			if weap_data.spread then
+				weap_data.spread.steelsight = 1.6
+				weap_data.spread.crouching = weap_data.spread.standing * 0.8
+				weap_data.spread.moving_crouching = weap_data.spread.moving_standing * 0.8
+			end
+
 			-- Tweak akimbo reload speeds and total ammo
 			if cat_map.akimbo then
 				local single_weapon_data = self[akimbo_mappings[weap_id]] or self[weap_id:sub(3)]
