@@ -59,6 +59,9 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 					weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.25)
 					weap_data.stats.reload = weap_data.stats.reload + 5
 				end
+			elseif cat_map.saw then
+				-- Add armor piercing to saws
+				weap_data.armor_piercing_chance = 1
 			end
 
 			-- Fix ADS spread values, basically swap around crouching and ADS spread

@@ -55,9 +55,11 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	-- Bullet Storm duration (20s -> 15s)
 	self.skill_descs.ammo_reservoir.multipro2 = "10"
 
-	-- Saw Massacre wear (50% -> 95%)
+	-- Saw Massacre wear (50% -> 90%), panic chance (50% -> 75%)
 	self.values.saw.enemy_slicer[1] = 1
-	self.skill_descs.carbon_blade.multibasic2 = "95%"
+	self.values.saw.panic_when_kill[1].chance = 0.75
+	self.skill_descs.carbon_blade.multibasic2 = "90%"
+	self.skill_descs.carbon_blade.multipro = "75%"
 
 	-- Eco Sentry cost reduction (5% -> 10%)
 	self.skill_descs.eco_sentry.multibasic = "10%"

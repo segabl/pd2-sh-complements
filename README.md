@@ -104,10 +104,12 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Saw Massacre
   - Basic
-    - Reduced wear 50% → 95%
+    - Reduced wear 50% → 90%
+  - Ace
+    - Panic chance 50% → 75%
 
 *Saw Massacre is a useless skill and 50% reduced wear is not enough to make the saw a viable weapon against enemies.*
-*Decreasing the wear further will make it more viable at least in some cases.*
+*Decreasing the wear further and increasing the panic chance will make it more viable at least in some cases.*
 
 ### Technician
 
@@ -412,6 +414,8 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Saws
   - Made damage against Bulldozers multiply base damage instead of a fixed number
+  - Made ammo use consistent instead of random
+  - Added innate armor piercing
 
 *Saws have a hidden damage increase against Bulldozers that's just a hardcoded damage value.*
 *Changing it to be a multiplier of the damage makes modding for damage actually matter.*
