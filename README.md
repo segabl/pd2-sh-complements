@@ -85,9 +85,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Overkill
   - Basic
     - Duration 20s → 10s
+  - Ace
+    - Added 20s duration upgrade
 
 *Overkill's duration is way too long for the strong bonus damage it provides.*
-*Reducing the duration will force players to engage with enemies more.*
+*Moving some of its power to the aced version will force players to engage with enemies more when only using it for shotguns.*
 
 #### Ammo Specialist
 

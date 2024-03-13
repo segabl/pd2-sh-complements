@@ -12,10 +12,12 @@ if not StreamHeistComplements then
 			return tostring(basic) .. tostring(pro_desc) .. "\n\n" .. tostring(pro) .. tostring(basic_desc)
 		end
 
+		local ovk_basic, ovk_basic_desc, ovk_pro, ovk_pro_desc = loc:text("menu_overkill_beta_desc"):match("(.-\n)(.+)\n\n(.-\n)(.+)")
 		local th_basic, th_basic_desc, th_pro = loc:text("menu_trigger_happy_beta_desc"):match("(.-\n)(.+)\n\n(.-\n)")
 		loc:add_localized_strings({
 			menu_single_shot_ammo_return_beta_desc = loc:text("menu_single_shot_ammo_return_beta_desc"):gsub("bullet", "bullets"),
 			menu_far_away_beta_desc = swap_tier_descriptions("menu_far_away_beta_desc"),
+			menu_overkill_beta_desc = ovk_basic .. ovk_basic_desc .. "\n\n" .. ovk_pro .. ovk_basic_desc:gsub("multibasic2", "multipro2") .. "\n\n" .. ovk_pro_desc,
 			menu_trigger_happy_beta_desc = th_basic .. th_basic_desc .. "\n\n" .. th_pro .. th_basic_desc:gsub("multibasic", "multipro"),
 			menu_bloodthirst_desc = swap_tier_descriptions("menu_bloodthirst_desc"),
 			-- Restore Sociopath first perk name

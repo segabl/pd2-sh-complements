@@ -8,6 +8,9 @@ Hooks:PostHook(SkillTreeTweakData, "init", "shc_init", function (self)
 	self.skills.far_away[1].upgrades[1] = "shotgun_steelsight_range_inc_1"
 	self.skills.far_away[2].upgrades[1] = "shotgun_steelsight_accuracy_inc_1"
 
+	-- Add 20s duration to Overkill Ace
+	table.insert(self.skills.overkill[2].upgrades, "player_overkill_damage_multiplier_2")
+
 	-- Swap basic and pro of Bloodthirst
 	self.skills.bloodthirst[1].upgrades[1] = "player_temp_melee_kill_increase_reload_speed_1"
 	self.skills.bloodthirst[2].upgrades[1] = "player_melee_damage_stacking_1"
