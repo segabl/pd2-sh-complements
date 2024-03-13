@@ -5,7 +5,7 @@
 	"priority" : 400,
 	"color" : "0.043 0.808 0.6",
 	"image" : "mod.png",
-	"version" : "1.7.3",
+	"version" : "1.7.4",
 	"updates" : [{
 		"identifier" : "pd2-sh-complements",
 		"host": { "meta": "https://updates.hoppip.at/pd2-sh-complements" }
