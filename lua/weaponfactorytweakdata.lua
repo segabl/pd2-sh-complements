@@ -94,9 +94,16 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	end
 
 	for _, v in pairs(self) do
-		if type(v) == "table" and v.override and v.override.wpn_fps_upg_a_underbarrel_hornet then
-			v.override.wpn_fps_upg_a_underbarrel_hornet.custom_stats.ammo_pickup_max_mul = 5
-			v.override.wpn_fps_upg_a_underbarrel_hornet.custom_stats.ammo_pickup_min_mul = 5
+		if type(v) == "table" and v.override then
+			if v.override.wpn_fps_upg_a_underbarrel_hornet then
+				v.override.wpn_fps_upg_a_underbarrel_hornet.custom_stats.ammo_pickup_max_mul = 5
+				v.override.wpn_fps_upg_a_underbarrel_hornet.custom_stats.ammo_pickup_min_mul = 5
+			end
+
+			if v.override.wpn_fps_upg_a_grenade_launcher_hornet then
+				v.override.wpn_fps_upg_a_grenade_launcher_hornet.custom_stats.ammo_pickup_max_mul = 5
+				v.override.wpn_fps_upg_a_grenade_launcher_hornet.custom_stats.ammo_pickup_min_mul = 5
+			end
 		end
 	end
 
