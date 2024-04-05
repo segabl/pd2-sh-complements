@@ -346,9 +346,16 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 - Tactical Reload
   - Changed instant swap back to increased swap speed
   - Swap speed duration 3s → 10s
+- Head Games
+  - No longer heals when Berserker is active
+- Grace Period
+  - No longer triggers from taking armor damage
+- Thriving
+  - Health increase 20% → 10%
 
-*The change made to the swapping mechanic leaves a little too short of a time window to swap weapons and also tends to bug out in various situations.*
+*The change made to the swapping mechanic leaves a little too short of a time window to swap weapons and looks jarring and buggy.*
 *Increasing the duration the bonus is available and changing it back to a swap speed increase makes it more accessible and less prone to bugs.*
+*Reducing the health increase brings it more in line with the armor cards and the Grace Period change makes it more reliable.*
 
 ## General changes
 

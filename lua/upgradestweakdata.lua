@@ -187,11 +187,19 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.specialization_descs[22][5].multiperk3 = "6%"
 	self.specialization_descs[22][9].multiperk = "6.25%"
 
-	-- Copycat - Instant swap duration (3 -> 10), instant swap revert
+	-- Copycat - Instant swap duration (3 -> 10), instant swap revert, Thriving (20% -> 10%), Grace Period trigger (50% -> 30%)
 	self.values.weapon.mrwi_swap_speed_multiplier[1] = 5
 	self.values.weapon.primary_reload_swap_secondary[1] = 10
 	self.values.weapon.secondary_reload_swap_primary[1] = 10
+	self.values.player.mrwi_health_multiplier[1] = 1.1
+	self.values.player.mrwi_health_multiplier[2] = 1.2
+	self.values.player.mrwi_health_multiplier[3] = 1.3
+	self.values.player.mrwi_health_multiplier[4] = 1.4
 	self.specialization_descs[23][1].multiperk2 = "10"
+	self.multi_choice_specialization_descs[23][1][1].multiperk = "10%"
+	self.multi_choice_specialization_descs[23][3][1].multiperk = "10%"
+	self.multi_choice_specialization_descs[23][5][1].multiperk = "10%"
+	self.multi_choice_specialization_descs[23][7][1].multiperk = "10%"
 
 	-- WEAPONS
 

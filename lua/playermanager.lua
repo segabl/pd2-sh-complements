@@ -24,3 +24,11 @@ function PlayerManager:has_active_temporary_property(name, ...)
 		return has_active_temporary_property_original(self, name, ...)
 	end
 end
+
+-- Prevent healing with Copycat when Berserker is active
+local on_headshot_dealt_original = PlayerManager.on_headshot_dealt
+function PlayerManager:on_headshot_dealt(...)
+	PlayerDamage.force_chk_health_ratio = true
+	on_headshot_dealt_original(self, ...)
+	PlayerDamage.force_chk_health_ratio = false
+end
