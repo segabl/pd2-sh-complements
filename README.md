@@ -46,14 +46,23 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *See notes on Confident.*
 
+- Joker
+  - Basic
+    - Hidden damage reduction 45% → 80%
+  - Ace
+    - Damage increase is now accurate to the description instead of a 35% damage penalty without the skill
+
+*There's a hiden damage reduction for Jokers that applies on top of the ones in Partners In Crime.*
+*Increasing the hidden damage reduction makes basic Jokers a little more useful and compensates for the reductions in Partners In Crime.*
+
 - Partners In Crime
   - Basic
-    - Damage reduction 45% → 80%
+    - Damage reduction 45% → 75%
   - Ace
     - Damage reduction 54% → 15%
 
-*Jokers in general are a low effort way to gain strong benefits and Partners In Crime is giving too much survivability to Jokers.*
-*Shifting some of the power will make the basic version more useful and reducing the total damage reduction decreases effective HP by 80% with the aced version.*
+*Partners In Crime is giving a bit too much survivability to Jokers on top of having badly distributed balance between Basic and Ace version.*
+*Shifting some of the power and reducing the total damage reduction in exchange for higher damage reduction at base will make the basic version more useful.*
 
 #### Sharpshooter
 

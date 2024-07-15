@@ -19,16 +19,19 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	-- Confident intimidation multiplier
 	self.values.player.intimidation_multiplier[1] = 1.35
 
+	-- Joker base damage reduction
+	self.values.player.convert_enemies_health_multiplier[1] = 0.8
+
 	-- Joker damage multiplier
 	self.values.player.convert_enemies_damage_multiplier[1] = 1
 	self.values.player.convert_enemies_damage_multiplier[2] = 1.35
 
-	-- Partners in Crime basic damage reduction (50% -> 80%)
-	self.values.player.passive_convert_enemies_health_multiplier[1] = 0.8
-	self.skill_descs.control_freak.multibasic3 = "80%"
+	-- Partners in Crime basic damage reduction (50% -> 75%)
+	self.values.player.passive_convert_enemies_health_multiplier[1] = 0.75
+	self.skill_descs.control_freak.multibasic3 = "75%"
 
 	-- Partners in Crime ace damage reduction (54% -> 15%)
-	self.values.player.passive_convert_enemies_health_multiplier[2] = 0.05
+	self.values.player.passive_convert_enemies_health_multiplier[2] = 0.1
 	self.skill_descs.control_freak.multipro4 = "15%"
 
 	-- Ammo Efficiency (1 bullet -> 2 bullets)
