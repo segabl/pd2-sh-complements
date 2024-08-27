@@ -4,9 +4,6 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	self.parts.wpn_fps_upg_a_custom.custom_stats.rays = 9
 	self.parts.wpn_fps_upg_a_custom_free.custom_stats.rays = 9
 
-	-- Remove DB damage penalty
-	self.parts.wpn_fps_upg_a_dragons_breath.stats.damage = nil
-
 	-- Rework tombstone
 	self.parts.wpn_fps_upg_a_rip.custom_stats.rays = 9
 

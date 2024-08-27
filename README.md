@@ -409,8 +409,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
     - DoT duration 5s → 10s
   - AP Slug
     - Accuracy bonus 8 → 24
-  - Dragon's Breath Round
-    - Removed damage penalty
 
 *Some shotgun ammo types are clearly superior with no downsides while others struggle to be useful.*
 *Adding downsides to the ones that are just free damage and buffing less used ones should make the choice of ammo more impactful.*
