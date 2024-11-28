@@ -33,6 +33,9 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 	-- M1014
 	self.benelli.stats.reload = 14
 
+	-- Street Sweeper
+	self.striker.stats.reload = 15
+
 	-- Generic weapon stat changes
 	for weap_id, weap_data in pairs(self) do
 		if type(weap_data) == "table" and weap_data.stats then

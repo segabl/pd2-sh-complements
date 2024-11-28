@@ -78,6 +78,10 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	self.parts.wpn_fps_ass_g36_s_sl8.stats.spread_moving = 2
 	self.parts.wpn_fps_ass_g36_s_sl8.stats.concealment = -5
 
+	-- Amaroq
+	self.parts.wpn_fps_snp_awp_conversion_wildlands.stats.total_ammo_mod = 5
+	self.parts.wpn_fps_snp_awp_ext_shellrack.stats.total_ammo_mod = 3
+
 	-- Set lowest alert range for all suppressors
 	-- Tweak Sting grenade pickup
 	for _, v in pairs(self.parts) do
