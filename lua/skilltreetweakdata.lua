@@ -4,9 +4,6 @@ Hooks:PostHook(SkillTreeTweakData, "init", "shc_init", function (self)
 	table.delete(self.skills.cable_guy[1].upgrades, "player_civ_intimidation_mul")
 	table.insert(self.skills.stockholm_syndrome[1].upgrades, "player_civ_intimidation_mul")
 
-	-- Add Joker base damage reduction
-	table.insert(self.skills.joker[1].upgrades, "player_convert_enemies_health_multiplier")
-
 	-- Swap basic and pro of Far Away
 	self.skills.far_away[1].upgrades[1] = "shotgun_steelsight_range_inc_1"
 	self.skills.far_away[2].upgrades[1] = "shotgun_steelsight_accuracy_inc_1"

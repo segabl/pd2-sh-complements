@@ -26,6 +26,7 @@
 		<group hook_id="lib/units/">
 			<post :hook_id="beings/player/states/playerbipod"/>
 			<post :hook_id="beings/player/playerdamage"/>
+			<post :hook_id="enemies/cop/copdamage"/>
 			<post :hook_id="equipment/ammo_bag/ammobagbase"/>
 			<post :hook_id="equipment/sentry_gun/sentrygunbase"/>
 			<post :hook_id="weapons/bowweaponbase"/>
