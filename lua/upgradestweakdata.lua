@@ -27,9 +27,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.values.player.passive_convert_enemies_health_multiplier[1] = 0.25
 	self.skill_descs.control_freak.multibasic3 = "75%"
 
-	-- Partners in Crime ace damage reduction (54% -> 20%)
-	self.values.player.passive_convert_enemies_health_multiplier[2] = 0.05
-	self.skill_descs.control_freak.multipro4 = "20%"
+	-- Partners in Crime ace damage reduction (54% -> 15%)
+	self.values.player.passive_convert_enemies_health_multiplier[2] = 0.1
+	self.skill_descs.control_freak.multipro4 = "15%"
 
 	-- Ammo Efficiency (1 bullet -> 2 bullets)
 	self.values.player.head_shot_ammo_return[1].ammo = 2

@@ -48,7 +48,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Joker
   - Basic
-    - Added 70% base damage reduction
+    - Added 75% base damage reduction
   - Ace
     - Damage increase is now accurate to the description instead of a 35% damage penalty without the skill
 
@@ -58,7 +58,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
   - Basic
     - Damage reduction 45% → 75%
   - Ace
-    - Damage reduction 54% → 20%
+    - Damage reduction 54% → 15%
 
 *Partners In Crime is giving a bit too much survivability to Jokers on top of having badly distributed balance between Basic and Ace version.*
 *Shifting some of the power and reducing the total damage reduction in exchange for higher damage reduction at base will make the basic version more useful.*
