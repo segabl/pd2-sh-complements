@@ -209,8 +209,9 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 
 	-- EQUIPMENT
 
-	-- Regular ECM feedback interval (1.5 -> 1)
+	-- Regular ECM feedback interval (1.5 -> 1), feedback recharge (4 min -> 3 min)
 	self.ecm_feedback_interval = 1
+	self.ecm_feedback_retrigger_interval = 180
 
 end)
 

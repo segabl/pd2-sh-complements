@@ -458,5 +458,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - ECM Jammer
   - Feedback interval 1.5s → 1s
+  - Recharge time 4 min → 3 min
 
-*This is a small adjustment to make feedback between Pocket ECM and regular ECM more consistent.*
+*Tweaking regular ECM feedback should make them more useful for loud gameplay, considering the heavy point investment needed.*
+*The change to the interval is a small adjustment to make feedback between Pocket ECM and regular ECM consistent.*
