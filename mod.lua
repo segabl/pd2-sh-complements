@@ -2,7 +2,11 @@ if not StreamHeistComplements then
 
 	StreamHeistComplements = {
 		mod_path = ModPath,
-		required = {}
+		save_path = SavePath .. "streamlined_heisting_complements.json",
+		required = {},
+		settings = {
+			incremental_recoil = false
+		}
 	}
 
 	Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInitStreamlinedHeistingComplements", function (loc)
@@ -28,7 +32,46 @@ if not StreamHeistComplements then
 			menu_deck21_9_desc = loc:text("menu_deck21_9_desc"):gsub("[^%.\n]+%$multiperk2[^\n]+", "")
 		})
 
+		if HopLib then
+			HopLib:load_localization(StreamHeistComplements.mod_path .. "loc/", loc)
+		else
+			loc:load_localization_file(StreamHeistComplements.mod_path .. "loc/english.txt")
+		end
+
 	end)
+
+	Hooks:Add("MenuManagerBuildCustomMenus", "MenuManagerBuildCustomMenusStreamlinedHeistingComplements", function(_, nodes)
+
+		local menu_id = "shc_menu"
+
+		MenuHelper:NewMenu(menu_id)
+
+		function MenuCallbackHandler:shc_toggle(item)
+			StreamHeistComplements.settings[item:name()] = (item:value() == "on")
+		end
+
+		function MenuCallbackHandler:shc_save()
+			io.save_as_json(StreamHeistComplements.settings, StreamHeistComplements.save_path)
+		end
+
+		MenuHelper:AddToggle({
+			id = "incremental_recoil",
+			title = "shc_menu_incremental_recoil",
+			desc = "shc_menu_incremental_recoil_desc",
+			callback = "shc_toggle",
+			value = StreamHeistComplements.settings.incremental_recoil,
+			menu_id = menu_id,
+			priority = 99
+		})
+
+		nodes[menu_id] = MenuHelper:BuildMenu(menu_id, { back_callback = "shc_save" })
+		MenuHelper:AddMenuItem(nodes["blt_options"], menu_id, "shc_menu_main")
+
+	end)
+
+	if io.file_is_readable(StreamHeistComplements.save_path) then
+		StreamHeistComplements.settings = io.load_as_json(StreamHeistComplements.save_path) or StreamHeistComplements.settings
+	end
 
 end
 

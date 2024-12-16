@@ -1,0 +1,5 @@
+{
+	"shc_menu_main": "Streamlined Heisting Complements",
+	"shc_menu_incremental_recoil": "Limited recoil recovery",
+	"shc_menu_incremental_recoil_desc": "When shooting a gun, the camera will only recover the recoil of the last fired shot"
+}
