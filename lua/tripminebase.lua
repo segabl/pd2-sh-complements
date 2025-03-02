@@ -21,5 +21,7 @@ function TripMineBase:_spawn_environment_fire(user_unit, added_time, range_multi
 	mvector3.multiply(fire_pos, col_ray and col_ray.distance * 0.5 or math.lerp(range, 0, dot))
 	mvector3.add(fire_pos, origin_pos)
 
-	EnvironmentFire.spawn(fire_pos, rotation, data, dot < 0.5 and math.UP or normal, user_unit, self._unit, added_time, range_multiplier)
+	local _, time_until_destruction = EnvironmentFire.spawn(fire_pos, rotation, data, dot < 0.5 and math.UP or normal, user_unit, self._unit, added_time, range_multiplier)
+
+	return time_until_destruction
 end
