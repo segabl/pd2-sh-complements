@@ -57,9 +57,11 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 				-- Add armor piercing to crossbows
 				weap_data.armor_piercing_chance = 1
 			elseif cat_map.minigun then
-				-- Buff minigun damage in exchange for movement speed penalty
-				weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.2)
-				weap_data.damage_falloff = FALLOFF_TEMPLATE.SPECIAL_LOW
+				-- Buff minigun damage in exchange for falloff/movement speed penalty
+				if not weap_data.damage_falloff then
+					weap_data.stats.damage = math.ceil(weap_data.stats.damage * 1.2)
+					weap_data.damage_falloff = FALLOFF_TEMPLATE.SPECIAL_LOW
+				end
 			elseif cat_map.shotgun then
 				-- Restore shotgun pellets
 				weap_data.rays = math.max(weap_data.rays or 1, 12)
@@ -116,17 +118,20 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 
 			-- Tweak pickup values based on damage and category
 			if weap_data.AMMO_PICKUP and weap_data.AMMO_PICKUP[2] > 0 then
-				local ref = self.stats.damage[math.min(weap_data.stats.damage, #self.stats.damage)] * (weap_data.stats_modifiers and weap_data.stats_modifiers.damage or 1)
-				ref = ref ^ 1.2
+				local base_damage = self.stats.damage[math.min(weap_data.stats.damage, #self.stats.damage)]
+				local damage_modifier = weap_data.stats_modifiers and weap_data.stats_modifiers.damage or 1
+				local ref = (base_damage * damage_modifier) ^ 1.2
 
 				if cat_map.flamethrower then
-					ref = ref * 3
+					ref = ref * 3.5
 				elseif cat_map.grenade_launcher then
 					ref = ref * 2
 				elseif cat_map.pistol then
 					ref = ref * 1.5
-				elseif cat_map.lmg or cat_map.minigun or weap_data.CLIP_AMMO_MAX >= 100 and not cat_map.akimbo then
-					ref = ref * 0.5
+				elseif cat_map.minigun then
+					ref = ref * 0.8
+				elseif cat_map.lmg or weap_data.CLIP_AMMO_MAX >= 100 and not cat_map.akimbo then
+					ref = ref * 0.6
 				end
 				if weap_data.can_shoot_through_shield then
 					ref = ref * 1.5
