@@ -30,8 +30,11 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_max_mul = 1.5
 	self.parts.wpn_fps_lmg_hcar_body_conversionkit.custom_stats.ammo_pickup_min_mul = 1.5
 
-	self.parts.wpn_fps_ass_g3_b_short.custom_stats.ammo_pickup_max_mul = 2
-	self.parts.wpn_fps_ass_g3_b_short.custom_stats.ammo_pickup_min_mul = 2
+	self.parts.wpn_fps_ass_g3_b_short.custom_stats.ammo_pickup_max_mul = 1.75
+	self.parts.wpn_fps_ass_g3_b_short.custom_stats.ammo_pickup_min_mul = 1.75
+	self.parts.wpn_fps_ass_g3_b_sniper.custom_stats = self.parts.wpn_fps_ass_g3_b_sniper.custom_stats or {}
+	self.parts.wpn_fps_ass_g3_b_sniper.custom_stats.ammo_pickup_max_mul = 0.8
+	self.parts.wpn_fps_ass_g3_b_sniper.custom_stats.ammo_pickup_min_mul = 0.8
 
 	self.parts.wpn_fps_pis_c96_b_long.custom_stats.ammo_pickup_max_mul = 0.5
 	self.parts.wpn_fps_pis_c96_b_long.custom_stats.ammo_pickup_min_mul = 0.5
@@ -45,6 +48,10 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.ammo_pickup_max_mul = 2.5
 	self.parts.wpn_fps_lmg_kacchainsaw_conversionkit.custom_stats.ammo_pickup_min_mul = 2.5
 
+	self.parts.wpn_fps_lmg_hcar_barrel_dmr.custom_stats = self.parts.wpn_fps_lmg_hcar_barrel_dmr.custom_stats or {}
+	self.parts.wpn_fps_lmg_hcar_barrel_dmr.custom_stats.ammo_pickup_max_mul = 0.8
+	self.parts.wpn_fps_lmg_hcar_barrel_dmr.custom_stats.ammo_pickup_min_mul = 0.8
+
 	-- Comando 553
 	self.parts.wpn_fps_ass_s552_fg_standard_green.stats.spread = 5
 	self.parts.wpn_fps_ass_s552_fg_standard_green.stats.spread_moving = 5
@@ -53,7 +60,8 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 
 	-- Reinfeld 880
 	self.parts.wpn_fps_shot_r870_body_rack.stats.reload = 2
-	self.parts.wpn_fps_shot_r870_fg_wood.custom_stats = { fire_rate_multiplier = 1.2 }
+	self.parts.wpn_fps_shot_r870_fg_wood.custom_stats = self.parts.wpn_fps_shot_r870_fg_wood.custom_stats or {}
+	self.parts.wpn_fps_shot_r870_fg_wood.custom_stats.fire_rate_multiplier = 1.2
 	self.parts.wpn_fps_shot_r870_fg_wood.stats.concealment = -1
 	self.parts.wpn_fps_shot_r870_fg_wood.stats.recoil = nil
 
