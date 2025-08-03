@@ -16,7 +16,7 @@ Hooks:PreHook(BlackMarketGui, "on_slot_selected", "shc_on_slot_selected", functi
 	end
 end)
 
-Hooks:PostHook(BlackMarketGui, "_setup", "_setup_pickup", function(self)
+Hooks:PostHook(BlackMarketGui, "_setup", "shc__setup", function(self)
 	if not self._mweapon_stats_shown then
 		return
 	end
