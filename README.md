@@ -463,3 +463,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Tweaking regular ECM feedback should make them more useful for loud gameplay, considering the heavy point investment needed.*
 *The change to the interval is a small adjustment to make feedback between Pocket ECM and regular ECM consistent.*
+
+- Armors
+  - Increased scaling of armor steadiness
+
+*Steadiness affects the screen-shake when being shot but heavier armors don't reduce it in a very noticable way.*
+*Increasing the scaling will make the difference between armors more noticable.*

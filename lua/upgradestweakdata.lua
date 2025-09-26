@@ -213,6 +213,15 @@ Hooks:PostHook(UpgradesTweakData, "init", "shc_init", function (self)
 	self.ecm_feedback_interval = 1
 	self.ecm_feedback_retrigger_interval = 180
 
+	-- Increase armor steadiness scaling
+	self.values.player.body_armor.damage_shake[1] = 1
+	self.values.player.body_armor.damage_shake[2] = 0.92
+	self.values.player.body_armor.damage_shake[3] = 0.82
+	self.values.player.body_armor.damage_shake[4] = 0.70
+	self.values.player.body_armor.damage_shake[5] = 0.56
+	self.values.player.body_armor.damage_shake[6] = 0.40
+	self.values.player.body_armor.damage_shake[7] = 0.22
+
 end)
 
 
