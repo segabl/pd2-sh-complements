@@ -133,7 +133,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 #### Breacher
 
 - Hardware Expert
-  - Drill upgrade duration 10s → 5s
   - Ace
     - Auto restart chance 10% → 30%
 
