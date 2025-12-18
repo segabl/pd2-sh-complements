@@ -103,11 +103,10 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Bullet Storm
   - Now only needs one gun to be fully empty to gain the maximum duration
-  - Fixed increased duration when ammo bag was used up
   - Ace
     - Duration 15s → 10s
 
-*Bullet Storm had comically long durations when the bag was used up, outside of that, reaching the full duration was annoying due to needing both guns to be empty.*
+*Reaching the full duration of Bullet Storm was impractical due to needing both guns to be empty.*
 *Reducing the requirement to get the maximum duration and slightly reducing the full duration should make the skill feel better.*
 
 - Saw Massacre
