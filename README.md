@@ -103,6 +103,7 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 - Bullet Storm
   - Now only needs one gun to be fully empty to gain the maximum duration
+  - Allows shooting with empty magazine when active
   - Ace
     - Duration 15s → 10s
 
