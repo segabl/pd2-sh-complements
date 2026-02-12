@@ -282,6 +282,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 
 *Increasing the speed for answering pagers makes Burglar more useful as an alternative for Yakuza as a stealth deck.*
 
+- Breath of Fresh Air
+  - Crouching movement speed 10% → 30%
+
+*Increasing the crouching movement speed bonus allows Burglar to better compete with Yakuza and Copycat in terms of movement speed bonuses.*
+
 ### Infiltrator
 
 - Overdog

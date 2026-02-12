@@ -24,6 +24,8 @@ if not StreamHeistComplements then
 			menu_overkill_beta_desc = ovk_basic .. ovk_basic_desc .. "\n\n" .. ovk_pro .. ovk_basic_desc:gsub("multibasic2", "multipro2") .. "\n\n" .. ovk_pro_desc,
 			menu_trigger_happy_beta_desc = th_basic .. th_basic_desc .. "\n\n" .. th_pro .. th_basic_desc:gsub("multibasic", "multipro"),
 			menu_bloodthirst_desc = swap_tier_descriptions("menu_bloodthirst_desc"),
+			-- Fix Burglar last perk description
+			menu_deck7_9_desc = loc:text("menu_deck7_9_desc"):gsub("($multiperk2.+)($multiperk2)", function(a) return a .. "$multiperk3" end),
 			-- Restore Sociopath first perk name
 			menu_deck9_1 = "No Talk",
 			-- Remove cooldown text from Gambler - Ammo Give Out
