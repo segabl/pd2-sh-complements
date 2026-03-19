@@ -1,4 +1,4 @@
-Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
+Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function(self)
 
 	-- Reduce buckshot rays
 	self.parts.wpn_fps_upg_a_custom.custom_stats.rays = 9
@@ -89,6 +89,28 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function (self)
 	-- Amaroq
 	self.parts.wpn_fps_snp_awp_conversion_wildlands.stats.total_ammo_mod = 5
 	self.parts.wpn_fps_snp_awp_ext_shellrack.stats.total_ammo_mod = 3
+
+	-- Car-4 family foregrips
+	self.parts.wpn_fps_upg_ass_m16_fg_stag.stats.recoil = nil
+	self.parts.wpn_fps_upg_ass_m16_fg_stag.stats.spread = 2
+	self.parts.wpn_fps_uupg_fg_radian.stats.recoil = 1
+	self.parts.wpn_fps_uupg_fg_radian.stats.spread = 1
+	self.parts.wpn_fps_uupg_fg_radian.stats.concealment = nil
+	self.parts.wpn_fps_upg_ass_m4_fg_moe.stats.damage = nil
+	self.parts.wpn_fps_upg_fg_smr.stats.damage = 3
+	self.parts.wpn_fps_upg_fg_smr.stats.recoil = 2
+	self.parts.wpn_fps_upg_fg_smr.stats.spread = nil
+	self.parts.wpn_fps_m4_uupg_fg_lr300.stats.recoil = nil
+	self.parts.wpn_fps_m4_uupg_fg_lr300.stats.concealment = 3
+
+	-- Car-4 family lower receivers
+	self.parts.wpn_fps_m4_uupg_lower_radian.stats.concealment = -2
+
+	-- Car-4 family magazines
+	self.parts.wpn_fps_m4_uupg_m_strike.stats.concealment = -2
+	self.parts.wpn_fps_upg_m4_m_pmag.stats.reload = 1
+	self.wpn_fps_smg_x_hajk.override.wpn_fps_upg_m4_m_pmag.stats.reload = 1
+	self.wpn_fps_smg_x_olympic.override.wpn_fps_upg_m4_m_pmag.stats.reload = 1
 
 	-- Set lowest alert range for all suppressors
 	-- Tweak Sting grenade pickup
