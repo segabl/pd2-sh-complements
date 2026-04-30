@@ -111,13 +111,11 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Reducing the requirement to get the maximum duration and slightly reducing the full duration should make the skill feel better.*
 
 - Saw Massacre
-  - Basic
-    - Reduced wear 50% → 90%
   - Ace
     - Panic chance 50% → 75%
 
-*Saw Massacre is a useless skill and 50% reduced wear is not enough to make the saw a viable weapon against enemies.*
-*Decreasing the wear further and increasing the panic chance will make it more viable at least in some cases.*
+*Saw Massacre is a useless skill and reduced wear is not enough to make the saw a viable weapon against enemies.*
+*Increasing the panic chance will make it more viable at least in some cases.*
 
 ### Technician
 
@@ -431,12 +429,9 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Basing the inconsistent stats on their single variants results in a slight buff for most akimbo pistols and a nerf for most other akimbo weapons.*
 
 - Saws
-  - Made damage against Bulldozers multiply base damage instead of a fixed number
-  - Made ammo use consistent instead of random
   - Added innate armor piercing
 
-*Saws have a hidden damage increase against Bulldozers that's just a hardcoded damage value.*
-*Changing it to be a multiplier of the damage makes modding for damage actually matter.*
+*Adding armor piercing to saws should make them a bit more useful when used against enemies.*
 
 - Bows
   - Reduced damage by 50%
