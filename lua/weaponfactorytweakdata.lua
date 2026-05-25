@@ -52,6 +52,15 @@ Hooks:PostHook(WeaponFactoryTweakData, "init", "shc_init", function(self)
 	self.parts.wpn_fps_lmg_hcar_barrel_dmr.custom_stats.ammo_pickup_max_mul = 0.8
 	self.parts.wpn_fps_lmg_hcar_barrel_dmr.custom_stats.ammo_pickup_min_mul = 0.8
 
+	self.parts.wpn_fps_upg_a_flun_flare.custom_stats.ammo_pickup_max_mul = 0.8
+	self.parts.wpn_fps_upg_a_flun_flare.custom_stats.ammo_pickup_min_mul = 0.8
+	self.parts.wpn_fps_upg_a_flun_shell.custom_stats.ammo_pickup_max_mul = 2.2
+	self.parts.wpn_fps_upg_a_flun_shell.custom_stats.ammo_pickup_min_mul = 2.2
+	self.wpn_fps_spe_flun.override.wpn_fps_upg_a_piercing.custom_stats.ammo_pickup_max_mul = 2.2
+	self.wpn_fps_spe_flun.override.wpn_fps_upg_a_piercing.custom_stats.ammo_pickup_min_mul = 2.2
+	self.wpn_fps_spe_flun.override.wpn_fps_upg_a_slug.custom_stats.ammo_pickup_max_mul = 2.2
+	self.wpn_fps_spe_flun.override.wpn_fps_upg_a_slug.custom_stats.ammo_pickup_min_mul = 2.2
+
 	-- Comando 553
 	self.parts.wpn_fps_ass_s552_fg_standard_green.stats.spread = 5
 	self.parts.wpn_fps_ass_s552_fg_standard_green.stats.spread_moving = 5
