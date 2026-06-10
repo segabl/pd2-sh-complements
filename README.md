@@ -214,7 +214,6 @@ Complementary skill, perk and weapon changes to go with [Streamlined Heisting](h
 *Refreshing the buff duration on hit but reducing the base duration makes the skill feel better while still providing a good boost to accuracy.*
 
 - Trigger Happy
-  - Now refreshes buff duration on hit
   - Stack boost is now additive
   - Basic
     - Damage increase 120% → 25%
