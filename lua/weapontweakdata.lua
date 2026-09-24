@@ -36,6 +36,9 @@ Hooks:PostHook(WeaponTweakData, "init", "shc_init", function (self)
 	-- Street Sweeper
 	self.striker.stats.reload = 15
 
+	-- Karussell
+	self.bleckert.damage_falloff = FALLOFF_TEMPLATE.SHOTGUN_FALL_PRIMARY_HIGH
+
 	-- Generic weapon stat changes
 	for weap_id, weap_data in pairs(self) do
 		if type(weap_data) == "table" and weap_data.stats then
